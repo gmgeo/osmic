@@ -31,11 +31,16 @@
         </dc:creator>
         <dc:rights>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:rights>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>twain47</dc:title>
+          </cc:Agent>
+        </dc:contributor>
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/publicdomain/">
@@ -48,12 +53,12 @@
       </cc:License>
     </rdf:RDF>
   </metadata>
-  <g
-     transform="translate(0,-1036.3622)"
-     id="layer1">
-    <path
-       d="m 6.0101525,1038.4039 4.0000005,0 0,4 4,0 0,4 -4,0 0,4 -4.0000005,0 0,-4 -4,0 0,-4 4,0 z"
-       id="path3757"
-       style="fill:#000000;fill-opacity:1;stroke:none" />
-  </g>
+  <path
+     d="m 6,3 4,0 0,3 3,0 0,4 -3,0 0,3 -4,0 0,-3 -3,0 0,-4 3,0 z"
+     id="path2989"
+     style="fill:#000000;fill-opacity:1;stroke:none" />
+  <path
+     d="m 8.0099615,-0.01621034 c -4.2302771,0 -8.02031246,3.79003494 -8.02031246,8.02031254 0,4.2302778 3.79003536,7.9857418 8.02031246,7.9857418 4.2302765,0 7.9857425,-3.755464 7.9857425,-7.9857418 0,-4.2302776 -3.755466,-8.02031254 -7.9857425,-8.02031254 z m 0,1.00253906 c 3.6237045,0 6.9832035,3.39406888 6.9832035,7.01777348 0,3.6237048 -3.359499,6.9832028 -6.9832035,6.9832028 -3.6237047,0 -7.0177734,-3.359498 -7.0177734,-6.9832028 0,-3.6237046 3.3940687,-7.01777348 7.0177734,-7.01777348 z"
+     id="path2985"
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.90395486;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
 </svg>

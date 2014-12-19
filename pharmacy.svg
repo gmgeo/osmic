@@ -12,7 +12,7 @@
    height="16"
    id="svg2">
   <title
-     id="title3759">Hospital</title>
+     id="title3759">Pharmacy</title>
   <defs
      id="defs4" />
   <metadata
@@ -23,7 +23,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>Hospital</dc:title>
+        <dc:title>Pharmacy</dc:title>
         <dc:creator>
           <cc:Agent>
             <dc:title>nebulon42</dc:title>
@@ -36,6 +36,11 @@
         </dc:rights>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>twain47</dc:title>
+          </cc:Agent>
+        </dc:contributor>
       </cc:Work>
       <cc:License
          rdf:about="http://creativecommons.org/licenses/publicdomain/">
@@ -48,8 +53,16 @@
       </cc:License>
     </rdf:RDF>
   </metadata>
+  <g
+     transform="translate(0,-1036.3622)"
+     id="layer1">
+    <path
+       d="m 5.9999995,1039.3622 4.0000005,0 0.01015,3.0417 2.98985,-0.042 0,4 -2.98985,0.042 -0.01015,2.9583 -4,0 0.010149,-2.9583 L 3,1046.3622 l 0,-4 3.0101495,0.042 z"
+       id="path3757"
+       style="fill:#000000;fill-opacity:1;stroke:none" />
+  </g>
   <path
-     d="M 0,0 0,16 16,16 16,0 0,0 z m 6,2.03125 4,0 0,4 4,0 0,4 -4,0 0,4 -4,0 0,-4 -4,0 0,-4 4,0 0,-4 z"
-     id="path2987"
-     style="fill:#000000;fill-opacity:1;stroke:none" />
+     d="m 1,1 c 0,4.6666667 0,9.333333 0,14 4.9458844,0 9.69608,0 14,0 C 15,10.054116 15,5.3039204 15,1 10.148864,1 5.1620256,1 1,1 z m 1,1 12,0 0,12 -12,0 z"
+     id="rect2985"
+     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
 </svg>
