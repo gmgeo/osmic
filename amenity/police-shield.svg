@@ -12,9 +12,36 @@
    height="16"
    id="svg2">
   <title
-     id="title3793">ATM</title>
+     id="title3793">Police</title>
   <defs
-     id="defs4" />
+     id="defs4">
+    <marker
+       markerUnits="strokeWidth"
+       refX="0"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowEnd">
+      <path
+         d="M 0,0 10,5 0,10 z"
+         id="path2108" />
+    </marker>
+    <marker
+       markerUnits="strokeWidth"
+       refX="10"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowStart">
+      <path
+         d="M 10,0 0,5 10,10 z"
+         id="path2111" />
+    </marker>
+  </defs>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -23,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>ATM</dc:title>
+        <dc:title>Police</dc:title>
         <dc:creator>
           <cc:Agent>
             <dc:title>nebulon42</dc:title>
@@ -38,7 +65,7 @@
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
         <dc:contributor>
           <cc:Agent>
-            <dc:title />
+            <dc:title>twain47</dc:title>
           </cc:Agent>
         </dc:contributor>
       </cc:Work>
@@ -53,16 +80,37 @@
       </cc:License>
     </rdf:RDF>
   </metadata>
-  <path
-     d="M 4,3 2,15 14,15 12,3 z m 3.5625,1 1.0625,0 0,1.34375 c 0.764857,0.085169 1.383097,0.3224299 1.8125,0.71875 0.433862,0.393058 0.656243,0.9106949 0.65625,1.5625 l -1.625,0 C 9.4687444,7.2155765 9.344226,6.8953621 9.09375,6.65625 8.8432638,6.4171496 8.5008379,6.2812562 8.0625,6.28125 7.6062627,6.2812562 7.2593635,6.3823593 7.03125,6.5625 6.8031292,6.7393801 6.6874974,6.9799161 6.6875,7.28125 c -2.6e-6,0.281692 0.1066833,0.5106314 0.34375,0.6875 0.241534,0.176878 0.6907658,0.3395081 1.3125,0.5 0.9437724,0.2489368 1.6330374,0.5474604 2.09375,0.875 0.4607,0.3275459 0.687493,0.773828 0.6875,1.34375 -7e-6,0.566651 -0.217854,1.006382 -0.6875,1.34375 C 9.9678415,12.368619 9.3140588,12.562767 8.5,12.625 l 0,1.375 -1.0625,0 0,-1.34375 C 6.6368518,12.594019 5.956352,12.360298 5.4375,12 4.923118,11.636429 4.7008579,11.110469 4.71875,10.40625 l 0,-0.03125 1.59375,0 c -2.3e-6,0.465113 0.1601204,0.8002 0.46875,1 0.3130999,0.199803 0.6910671,0.312501 1.15625,0.3125 0.4964853,10e-7 0.8833997,-0.104375 1.15625,-0.28125 C 9.3665904,11.229378 9.4999944,10.992117 9.5,10.6875 9.4999944,10.40909 9.375476,10.183426 9.125,10 8.8789867,9.8165785 8.45647,9.6506727 7.875,9.5 6.9312194,9.2641723 6.2241232,8.9870721 5.75,8.65625 5.2803465,8.3221602 5.062499,7.8544552 5.0625,7.28125 5.062499,6.7375343 5.266988,6.2879775 5.71875,5.9375 6.1705087,5.5870361 6.7886892,5.3780157 7.5625,5.3125 z"
-     id="path2988"
-     style="fill:#000000;fill-opacity:1;stroke:none" />
-  <path
-     d="m 3,4 -1,0 0,-2.9999999 12,0 L 14,4 13,4 13,2 3,2 z"
-     id="path3772"
-     style="fill:#000000;fill-opacity:1;stroke:none" />
   <g
      transform="matrix(3.3110893,0,0,2.0827798,-20.090079,-8.8964905)"
      id="text2989"
      style="font-size:4.14989901px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto Medium" />
+  <g
+     transform="matrix(1.1975036,0,0,1.1975036,-757.67867,36.581142)"
+     id="g2117"
+     style="fill:#000000">
+    <g
+       id="g2119"
+       style="fill:#000000">
+      <g
+         id="g2121"
+         style="fill:#000000">
+        <path
+           d=""
+           id="path2125"
+           style="fill:#000000;stroke:none" />
+      </g>
+      <g
+         id="g2127"
+         style="fill:#000000">
+        <path
+           d=""
+           id="path2131"
+           style="fill:#000000;stroke:none" />
+      </g>
+    </g>
+  </g>
+  <path
+     d="M 3,1 1,3 c 2,1.5 1.375,3.625 1,6 -0.1875,1.1875 0.078125,2.421875 1,3.5 0.921875,1.078125 3,1.147182 5,2.5 2,-1.424727 4.078125,-1.421875 5,-2.5 C 13.921875,11.421875 14.1875,10.1875 14,9 13.625,6.625 12.5,4.5 15,3 L 13,1 C 13,1 11.553711,2 10.65625,2 9.7587892,2 8,1 8,1 8,1 6.4454002,2 5.5,2 4.5545997,2 3,1 3,1 z M 8,4 9.53125,7 12,7 10,9 11,12 8,10 5,12 6,9 4,7 6.46875,7 8,4 z"
+     id="path3969"
+     style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
 </svg>

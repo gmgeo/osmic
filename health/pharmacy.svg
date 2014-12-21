@@ -57,12 +57,9 @@
      transform="translate(0,-1036.3622)"
      id="layer1">
     <path
-       d="m 5.9999995,1039.3622 4.0000005,0 0.01015,3.0417 2.98985,-0.042 0,4 -2.98985,0.042 -0.01015,2.9583 -4,0 0.010149,-2.9583 L 3,1046.3622 l 0,-4 3.0101495,0.042 z"
+       d="M 1,1 1,15 15,15 15,1 1,1 z M 2,2 14,2 14,14 2,14 2,2 z M 6,3 6,6.03125 3,6 3,10 6,10.03125 6,13 10,13 10,10.03125 13,10 13,6 10,6.03125 10,3 6,3 z"
+       transform="translate(0,1036.3622)"
        id="path3757"
-       style="fill:#000000;fill-opacity:1;stroke:none" />
+       style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
   </g>
-  <path
-     d="m 1,1 c 0,4.6666667 0,9.333333 0,14 4.9458844,0 9.69608,0 14,0 C 15,10.054116 15,5.3039204 15,1 10.148864,1 5.1620256,1 1,1 z m 1,1 12,0 0,12 -12,0 z"
-     id="rect2985"
-     style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
 </svg>
