@@ -8,8 +8,8 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    version="1.1"
-   width="20"
-   height="20"
+   width="16"
+   height="16"
    id="svg2">
   <title
      id="title3793">Police</title>
@@ -81,20 +81,20 @@
     </rdf:RDF>
   </metadata>
   <rect
-     width="20"
-     height="20"
-     rx="3"
-     ry="3"
+     width="16"
+     height="16"
+     rx="2"
+     ry="2"
      x="0"
      y="-4.7683716e-07"
      id="rect2995"
      style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
   <g
-     transform="matrix(3.3110893,0,0,2.0827798,-20.090079,-4.8964905)"
+     transform="matrix(3.3110893,0,0,2.0827798,-20.090079,-8.8964905)"
      id="text2989"
      style="font-size:4.14989901px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto Medium" />
   <g
-     transform="matrix(1.1975036,0,0,1.1975036,-757.67867,40.581142)"
+     transform="matrix(1.1975036,0,0,1.1975036,-757.67867,36.581142)"
      id="g2117"
      style="fill:#000000">
     <g
@@ -119,7 +119,7 @@
     </g>
   </g>
   <path
-     d="M 8,3 7,4 7,5 13,5 13,4 12,3 z M 7,6 C 6.9667,6.168726 7,6.3395259 7,6.5185186 7,7.9503556 8.61931,9 10,9 11.38069,9 13,7.9503556 13,6.5185186 13,6.3395259 13,6 13,6 z m 0,4 C 5.5810939,10 5.01415,11.876578 5,13 L 5,17 6.53125,17 12,10 z M 13.5,10 8.03125,17 15,17 15,13 c 0,-1.123526 -0.272842,-3 -1.5,-3 z"
+     d="M 6,1 5,2 5,3 11,3 11,2 10,1 z M 5,4 C 4.9667,4.168726 5,4.3395259 5,4.5185186 5,5.9503556 6.61931,7 8,7 9.38069,7 11,5.9503556 11,4.5185186 11,4.3395259 11,4 11,4 z M 5,8 C 3.5810939,8 3.01415,9.876578 3,11 L 3,15 4.53125,15 10,8 z M 11.5,8 6.03125,15 13,15 13,11 C 13,9.876474 12.727158,8 11.5,8 z"
      id="rect7805-5-4"
      style="color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
 </svg>
