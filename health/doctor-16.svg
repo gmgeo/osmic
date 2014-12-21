@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="16"
+   height="16"
+   id="svg2">
+  <defs
+     id="defs4">
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutL"
+       style="overflow:visible">
+      <path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.8,0.8)"
+         id="path5987"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path5848"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path5854"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Send"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         id="path5860"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow2Send"
+       style="overflow:visible">
+      <path
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         id="path5878"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutS"
+       style="overflow:visible">
+      <path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.2,0.2)"
+         id="path5993"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <inkscape:path-effect
+       effect="ruler"
+       id="path-effect8652" />
+    <inkscape:path-effect
+       effect="ruler"
+       id="path-effect8654" />
+    <inkscape:path-effect
+       effect="ruler"
+       id="path-effect8656" />
+    <inkscape:path-effect
+       effect="bend_path"
+       id="path-effect8658" />
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutL-0"
+       style="overflow:visible">
+      <path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.8,0.8)"
+         id="path5987-6"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend-3"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path5848-5"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend-9"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path5854-1"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Send-5"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         id="path5860-9"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow2Send-3"
+       style="overflow:visible">
+      <path
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         id="path5878-9"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutS-7"
+       style="overflow:visible">
+      <path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.2,0.2)"
+         id="path5993-1"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <inkscape:path-effect
+       effect="ruler"
+       id="path-effect8652-9" />
+    <inkscape:path-effect
+       effect="ruler"
+       id="path-effect8654-0" />
+    <inkscape:path-effect
+       effect="ruler"
+       id="path-effect8656-7" />
+    <inkscape:path-effect
+       effect="bend_path"
+       id="path-effect8658-3" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:rights>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="matrix(0.57632428,0,0,0.57632428,-10.358019,-459.72189)"
+     id="text4892"
+     style="font-size:58.81888199px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans" />
+  <g
+     transform="matrix(1.2125471,0,0,1.1028537,-121.40471,139.02544)"
+     id="text7907"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans" />
+  <g
+     transform="matrix(1.0184062,0,0,1,-86.916359,-892.07406)"
+     id="text16643"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" />
+  <g
+     transform="matrix(0.16,0,0,0.16,-8.688733,-96.73364)"
+     id="g5757" />
+  <g
+     transform="matrix(0.16,0,0,0.16,-8.688733,-96.73364)"
+     id="g5761" />
+  <g
+     transform="matrix(0.16,0,0,0.16,-8.688733,-96.73364)"
+     id="g5765" />
+  <g
+     transform="matrix(0.16,0,0,0.16,-8.688733,-96.73364)"
+     id="g5769" />
+  <text
+     x="-2.3050849"
+     y="-107.21186"
+     id="text7239"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+       x="-2.3050849"
+       y="-107.21186"
+       id="tspan7241" /></text>
+  <g
+     transform="matrix(0.16,0,0,0.16,19.694915,83.76814)"
+     id="Captions" />
+  <g
+     transform="translate(19.694915,65.28814)"
+     id="g7138" />
+  <g
+     transform="matrix(0.57632428,0,0,0.57632428,-7.285903,-458.0975)"
+     id="text4892-7"
+     style="font-size:58.81888199px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans" />
+  <g
+     transform="matrix(1.2125471,0,0,1.1028537,-118.33259,140.64983)"
+     id="text7907-5"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans" />
+  <g
+     transform="matrix(1.0184062,0,0,1,-83.844243,-890.44967)"
+     id="text16643-3"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans" />
+  <g
+     transform="matrix(0.16,0,0,0.16,-5.616617,-95.10925)"
+     id="g5757-2" />
+  <g
+     transform="matrix(0.16,0,0,0.16,-5.616617,-95.10925)"
+     id="g5761-3" />
+  <g
+     transform="matrix(0.16,0,0,0.16,-5.616617,-95.10925)"
+     id="g5765-2" />
+  <g
+     transform="matrix(0.16,0,0,0.16,-5.616617,-95.10925)"
+     id="g5769-0" />
+  <text
+     x="0.76703101"
+     y="-105.58747"
+     id="text7239-6"
+     xml:space="preserve"
+     style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+       x="0.76703101"
+       y="-105.58747"
+       id="tspan7241-4" /></text>
+  <g
+     transform="matrix(0.16,0,0,0.16,22.767031,85.39253)"
+     id="Captions-0" />
+  <g
+     transform="translate(22.767031,66.91253)"
+     id="g7138-1" />
+  <path
+     d="M 8,2 C 6.83929,2 5.6678336,2.5047052 4.875,3.5 4.1875142,4.3630449 4,5 3.90625,6.0000004 1.01009,6.0238004 1,7.0817104 1,14 l 14,0 C 15,7.0817104 14.9899,6.0237504 12.09375,6.0000004 12,5 11.795537,4.3460958 11.125,3.5 10.334655,2.5027279 9.16071,2 8,2 z m 0,2 c 1.281412,-0.00489 2,1 2.0625,2.0000004 l -4.125,0 C 6,5 6.718588,4.0048937 8,4 z m -1,3.0000004 2,0 L 9,9 l 2,0 0,2 -2,0 0,2 -2,0 0,-2 -2,0 0,-2 2,0 z"
+     id="rect4125"
+     style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
+</svg>
