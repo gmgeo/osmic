@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="20"
+   height="20"
+   id="svg2">
+  <title
+     id="title3759">Hospital</title>
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Hospital</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>nebulon42</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:rights>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>twain47</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     width="20"
+     height="20"
+     rx="3"
+     ry="3"
+     x="0"
+     y="7.1525574e-07"
+     id="rect2984"
+     style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
+  <path
+     d="m 10,1.96875 c -4.2302771,0 -8,3.8009724 -8,8.03125 0,4.230278 3.7697229,8 8,8 4.230277,0 8,-3.769722 8,-8 C 18,5.7697224 14.230276,1.96875 10,1.96875 z M 10,3 c 3.623705,0 7,3.3762954 7,7 0,3.623705 -3.376296,7 -7,7 C 6.3762953,17 3,13.623705 3,10 3,6.3762954 6.3762953,3 10,3 z m -2,2 0,3 -3,0 0,4 3,0 0,3 4,0 0,-3 3,0 0,-4 -3,0 0,-3 -4,0 z"
+     id="path2989"
+     style="fill:#ffffff;fill-opacity:1;stroke:none" />
+</svg>

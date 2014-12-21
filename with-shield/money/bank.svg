@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="20"
+   height="20"
+   id="svg2">
+  <title
+     id="title3793">Bank</title>
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Bank</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>nebulon42</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:rights>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     width="20"
+     height="20"
+     rx="3"
+     ry="3"
+     x="0"
+     y="4.7683716e-07"
+     id="rect2985"
+     style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
+  <path
+     d="m 4,8 0,9 12,0 0,-9 -6,-5 z m 5.5625,-2 1.0625,0 0,1.34375 c 0.764857,0.085169 1.383097,0.3224299 1.8125,0.71875 0.433862,0.393058 0.656243,0.910695 0.65625,1.5625 l -1.625,0 c -6e-6,-0.409423 -0.124524,-0.729638 -0.375,-0.96875 C 10.843264,8.41715 10.500838,8.281256 10.0625,8.28125 9.6062627,8.281256 9.2593635,8.382359 9.03125,8.5625 8.8031292,8.73938 8.6874974,8.979916 8.6875,9.28125 c -2.6e-6,0.281692 0.1066833,0.510631 0.34375,0.6875 0.241534,0.176878 0.6907658,0.339508 1.3125,0.5 0.943772,0.248937 1.633037,0.54746 2.09375,0.875 0.4607,0.327546 0.687493,0.773828 0.6875,1.34375 -7e-6,0.566651 -0.217854,1.006382 -0.6875,1.34375 -0.469658,0.337369 -1.123441,0.531517 -1.9375,0.59375 l 0,1.375 -1.0625,0 0,-1.34375 C 8.6368518,14.594019 7.956352,14.360298 7.4375,14 6.923118,13.636429 6.7008579,13.110469 6.71875,12.40625 l 0,-0.03125 1.59375,0 c -2.3e-6,0.465113 0.1601204,0.8002 0.46875,1 0.3130999,0.199803 0.6910671,0.312501 1.15625,0.3125 0.496485,10e-7 0.8834,-0.104375 1.15625,-0.28125 C 11.36659,13.229378 11.499994,12.992117 11.5,12.6875 11.499994,12.40909 11.375476,12.183426 11.125,12 10.878987,11.816579 10.45647,11.650673 9.875,11.5 8.9312194,11.264172 8.2241232,10.987072 7.75,10.65625 7.2803465,10.32216 7.062499,9.854455 7.0625,9.28125 7.062499,8.737534 7.266988,8.287978 7.71875,7.9375 8.1705087,7.5870361 8.7886892,7.3780157 9.5625,7.3125 z"
+     id="path2988"
+     style="fill:#ffffff;fill-opacity:1;stroke:none" />
+  <g
+     transform="matrix(3.3110893,0,0,2.0827798,-20.090079,-4.8964905)"
+     id="text2989"
+     style="font-size:4.14989901px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto Medium" />
+</svg>
