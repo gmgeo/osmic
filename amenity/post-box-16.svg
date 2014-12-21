@@ -57,8 +57,16 @@
      transform="matrix(3.3110893,0,0,2.0827798,-20.090079,-8.8964905)"
      id="text2989"
      style="font-size:4.14989901px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto Medium" />
-  <path
-     d="M 3,5 3,6 8,8 13,6 13,5 z M 13,7 8,9 3,7 l 0,4 10,0 z"
-     id="path2987"
-     style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
+  <g
+     transform="translate(-0.03125,0.0625)"
+     id="g3049">
+    <g
+       transform="matrix(3.3110893,0,0,2.0827798,-20.090079,-8.8964905)"
+       id="text2989-0"
+       style="font-size:4.14989901px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto Medium" />
+    <path
+       d="m 4,5 0,1 4,2 4,-2 0,-1 z m 0,2 0,4 8,0 0,-4 -4,2 z"
+       id="path2987-7"
+       style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
+  </g>
 </svg>
