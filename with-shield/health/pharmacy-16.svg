@@ -7,12 +7,98 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="16"
    height="16"
    id="svg2">
   <defs
-     id="defs4" />
+     id="defs4">
+    <inkscape:path-effect
+       effect="bend_path"
+       id="path-effect8658" />
+    <inkscape:path-effect
+       effect="ruler"
+       id="path-effect8656" />
+    <inkscape:path-effect
+       effect="ruler"
+       id="path-effect8654" />
+    <inkscape:path-effect
+       effect="ruler"
+       id="path-effect8652" />
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutS"
+       style="overflow:visible">
+      <path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.2,0.2)"
+         id="path5993"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow2Send"
+       style="overflow:visible">
+      <path
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
+         id="path5878"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Send"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         id="path5860"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Mend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         id="path5854"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path5848"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="TriangleOutL"
+       style="overflow:visible">
+      <path
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         transform="scale(0.8,0.8)"
+         id="path5987"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+  </defs>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -24,7 +110,7 @@
         <dc:title></dc:title>
         <dc:creator>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:creator>
         <dc:rights>
@@ -36,7 +122,7 @@
            rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
         <dc:contributor>
           <cc:Agent>
-            <dc:title></dc:title>
+            <dc:title />
           </cc:Agent>
         </dc:contributor>
       </cc:Work>
@@ -61,13 +147,57 @@
      id="rect2985"
      style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
   <g
-     transform="translate(0,-1036.3622)"
-     id="layer1"
+     id="g3111"
      style="fill:#ffffff">
+    <g
+       transform="matrix(0.57632428,0,0,0.57632428,-10.358019,-459.72189)"
+       id="text4892"
+       style="font-size:58.81888199px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans" />
+    <g
+       transform="matrix(1.2125471,0,0,1.1028537,-121.40471,139.02544)"
+       id="text7907"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans" />
+    <g
+       transform="matrix(1.0184062,0,0,1,-86.916359,-892.07406)"
+       id="text16643"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans" />
+    <g
+       transform="matrix(0.16,0,0,0.16,-8.688733,-96.73364)"
+       id="g5757"
+       style="fill:#ffffff" />
+    <g
+       transform="matrix(0.16,0,0,0.16,-8.688733,-96.73364)"
+       id="g5761"
+       style="fill:#ffffff" />
+    <g
+       transform="matrix(0.16,0,0,0.16,-8.688733,-96.73364)"
+       id="g5765"
+       style="fill:#ffffff" />
+    <g
+       transform="matrix(0.16,0,0,0.16,-8.688733,-96.73364)"
+       id="g5769"
+       style="fill:#ffffff" />
+    <text
+       x="-2.3050849"
+       y="-107.21186"
+       id="text7239"
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="-2.3050849"
+         y="-107.21186"
+         id="tspan7241"
+         style="fill:#ffffff" /></text>
+    <g
+       transform="matrix(0.16,0,0,0.16,19.694915,83.76814)"
+       id="Captions"
+       style="fill:#ffffff" />
+    <g
+       transform="translate(19.694915,65.28814)"
+       id="g7138"
+       style="fill:#ffffff" />
     <path
-       d="M 1,1 1,15 15,15 15,1 1,1 z M 2,2 14,2 14,14 2,14 2,2 z M 6,3 6,6.03125 3,6 3,10 6,10.03125 6,13 10,13 10,10.03125 13,10 13,6 10,6.03125 10,3 6,3 z"
-       transform="translate(0,1036.3622)"
-       id="path3757"
+       d="m 5,5 -2,2 0,8 10,0 0,-8 -2,-2.0000003 z m 2,2 2,0 0,2 2,0 0,2 -2,0 0,2 -2,0 0,-2 -2,0 0,-2 2,0 z M 5,1 5,4 11,4 11,1 z"
+       id="path4199"
        style="fill:#ffffff;fill-opacity:1;stroke:none" />
   </g>
 </svg>
