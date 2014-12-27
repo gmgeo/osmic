@@ -1,6 +1,8 @@
 # Osmic (OSM Icons)
 
-A collection of clean map icons licensed under CC0 (Public Domain).
+A collection of clean SVG map icons licensed under CC0 (Public Domain).
+
+![Osmic (OSM Icons)](https://github.com/nebulon42/osmic/raw/master/icons.png "Available icons")
 
 Icons are heavily inspired by
 * Maki ([mapbox/maki](https://github.com/mapbox/maki))
