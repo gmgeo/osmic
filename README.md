@@ -16,5 +16,5 @@ All icons should adhere to the following features
 * common canvas size
 * avoid Inkscape specific code, use plain SVG
 
-## Icon specificiations
+## Icon specifications
 All icons use a canvas base size of 16px. Where required there exist several versions that are varying in size and amount of detail. The size is indicated by appending the pixel value to the icon name (e.g. hospital-16.svg).
