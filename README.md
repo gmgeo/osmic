@@ -1,6 +1,6 @@
 # Osmic (OSM Icons)
 
-A collection of clean SVG map icons licensed under CC0 (Public Domain).
+A collection of clean high quality SVG map icons licensed under CC0 (Public Domain).
 
 ![Osmic (OSM Icons)](https://github.com/nebulon42/osmic/raw/master/icons.png "Available icons")
 
