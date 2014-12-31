@@ -23,6 +23,9 @@ All icons use a canvas base size of 16px. Where required there exist several ver
 
 ## Why another icon collection?
 Bascially there are two collections of icons that are widely used for displaying OSM data: [twain47's Open-SVG-Map-Icons](https://github.com/twain47/Open-SVG-Map-Icons) and [Mapbox' Maki](https://github.com/mapbox/maki).
-Osmic does not try to replace any of the two, but aims at addressing shortcomings of both collections. While Open-SVG-Map-Icons comprise a quite comprehensive icon collection they are quite complex and do not work so well at small resolutions. They also do not align to the pixel grid, which may result in a blurry icon representation. On the other hand, Maki icons have been designed especially for small resolutions but come with a lot of Mapbox or marker specific code. Some icons also have an outline which hinders recolouring of the icons.
+
+Osmic does not try to replace any of the two, but aims at addressing shortcomings of both collections. While Open-SVG-Map-Icons comprise a quite comprehensive icon collection they often feature somewhat complex representations and do not work so well at small resolutions. They also do not align to the pixel grid, which may result in a blurry icon representation.
+
+On the other hand, Maki icons have been designed especially for small resolutions but come with a lot of Mapbox or marker specific code. Some icons also have an outline which hinders recolouring of the icons.
 
 Osmic tries to provide simple, clean and legible icons - and just icons.
