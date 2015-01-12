@@ -12,6 +12,20 @@
    height="100%"
    viewBox="0 0 16 16"
    id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
   <rect
      width="16"
      height="16"
@@ -19,10 +33,10 @@
      ry="2"
      x="0"
      y="0"
-     id="rect2983"
-     style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
+     id="canvas"
+     style="fill:#1a1a1a;fill-opacity:1;stroke:none;" />
   <path
      d="m 15,9 0,1 -6,-1 0,3 2,2 0,1 L 8,14 5,15 5,14 7,12 7,9 1,10 1,9 7,6 7,3 C 7,2 7.22222,1 8,1 8.77777,1 9,2 9,3 l 0,3 z"
-     id="path7712-0"
-     style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline" />
+     id="airport"
+     style="fill:#ffffff;fill-opacity:1;stroke:none" />
 </svg>

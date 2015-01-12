@@ -12,8 +12,29 @@
    height="100%"
    viewBox="0 0 16 16"
    id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <rect
+     width="16"
+     height="16"
+     x="0"
+     y="0"
+     id="canvas"
+     style="fill:none;stroke:none;visibility:hidden" />
   <path
      d="M 3.84375,1.5 A 2,2 0 0 0 2,3.5 a 2,2 0 0 0 4,0 2,2 0 0 0 -2.15625,-2 z m 8,0 A 2,2 0 0 0 10,3.5 a 2,2 0 0 0 4,0 2,2 0 0 0 -2.15625,-2 z M 3,6 C 3,6 2,6.5 2,7.5 2,8.5 3,9 3,9 3,9 1,10 1,13 l 2.1875,0 0.3125,1.5 1,0 L 4.8125,13 7,13 C 7,10 5,9 5,9 5,9 6,8.4520606 6,7.5 6,6.5479394 5,6 5,6 L 4,7 3,6 z m 7,0 C 9.2636669,6 8.9041211,6.3528175 9,7 l 1,4.5 c 0.08475,0.254237 0.194915,0.5 0.5,0.5 l 0.5,0 0.5,2.5 1,0 0.5,-2.5 0.5,0 c 0.271186,0 0.4322,-0.211865 0.5,-0.5 L 15,7 C 15.095879,6.2809084 14.647182,6 14,6 L 13,6 12,7 11,6 10,6 z"
-     id="path3022"
+     id="toilets"
      style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
 </svg>

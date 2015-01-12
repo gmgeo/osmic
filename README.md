@@ -16,7 +16,11 @@ All icons should adhere to the following features
 * sharp (aligned to pixel grid)
 * single point of view (avoid use of perspective where possible)
 * common canvas size
+
+## SVG code
 * avoid Inkscape specific code, use plain SVG
+* no groups, one path
+* invsibile background rectangle spanning the whole canvas to avoid up-/downscaling of the shape alone when using `marker-width` or `marker-height`
 
 ## Icon specifications
 All icons use a canvas base size of 16px. Where required there exist several versions that are varying in size and amount of detail. The size is indicated by appending the pixel value to the icon name (e.g. hospital-16.svg).
