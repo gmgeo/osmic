@@ -24,11 +24,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="76.240079"
+     inkscape:zoom="2.8"
+     inkscape:cx="55.615079"
      inkscape:cy="116.95876"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="svg2"
      showgrid="true"
      inkscape:window-width="1920"
      inkscape:window-height="1023"
@@ -644,22 +644,6 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       id="g3145"
-       transform="translate(56,908.36217)">
-      <rect
-         style="fill:none;stroke:none;visibility:hidden"
-         id="canvas-8"
-         y="0"
-         x="0"
-         height="16"
-         width="16" />
-      <path
-         style="fill:#1a1a1a;fill-opacity:1;stroke:none"
-         id="library"
-         d="m 1,1 0,8 c 3,0 6.2260303,2.424727 6.25,3 l 0,-8 C 7.2739697,3.4793944 4,1 1,1 z M 15,1 C 12,1 8.7260303,3.3835155 8.75,4 l 0,8 C 8.75,11.431455 12,9 15,9 z M 1,10.5 1,12 c 3,0 6.25,2.520606 6.25,3 l 0,-1.5 C 7.25,13.020606 4,10.5 1,10.5 z m 14,0 c -3,0 -6.25,2.496635 -6.25,3 l 0,1.5 C 8.75,14.640455 12,12.311606 15,12 z"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
        id="g3122"
        transform="translate(32,908.36217)">
       <rect
@@ -673,6 +657,22 @@
          style="fill:#1a1a1a;fill-opacity:1;stroke:none"
          id="embassy"
          d="M 6.5,1 C 4.9486964,1 4,2 4,2 L 4,9 C 4,9 5.0325904,8 6.5,8 7.9674096,8 8.5558686,8.6639006 9,9 9.4441314,9.3360994 9.984651,10 11.5,10 13.015349,10 14,9 14,9 L 14,2 C 14,2 12.991379,3 11.5,3 10.008621,3 9.467783,2.3957752 9,2 8.532217,1.6042248 8.0513036,1 6.5,1 z M 2,1.25 C 1.5,1.25 1,1.5 1,2 l 0,12 c 0,1 2,1 2,0 L 3,2 C 3,1.5 2.5,1.25 2,1.25 z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g3125"
+       transform="translate(56,908.36217)">
+      <rect
+         style="fill:none;stroke:none;visibility:hidden"
+         id="canvas-10"
+         y="0"
+         x="0"
+         height="16"
+         width="16" />
+      <path
+         style="fill:#1a1a1a;fill-opacity:1;stroke:none"
+         id="library"
+         d="m 1,1 0,10 c 2,3 5.2497897,2.039143 5.2497897,4 L 7.25,15 7.25,5 C 7.25,2.0168774 3,4 1,1 z M 15,1 C 13,4 8.75,2.0449388 8.75,5 l 0,10 1,0 C 9.75,13.020266 13,14 15,11 z"
          inkscape:connector-curvature="0" />
     </g>
   </g>
