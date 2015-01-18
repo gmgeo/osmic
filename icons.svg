@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="45.53867"
-     inkscape:cy="38.248467"
+     inkscape:zoom="11.2"
+     inkscape:cx="24.91367"
+     inkscape:cy="119.06067"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="false"
@@ -688,22 +688,6 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       id="g3302"
-       transform="translate(56,908.36217)">
-      <rect
-         style="fill:none;stroke:none;visibility:hidden"
-         id="canvas-109"
-         y="0"
-         x="0"
-         height="16"
-         width="16" />
-      <path
-         style="fill:#1a1a1a;fill-opacity:1;stroke:none"
-         id="town-hall"
-         d="M 8,1 C 7.75,1.0032 7.5,1.1644239 7.5,1.5 l 0,4.03125 C 4.906144,5.6951647 4,7.060613 4,8 l 8,0 C 12,7.060613 11.093856,5.6951647 8.5,5.53125 L 8.5,1.5 C 8.5,1.1516409 8.25,0.99680426 8,1 z M 9,1 9,4 13,4 11,2.5 13,1 z m -7,8 0,1 1,0 0,4 -1,0 0,1 12,0 0,-1 -1,0 0,-4 1,0 0,-1 z m 4,3 c 0,-2 4,-2 4,0 l 0,2 -4,0 z"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
        id="g3154"
        transform="translate(8,980.36217)">
       <rect
@@ -781,6 +765,22 @@
          style="fill:#1a1a1a;fill-opacity:1;stroke:none"
          id="guidepost"
          d="M 8,1.25 C 7.625,1.25 7.25,1.5 7.25,2 l 0,13 1.5,0 0,-13 C 8.75,1.5 8.375,1.25 8,1.25 z M 3,2 1,3.5 3,5 7,5 7,2 3,2 z M 9,5 9,8 13,8 15,6.5 13,5 9,5 z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g3171"
+       transform="translate(56,908.36217)">
+      <rect
+         style="fill:none;stroke:none;visibility:hidden"
+         id="canvas-240"
+         y="0"
+         x="0"
+         height="16"
+         width="16" />
+      <path
+         style="fill:#1a1a1a;fill-opacity:1;stroke:none"
+         id="town-hall"
+         d="M 8,1 C 7.75,1.0032 7.5,1.1644239 7.5,1.5 L 7.5,5.375 3,8 13,8 8.5,5.375 8.5,1.5 C 8.5,1.1516409 8.25,0.99680426 8,1 z M 9,1 9,4 13,4 11,2.5 13,1 z m -7,8 0,1 1,0 0,4 -1,0 0,1 12,0 0,-1 -1,0 0,-4 1,0 0,-1 z m 6,1.5 c 1,0 2,0.5 2,1.5 l 0,2 -4,0 0,-2 c 0,-1 1,-1.5 2,-1.5 z"
          inkscape:connector-curvature="0" />
     </g>
   </g>
