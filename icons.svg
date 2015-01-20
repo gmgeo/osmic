@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="138.47861"
-     inkscape:cy="71.962641"
+     inkscape:zoom="22.4"
+     inkscape:cx="63.395569"
+     inkscape:cy="152.77484"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -836,8 +836,9 @@
       <path
          style="fill:#1a1a1a;fill-opacity:1;stroke:none"
          id="town-hall"
-         d="M 8,1 C 7.75,1.0032 7.5,1.1644239 7.5,1.5 L 7.5,5.375 3,8 13,8 8.5,5.375 8.5,1.5 C 8.5,1.1516409 8.25,0.99680426 8,1 z M 9,1 9,4 13,4 11,2.5 13,1 z m -7,8 0,1 1,0 0,4 -1,0 0,1 12,0 0,-1 -1,0 0,-4 1,0 0,-1 z m 6,1.5 c 1,0 2,0.5 2,1.5 l 0,2 -4,0 0,-2 c 0,-1 1,-1.5 2,-1.5 z"
-         inkscape:connector-curvature="0" />
+         d="M 8,1 C 7.75,1.0032 7.5,1.1644239 7.5,1.5 L 7.5,5.375 2,8 14,8 8.5,5.375 8.5,1.5 C 8.5,1.1516409 8.25,0.99680426 8,1 z M 9,1 9,4 13,4 11,2.5 13,1 z m -7,8 0,1 1,0 0,4 -1,0 0,1 12,0 0,-1 -1,0 0,-4 1,0 0,-1 z m 6,1.5 c 1,0 2,0.5 2,1.5 l 0,2 -4,0 0,-2 c 0,-1 1,-1.5 2,-1.5 z"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csccccsccccccccccccccccccccssccss" />
     </g>
     <g
        id="g3192"
