@@ -1,7 +1,14 @@
+# How to request icons
+New icons may be requested via GitHub issues. Please search through existing issues first to see if your request is not already covered. Please also limit issues to a
+single icon or a small number of very closely related icons.
+
+
 # How to contribute
 
 Osmic uses "Fork & Pull" for contributions (see https://help.github.com/articles/using-pull-requests). Both adjustments and improvements to existing icons as well as
 new icons are welcome.
+
+Please limit new icon pull requests to one icon each unless they are very closely related in concept and design.
 
 ## Legal aspects
 
