@@ -12,12 +12,12 @@ Please limit new icon pull requests to one icon each unless they are very closel
 
 ## Legal aspects
 
-By contributing you agree to release your work under CC0 (or Public Domain). If submitting new icons or substantial modifications you confirm that this is your own
-work and it is free of the rights of others.
+By contributing you agree to release your work under CC0 (or Public Domain), see the [license](https://github.com/nebulon42/osmic/blob/master/LICENSE.txt) for details.
+If submitting new icons or substantial modifications you confirm that this is your own work and it is free of the rights of others.
 
 ## Technical aspects
 
-It is recommended to use Inkscape (http://inkscape.org) for creating or modifying SVG files. Please do not submit files in Inkscape's own SVG-like format as it contains
+It is recommended to use Inkscape (https://inkscape.org) for creating or modifying SVG files. Please do not submit files in Inkscape's own SVG-like format as it contains
 a lot of clutter. Instead use File > Save As ... and select "Plain SVG".
 
 Icon standard canvas size is 16x16px with 1px padding (should be kept free of any icon content). The icon file name should use dashes for whitespace and append the canvas size (e.g. `waste-basket-16.svg`).
