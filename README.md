@@ -33,3 +33,7 @@ Osmic does not try to replace any of the two, but aims at addressing shortcoming
 On the other hand, Maki icons have been designed especially for small resolutions but come with a lot of Mapbox or marker specific code. Some icons also have an outline which hinders recolouring of the icons.
 
 Osmic tries to provide simple, clean and legible icons - and just icons.
+
+## How to contribute
+
+Contributions are welcome, please have a look at [this guide](https://github.com/nebulon42/osmic/raw/master/CONTRIBUTING.md).
