@@ -25,8 +25,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="34.10729"
-     inkscape:cy="72.55536"
+     inkscape:cx="78.622996"
+     inkscape:cy="78.508502"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -938,7 +938,7 @@
        transform="translate(56,956.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
-         id="canvas-8"
+         id="canvas-18"
          y="0"
          x="0"
          height="16"
@@ -946,7 +946,7 @@
       <path
          style="fill:#1a1a1a;fill-opacity:1"
          id="drinking-water"
-         d="m 2,7 1.75,8 4.5,0 L 10,7 z m 1.21,1 5.58,0 -0.45,2 -4.7,0 M 5,6 C 5,4 6,3 8,3 L 9,3 9,2 8,2 C 7,2 7,1 8,1 l 3,0 c 1,0 1,1 0,1 l -1,0 0,1 4,0 0,1.5 -6,0 C 6.9152599,4.4911116 6.5,4.9824765 6.5,6 z"
+         d="m 2,7 1.5,8 5,0 L 10,7 z M 3.18,8 8.81,8 8.44,10 3.55,10 M 5,6 C 5,4 6,3 8,3 L 9,3 9,2 8,2 C 7,2 7,1 8,1 l 3,0 c 1,0 1,1 0,1 l -1,0 0,1 4,0 0,1.5 -6,0 C 6.9152599,4.4911116 6.5,4.9824765 6.5,6 z"
          inkscape:connector-curvature="0" />
     </g>
   </g>
