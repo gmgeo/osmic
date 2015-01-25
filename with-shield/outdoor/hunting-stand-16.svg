@@ -36,7 +36,7 @@
      id="canvas"
      style="fill:#1a1a1a;stroke:none" />
   <path
-     d="m 3,1 0,1.25 10,2 L 13,3 3,1 z M 4,3.5 4,9 12,9 12,5 4,3.5 z m -1,6.5 0,1 1,0 -1,4 1.5,0 1,-4 5,0 1.03125,4 1.5,0 L 12,11 l 1,0 0,-1 -10,0 z"
+     d="m 3,1 0,1.25 10,2 L 13,3 z M 4,3.5 4,8 12,8 12,5 z M 3,9 l 0,1 1,0 -1,5 1.5,0 1,-5 5,0 1.03125,5 1.5,0 L 12,10 l 1,0 0,-1 z"
      id="hunting-stand"
      style="fill:#ffffff;fill-opacity:1;stroke:none" />
 </svg>

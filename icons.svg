@@ -24,8 +24,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="104.66407"
+     inkscape:zoom="11.2"
+     inkscape:cx="90.079993"
      inkscape:cy="81.781432"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -950,11 +950,11 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       id="g3174"
+       id="g3176"
        transform="translate(104,956.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
-         id="canvas-75"
+         id="canvas-68"
          y="0"
          x="0"
          height="16"
@@ -962,7 +962,7 @@
       <path
          style="fill:#1a1a1a;fill-opacity:1;stroke:none"
          id="hunting-stand"
-         d="m 3,1 0,1.25 10,2 L 13,3 3,1 z M 4,3.5 4,9 12,9 12,5 4,3.5 z m -1,6.5 0,1 1,0 -1,4 1.5,0 1,-4 5,0 1.03125,4 1.5,0 L 12,11 l 1,0 0,-1 -10,0 z"
+         d="m 3,1 0,1.25 10,2 L 13,3 z M 4,3.5 4,8 12,8 12,5 z M 3,9 l 0,1 1,0 -1,5 1.5,0 1,-5 5,0 1.03125,5 1.5,0 L 12,10 l 1,0 0,-1 z"
          inkscape:connector-curvature="0" />
     </g>
   </g>
