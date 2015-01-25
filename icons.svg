@@ -24,8 +24,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.2"
-     inkscape:cx="90.079993"
+     inkscape:zoom="2.8"
+     inkscape:cx="159.83899"
      inkscape:cy="81.781432"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -870,22 +870,6 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       id="g3162"
-       transform="translate(152,956.36217)">
-      <rect
-         style="fill:none;stroke:none;visibility:hidden"
-         id="canvas-6"
-         y="0"
-         x="0"
-         height="16"
-         width="16" />
-      <path
-         style="fill:#1a1a1a;fill-opacity:1;stroke:none"
-         id="waste-basket"
-         d="M 7,1 C 6,1 6,2 6,2 L 5,2 C 3,2 3,4 3,4 L 13,4 C 13,4 13,2 11,2 L 10,2 C 10,2 10,1 9,1 L 7,1 z m -4,4 0,7 c 0,1.496636 1.4247267,3 3,3 l 4,0 c 1.455425,0 3,-1.496636 3,-3 L 13,5 3,5 z M 5.875,6.8125 C 6.3125,6.8125 6.75,7.2180406 6.75,8 l 0,4 C 6.75,13.54836 5,13.54836 5,12 L 5,8 C 5,7.2180406 5.4375,6.8125 5.875,6.8125 z m 4.25,0 C 10.5625,6.8125 11,7.2180406 11,8 l 0,4 c 0,1.54836 -1.75,1.54836 -1.75,0 l 0,-4 c 0,-0.7819594 0.4375,-1.1875 0.875,-1.1875 z"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
        id="g3191"
        transform="translate(128,956.36217)">
       <rect
@@ -963,6 +947,22 @@
          style="fill:#1a1a1a;fill-opacity:1;stroke:none"
          id="hunting-stand"
          d="m 3,1 0,1.25 10,2 L 13,3 z M 4,3.5 4,8 12,8 12,5 z M 3,9 l 0,1 1,0 -1,5 1.5,0 1,-5 5,0 1.03125,5 1.5,0 L 12,10 l 1,0 0,-1 z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g3177"
+       transform="translate(152,956.36217)">
+      <rect
+         style="fill:none;stroke:none;visibility:hidden"
+         id="canvas-16"
+         y="0"
+         x="0"
+         height="16"
+         width="16" />
+      <path
+         style="fill:#1a1a1a;fill-opacity:1;stroke:none"
+         id="waste-basket"
+         d="M 7,1 C 6,1 6,2 6,2 L 5,2 C 3,2 3,4 3,4 L 13,4 C 13,4 13,2 11,2 L 10,2 C 10,2 10,1 9,1 z m -4,4 2,10 6,0 2,-10 z"
          inkscape:connector-curvature="0" />
     </g>
   </g>
