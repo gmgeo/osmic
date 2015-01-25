@@ -24,6 +24,6 @@ Icon standard canvas size is 16x16px with 1px padding (should be kept free of an
 
 All icon content should have the colour `#1a1a1a` and consist of a single path (parts merged together). No groups should be used.
 
-The ID of the path should be the name of the icon (e.g. `waste-basket-16.svg` has id `waste-basket`). All icons should have a invsibile background rectangle
+The ID of the path should be the name of the icon (e.g. `waste-basket-16.svg` has id `waste-basket`). All icons should have a invisible background rectangle
 spanning the whole canvas to avoid up-/downscaling of the shape alone when using `marker-width` or `marker-height` in CartoCSS. The style of this rectangle should have `visibility:hidden` set and
 use the id `canvas`.
