@@ -24,8 +24,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="159.83899"
+     inkscape:zoom="11.2"
+     inkscape:cx="139.21399"
      inkscape:cy="81.781432"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -954,7 +954,7 @@
        transform="translate(152,956.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
-         id="canvas-16"
+         id="canvas-734"
          y="0"
          x="0"
          height="16"
@@ -962,7 +962,7 @@
       <path
          style="fill:#1a1a1a;fill-opacity:1;stroke:none"
          id="waste-basket"
-         d="M 7,1 C 6,1 6,2 6,2 L 5,2 C 3,2 3,4 3,4 L 13,4 C 13,4 13,2 11,2 L 10,2 C 10,2 10,1 9,1 z m -4,4 2,10 6,0 2,-10 z"
+         d="M 7,2 C 6,2 6,3 6,3 L 5,3 C 3,3 3,4 3,4 L 13,4 C 13,4 13,3 11,3 L 10,3 C 10,3 10,2 9,2 z m -4,3 2,9 6,0 2,-9 z"
          inkscape:connector-curvature="0" />
     </g>
   </g>
