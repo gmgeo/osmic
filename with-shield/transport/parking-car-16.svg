@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="0 0 16 16"
+   id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <rect
+     width="16"
+     height="16"
+     rx="2"
+     ry="2"
+     x="0"
+     y="0"
+     id="canvas"
+     style="fill:#1a1a1a;stroke:none" />
+  <path
+     d="M 3,2 3,14 5.4892765,14 5.5107234,9.9999996 9,9.9760303 C 11,9.9622915 13,9 13,6 13,3 11,1.9679264 8.9785531,1.9760308 z m 2.4892765,2.511985 0.021447,3 3,-0.02397 C 9.3789437,7.488015 10.466898,7.2396972 10.5,6 10.533102,4.7603028 9.4528474,4.488015 8.4892765,4.488015 z"
+     id="parking-car"
+     style="fill:#ffffff;fill-rule:evenodd" />
+</svg>
