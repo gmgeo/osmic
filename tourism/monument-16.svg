@@ -36,5 +36,5 @@
   <path
      d="M 8,1 C 8,1 6,2.4966359 6,3 l 0,8 4,0 0,-8 C 10,2.5206056 8,1 8,1 z M 5,12 c -1,0 -1,1 -1,2 l -1,0 -1,1 12,0 -1,-1 -1,0 c 0,-1 0,-2 -1,-2 z"
      id="monument"
-     style="fill:#000000;fill-opacity:1;stroke:none" />
+     style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
 </svg>

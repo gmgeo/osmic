@@ -25,8 +25,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs6">
-  </defs>
+     id="defs6" />
   <rect
      width="16"
      height="16"
@@ -35,7 +34,7 @@
      id="canvas"
      style="fill:none;stroke:none;visibility:hidden" />
   <path
-     d="M 6,2 C 5,2 4,3 4,4 l 0,8 8,0 0,-8 C 12,3 11,2 10,2 z M 7,4 9,4 9,5 7,5 z m -2,2 6,0 0,1 -6,0 z m 1,2 4,0 0,1 -4,0 z m -3,5 -1,1 0,1 12,0 0,-1 -1,-1 z"
-     id="memorial"
+     d="M 8,1 C 6.8954306,1 6,1.8954306 6,3 6,4.1045694 6.8954306,5 8,5 9.1045694,5 10,4.1045694 10,3 10,1.8954306 9.1045694,1 8,1 z m -4,5 0,2 2,0 0,5 -2,0 0,2 8,0 0,-2 -2,0 0,-7 -6,0 z"
+     id="information"
      style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
 </svg>
