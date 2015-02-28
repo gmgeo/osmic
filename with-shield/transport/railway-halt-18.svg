@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="0 0 18 18"
+   id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <rect
+     width="18"
+     height="18"
+     rx="3"
+     ry="3"
+     x="0"
+     y="0"
+     id="shield"
+     style="fill:#1a1a1a;stroke:none" />
+  <path
+       d="m 5.968593,2 -2.96875,3 0,7 c -0.03659,0.575273 0.47725,1.000467 1.03125,1 l 9.96875,0 c 0.554,-4.67e-4 1,-0.400757 1,-1 l 0,-7 -3,-3 z m 1.0625,1 3.96875,0 0,1 -3.96875,0 z m -2,2 7.96875,0 0,4 -7.96875,0 z m 0.78125,5 c 0.01042,-1.63e-4 0.02083,-1.63e-4 0.03125,0 0.572889,-0.09067 1.163381,0.420024 1.15625,1 0,0.523599 -0.476401,1 -1,1 -0.523599,0 -1,-0.476401 -1,-1 -0.0083,-0.466609 0.354081,-0.91257 0.8125,-1 z m 6.03125,0 c 0.572889,-0.09067 1.163381,0.420024 1.15625,1 0,0.523599 -0.476401,1 -1,1 -0.523599,0 -1,-0.476401 -1,-1 -0.0058,-0.475381 0.374167,-0.925752 0.84375,-1 z m -7.84375,4 -1,2 3,0 1,-2 z m 7,0 1,2 3,0 -1,-2 z"
+       id="railway-halt"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+</svg>

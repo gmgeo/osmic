@@ -20,10 +20,12 @@ If submitting new icons or substantial modifications you confirm that this is yo
 It is recommended to use Inkscape (https://inkscape.org) for creating or modifying SVG files. Please do not submit files in Inkscape's own SVG-like format as it contains
 a lot of clutter. Instead use File > Save As ... and select "Plain SVG".
 
-Icon standard canvas size is 16x16px with 1px padding (should be kept free of any icon content). The icon file name should use dashes for whitespace and append the canvas size (e.g. `waste-basket-16.svg`).
+Icon standard canvas size is 18x18px with 1px padding (should be kept free of any icon and halo content) and 1px wide white halo. Basically the available space for icon content is 14x14px.
+The icon file name should use dashes for whitespace and append the canvas size (e.g. `waste-basket-18.svg`).
 
-All icon content should have the colour `#1a1a1a` and consist of a single path (parts merged together). No groups should be used.
+All icon content has the colour `#1a1a1a` and consists of a single path (parts merged together). It has the ID `icon`. This icon content is duplicated with colour white and 30% opacity having ID `halo`.
+In addition the duplicate has a 2px wide white outline and lies below the icon content regarding to z-index. These two parts are grouped together with ID of the name of the icon
+(e.g. `waste-basket-18.svg` has id `waste-basket`).
 
-The ID of the path should be the name of the icon (e.g. `waste-basket-16.svg` has id `waste-basket`). All icons should have a invisible background rectangle
-spanning the whole canvas to avoid up-/downscaling of the shape alone when using `marker-width` or `marker-height` in CartoCSS. The style of this rectangle should have `visibility:hidden` set and
-use the id `canvas`.
+In the background all iconshave a invisible rectangle spanning the whole canvas to avoid up-/downscaling of the shape alone when using `marker-width` or `marker-height` in CartoCSS. The style of this rectangle has set
+ `visibility:hidden` and uses the id `canvas`. See one of the icons for an example how this looks.

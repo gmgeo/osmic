@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="0 0 18 18"
+   id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <rect
+     width="18"
+     height="18"
+     rx="3"
+     ry="3"
+     x="0"
+     y="0"
+     id="shield"
+     style="fill:#1a1a1a;stroke:none" />
+  <path
+       d="m 4,3 1,1 5,0 0,2 -4.71875,0 C 4.929782,5.6968959 4.495731,5.5 4,5.5 c -1.098647,0 -2,0.9013528 -2,2 0,1.0986471 0.901353,2 2,2 0.427066,0 0.798288,-0.143336 1.125,-0.375 L 7,11 c 0,1 1,2 2,2 l 5,0 c 1,0 2,-1 2,-2 C 15.95458,8.5666111 14,6 11,6 L 11,4 15,4 16,3 4,3 z m 0,3.5 c 0.558207,0 1,0.441793 1,1 0,0.558207 -0.441793,1 -1,1 -0.558207,0 -1,-0.441793 -1,-1 0,-0.558207 0.441793,-1 1,-1 z M 11,7 c 2,0 4,2 4,4 l -3,0 c -0.527334,0 -1,-0.491525 -1,-1 l 0,-3 z m -3,7 c -0.525424,0 -0.491525,1 0,1 l 7,0 c 0.59322,0 0.559322,-1 0,-1 l -7,0 z"
+       id="heliport"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+</svg>
