@@ -27,5 +27,5 @@ All icon content has the colour `#1a1a1a` and consists of a single path (parts m
 In addition the duplicate has a 2px wide white outline and lies below the icon content regarding to z-index. These two parts are grouped together with ID of the name of the icon
 (e.g. `waste-basket-18.svg` has id `waste-basket`).
 
-In the background all iconshave a invisible rectangle spanning the whole canvas to avoid up-/downscaling of the shape alone when using `marker-width` or `marker-height` in CartoCSS. The style of this rectangle has set
+In the background all icons have a invisible rectangle spanning the whole canvas to avoid up-/downscaling of the shape alone when using `marker-width` or `marker-height` in CartoCSS. The style of this rectangle has set
  `visibility:hidden` and uses the id `canvas`. See one of the icons for an example how this looks.
