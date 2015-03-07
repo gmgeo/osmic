@@ -24,12 +24,12 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.9447107"
-     inkscape:cx="166.72029"
+     inkscape:zoom="2.7502362"
+     inkscape:cx="124.7239"
      inkscape:cy="149.40398"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
+     inkscape:current-layer="svg2"
+     showgrid="true"
      inkscape:window-width="1920"
      inkscape:window-height="1023"
      inkscape:window-x="0"
@@ -2560,30 +2560,6 @@
       </g>
     </g>
     <g
-       id="g5094"
-       transform="translate(164,896.36217)">
-      <rect
-         style="fill:none;stroke:none;visibility:hidden"
-         id="canvas-759"
-         y="0"
-         x="0"
-         height="18"
-         width="18" />
-      <g
-         id="hunting-stand">
-        <path
-           style="opacity:0.3;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           id="halo-41"
-           d="m 4,2 0,1.25 10,2 L 14,4 z M 5,4.5 5,9 13,9 13,6 z m -1,5.5 0,1 1,0 -1,5 1.5,0 1,-5 5,0 1.03125,5 1.5,0 L 13,11 l 1,0 0,-1 z"
-           inkscape:connector-curvature="0" />
-        <path
-           style="fill:#1a1a1a;fill-opacity:1;stroke:none"
-           id="icon-105"
-           d="m 4,2 0,1.25 10,2 L 14,4 z M 5,4.5 5,9 13,9 13,6 z m -1,5.5 0,1 1,0 -1,5 1.5,0 1,-5 5,0 1.03125,5 1.5,0 L 13,11 l 1,0 0,-1 z"
-           inkscape:connector-curvature="0" />
-      </g>
-    </g>
-    <g
        id="g5146"
        transform="translate(190,896.36217)">
       <rect
@@ -3516,6 +3492,30 @@
            style="fill:#1a1a1a;fill-opacity:1;fill-rule:nonzero;stroke:none"
            id="icon-43"
            d="m 15.006803,2.0030893 -10,2 0,8.5624997 c -0.385369,-0.06933 -0.787572,-0.07549 -1.1875,0.03125 -1.154782,0.308194 -2.013317,1.387352 -1.78125,2.25 0.232067,0.862648 1.501469,1.370694 2.65625,1.0625 1.154781,-0.308194 1.8125,-1.336236 1.8125,-2.25 l 0,-6.9687497 7,-1.375 0,5.6249997 c -0.385334,-0.06124 -0.787622,-0.04422 -1.1875,0.0625 -1.154637,0.308156 -2.013061,1.35615 -1.78125,2.21875 0.232265,0.862479 1.501613,1.370655 2.65625,1.0625 1.154637,-0.308156 1.8125,-1.28125 1.8125,-2.28125 z"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g3659"
+       transform="translate(164,896.36217)">
+      <rect
+         style="fill:none;stroke:none;visibility:hidden"
+         id="canvas-34"
+         y="0"
+         x="0"
+         height="18"
+         width="18" />
+      <g
+         id="hunting-stand">
+        <path
+           style="opacity:0.3;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="halo-84"
+           d="m 5,2 0,1.25 8,2 L 13,4 z M 6,4.5 6,9 12,9 12,6 z m -1,5.5 0,1 1,0 -1,5 1.5,0 1,-5 3,0 1.03125,5 1.5,0 L 12,11 l 1,0 0,-1 z"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#1a1a1a;fill-opacity:1;stroke:none"
+           id="icon-025"
+           d="m 5,2 0,1.25 8,2 L 13,4 z M 6,4.5 6,9 12,9 12,6 z m -1,5.5 0,1 1,0 -1,5 1.5,0 1,-5 3,0 1.03125,5 1.5,0 L 12,11 l 1,0 0,-1 z"
            inkscape:connector-curvature="0" />
       </g>
     </g>
