@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="0 0 18 18"
+   id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <rect
+     width="18"
+     height="18"
+     x="0"
+     y="0"
+     id="canvas"
+     style="fill:none;stroke:none;visibility:hidden" />
+  <g
+     id="fountain">
+    <path
+       d="M 11,2 C 9.4663253,2 8.25,3.0324775 8.25,5 l 0,1.3125 C 7.8650488,6.1210714 7.4330942,6 7,6 5.5329432,6 4.25,7.0324775 4.25,9 l 0,3 1.5,0 0,-3 C 5.75,8.0340405 6.4330163,7.5 7,7.5 7.5669837,7.5 8.25,8.0673495 8.25,9 l 0,3 1.5,0 0,-3 0,-4 c 0,-0.9659595 0.716325,-1.5 1.25,-1.5 0.600293,0 1.25,0.5673495 1.25,1.5 l 0,7 1.5,0 0,-7 C 13.75,3.1013899 12.500366,2 11,2 z M 2,13 c 0,1 3,3 7,3 4,0 7,-2 7,-3 L 2,13 z"
+       id="halo"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       d="M 11,2 C 9.466325,2 8.25,3.0324775 8.25,5 l 0,1.3125 C 7.865049,6.1210714 7.433094,6 7,6 5.532943,6 4.25,7.0324775 4.25,9 l 0,3 1.5,0 0,-3 C 5.75,8.0340405 6.433016,7.5 7,7.5 7.566984,7.5 8.25,8.0673495 8.25,9 l 0,3 1.5,0 0,-3 0,-4 c 0,-0.9659595 0.716325,-1.5 1.25,-1.5 0.600293,0 1.25,0.5673495 1.25,1.5 l 0,7 1.5,0 0,-7 C 13.75,3.1013899 12.500366,2 11,2 z M 2,13 c 0,1 3,3 7,3 4,0 7,-2 7,-3 L 2,13 z"
+       id="icon"
+       style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
+  </g>
+</svg>
