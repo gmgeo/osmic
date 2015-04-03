@@ -24,16 +24,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.3161332"
+     inkscape:zoom="2.3448603"
      inkscape:cx="178.64271"
      inkscape:cy="85.595783"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1023"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     showgrid="false"
+     inkscape:window-width="1855"
+     inkscape:window-height="1056"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -155,7 +155,7 @@
     </g>
     <g
        id="g3920"
-       transform="translate(242,818.36211)">
+       transform="translate(268,818.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-1"
@@ -173,7 +173,7 @@
     </g>
     <g
        id="g4052"
-       transform="translate(268,818.36211)">
+       transform="translate(294,818.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-0"
@@ -191,7 +191,7 @@
     </g>
     <g
        id="g4096"
-       transform="translate(294,818.36211)">
+       transform="translate(8,844.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-9"
@@ -209,7 +209,7 @@
     </g>
     <g
        id="g4140"
-       transform="translate(8,844.36214)">
+       transform="translate(34,844.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-07"
@@ -227,7 +227,7 @@
     </g>
     <g
        id="g4184"
-       transform="translate(34,844.36214)">
+       transform="translate(60,844.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-99"
@@ -245,7 +245,7 @@
     </g>
     <g
        id="g4228"
-       transform="translate(60,844.36214)">
+       transform="translate(86,844.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-22"
@@ -263,7 +263,7 @@
     </g>
     <g
        id="g4291"
-       transform="translate(86,844.36211)">
+       transform="translate(112,844.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-56"
@@ -281,7 +281,7 @@
     </g>
     <g
        id="g4335"
-       transform="translate(112,844.36211)">
+       transform="translate(138,844.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-10"
@@ -299,7 +299,7 @@
     </g>
     <g
        id="g4379"
-       transform="translate(138,844.36211)">
+       transform="translate(164,844.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-45"
@@ -317,7 +317,7 @@
     </g>
     <g
        id="g4423"
-       transform="translate(164,844.36211)">
+       transform="translate(190,844.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-53"
@@ -335,7 +335,7 @@
     </g>
     <g
        id="g4469"
-       transform="translate(190,844.36211)">
+       transform="translate(216,844.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="pub"
@@ -353,7 +353,7 @@
     </g>
     <g
        id="g4513"
-       transform="translate(216,844.36211)">
+       transform="translate(242,844.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-00"
@@ -371,7 +371,7 @@
     </g>
     <g
        id="g4576"
-       transform="translate(242,844.36211)">
+       transform="translate(268,844.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-19"
@@ -389,7 +389,7 @@
     </g>
     <g
        id="g4620"
-       transform="translate(268,844.36211)">
+       transform="translate(294,844.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-51"
@@ -407,7 +407,7 @@
     </g>
     <g
        id="g4683"
-       transform="translate(294,844.36211)">
+       transform="translate(8,870.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-6"
@@ -425,7 +425,7 @@
     </g>
     <g
        id="g4727"
-       transform="translate(8,870.36214)">
+       transform="translate(34,870.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-57"
@@ -443,7 +443,7 @@
     </g>
     <g
        id="g4771"
-       transform="translate(34,870.36214)">
+       transform="translate(60,870.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-09"
@@ -461,7 +461,7 @@
     </g>
     <g
        id="g4815"
-       transform="translate(60,870.36214)">
+       transform="translate(86,870.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-34"
@@ -479,7 +479,7 @@
     </g>
     <g
        id="g4878"
-       transform="translate(86,870.36211)">
+       transform="translate(112,870.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-65"
@@ -497,7 +497,7 @@
     </g>
     <g
        id="g4922"
-       transform="translate(112,870.36211)">
+       transform="translate(138,870.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-41"
@@ -515,7 +515,7 @@
     </g>
     <g
        id="g4985"
-       transform="translate(216,870.36211)">
+       transform="translate(242,870.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-26"
@@ -533,7 +533,7 @@
     </g>
     <g
        id="g5029"
-       transform="translate(242,870.36211)">
+       transform="translate(268,870.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-7"
@@ -551,7 +551,7 @@
     </g>
     <g
        id="g5073"
-       transform="translate(294,870.36211)">
+       transform="translate(8,896.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-27"
@@ -569,7 +569,7 @@
     </g>
     <g
        id="g5117"
-       transform="translate(34,896.36214)">
+       transform="translate(60,896.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-59"
@@ -587,7 +587,7 @@
     </g>
     <g
        id="g5161"
-       transform="translate(60,896.36214)">
+       transform="translate(86,896.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-009"
@@ -605,7 +605,7 @@
     </g>
     <g
        id="g5249"
-       transform="translate(112,896.36211)">
+       transform="translate(138,896.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-67"
@@ -623,7 +623,7 @@
     </g>
     <g
        id="g5293"
-       transform="translate(138,896.36211)">
+       transform="translate(164,896.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-28"
@@ -641,7 +641,7 @@
     </g>
     <g
        id="g5337"
-       transform="translate(164,896.36211)">
+       transform="translate(190,896.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-72"
@@ -659,7 +659,7 @@
     </g>
     <g
        id="g5381"
-       transform="translate(190,896.36211)">
+       transform="translate(216,896.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-01"
@@ -677,7 +677,7 @@
     </g>
     <g
        id="g5444"
-       transform="translate(216,896.36211)">
+       transform="translate(242,896.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-75"
@@ -695,7 +695,7 @@
     </g>
     <g
        id="g5576"
-       transform="translate(242,896.36211)">
+       transform="translate(268,896.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-73"
@@ -713,7 +713,7 @@
     </g>
     <g
        id="g5620"
-       transform="translate(268,896.36211)">
+       transform="translate(294,896.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-92"
@@ -731,7 +731,7 @@
     </g>
     <g
        id="g5664"
-       transform="translate(294,896.36211)">
+       transform="translate(8,922.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-091"
@@ -749,7 +749,7 @@
     </g>
     <g
        id="g5708"
-       transform="translate(8,922.36217)">
+       transform="translate(34,922.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-43"
@@ -767,7 +767,7 @@
     </g>
     <g
        id="g5752"
-       transform="translate(34,922.36214)">
+       transform="translate(60,922.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-23"
@@ -785,7 +785,7 @@
     </g>
     <g
        id="g5803"
-       transform="translate(60,922.36214)">
+       transform="translate(86,922.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-731"
@@ -803,7 +803,7 @@
     </g>
     <g
        id="g5847"
-       transform="translate(86,922.36214)">
+       transform="translate(112,922.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-08"
@@ -821,7 +821,7 @@
     </g>
     <g
        id="g5891"
-       transform="translate(112,922.36211)">
+       transform="translate(138,922.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-8"
@@ -839,7 +839,7 @@
     </g>
     <g
        id="g5935"
-       transform="translate(138,922.36211)">
+       transform="translate(164,922.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-89"
@@ -857,7 +857,7 @@
     </g>
     <g
        id="g5998"
-       transform="translate(190,922.36211)">
+       transform="translate(216,922.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-531"
@@ -875,7 +875,7 @@
     </g>
     <g
        id="g6086"
-       transform="translate(242,922.36211)">
+       transform="translate(268,922.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shields"
@@ -893,7 +893,7 @@
     </g>
     <g
        id="g6130"
-       transform="translate(294,922.36211)">
+       transform="translate(8,948.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-54"
@@ -911,7 +911,7 @@
     </g>
     <g
        id="g6174"
-       transform="translate(8,948.36217)">
+       transform="translate(34,948.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-63"
@@ -929,7 +929,7 @@
     </g>
     <g
        id="g6350"
-       transform="translate(60,974.36217)">
+       transform="translate(86,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-061"
@@ -947,7 +947,7 @@
     </g>
     <g
        id="g6413"
-       transform="translate(86,974.36217)">
+       transform="translate(112,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-76"
@@ -965,7 +965,7 @@
     </g>
     <g
        id="g6457"
-       transform="translate(112,974.36217)">
+       transform="translate(138,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-20"
@@ -983,7 +983,7 @@
     </g>
     <g
        id="g6501"
-       transform="translate(138,974.36217)">
+       transform="translate(164,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-102"
@@ -1001,7 +1001,7 @@
     </g>
     <g
        id="g6545"
-       transform="translate(164,974.36217)">
+       transform="translate(190,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-58"
@@ -1019,7 +1019,7 @@
     </g>
     <g
        id="g6589"
-       transform="translate(190,974.36217)">
+       transform="translate(216,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-12"
@@ -1037,7 +1037,7 @@
     </g>
     <g
        id="g6652"
-       transform="translate(216,974.36217)">
+       transform="translate(242,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-356"
@@ -1055,7 +1055,7 @@
     </g>
     <g
        id="g6696"
-       transform="translate(242,974.36217)">
+       transform="translate(268,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-763"
@@ -1073,7 +1073,7 @@
     </g>
     <g
        id="g6766"
-       transform="translate(268,974.36217)">
+       transform="translate(294,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-42"
@@ -1091,7 +1091,7 @@
     </g>
     <g
        id="g6810"
-       transform="translate(294,974.36217)">
+       transform="translate(8,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-60"
@@ -1109,7 +1109,7 @@
     </g>
     <g
        id="g6854"
-       transform="translate(8,1000.3622)">
+       transform="translate(34,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-588"
@@ -1127,7 +1127,7 @@
     </g>
     <g
        id="g6898"
-       transform="translate(34,1000.3622)">
+       transform="translate(60,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-003"
@@ -1145,7 +1145,7 @@
     </g>
     <g
        id="g6942"
-       transform="translate(60,1000.3622)">
+       transform="translate(86,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-05"
@@ -1163,7 +1163,7 @@
     </g>
     <g
        id="g7030"
-       transform="translate(86,1000.3622)">
+       transform="translate(112,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-03"
@@ -1181,7 +1181,7 @@
     </g>
     <g
        id="g7074"
-       transform="translate(112,1000.3622)">
+       transform="translate(138,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-510"
@@ -1199,7 +1199,7 @@
     </g>
     <g
        id="g7118"
-       transform="translate(138,1000.3622)">
+       transform="translate(164,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-93"
@@ -1217,7 +1217,7 @@
     </g>
     <g
        id="g7162"
-       transform="translate(164,1000.3622)">
+       transform="translate(190,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-37"
@@ -1235,7 +1235,7 @@
     </g>
     <g
        id="g7206"
-       transform="translate(190,1000.3622)">
+       transform="translate(216,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-109"
@@ -1253,7 +1253,7 @@
     </g>
     <g
        id="g7250"
-       transform="translate(216,1000.3622)">
+       transform="translate(242,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-071"
@@ -1271,7 +1271,7 @@
     </g>
     <g
        id="g7294"
-       transform="translate(242,1000.3622)">
+       transform="translate(268,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-96"
@@ -1289,7 +1289,7 @@
     </g>
     <g
        id="g7338"
-       transform="translate(268,1000.3622)">
+       transform="translate(294,1000.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-037"
@@ -1307,7 +1307,7 @@
     </g>
     <g
        id="g7433"
-       transform="translate(34,1026.3622)">
+       transform="translate(60,1026.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-98"
@@ -1325,7 +1325,7 @@
     </g>
     <g
        id="g3552"
-       transform="translate(8,974.36217)">
+       transform="translate(34,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-64"
@@ -1343,7 +1343,7 @@
     </g>
     <g
        id="g3506"
-       transform="translate(34,948.36214)">
+       transform="translate(60,948.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-79"
@@ -1361,7 +1361,7 @@
     </g>
     <g
        id="g3509"
-       transform="translate(268,922.36211)">
+       transform="translate(294,922.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-74"
@@ -1379,7 +1379,7 @@
     </g>
     <g
        id="g3512"
-       transform="translate(138,870.36211)">
+       transform="translate(164,870.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-84"
@@ -1397,7 +1397,7 @@
     </g>
     <g
        id="g3522"
-       transform="translate(164,870.36211)">
+       transform="translate(190,870.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-69"
@@ -1415,7 +1415,7 @@
     </g>
     <g
        id="g3544"
-       transform="translate(190,870.36211)">
+       transform="translate(216,870.36211)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-964"
@@ -1433,7 +1433,7 @@
     </g>
     <g
        id="g3521"
-       transform="translate(8,896.36217)">
+       transform="translate(34,896.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-47"
@@ -1451,7 +1451,7 @@
     </g>
     <g
        id="g3569"
-       transform="translate(112,948.36214)">
+       transform="translate(138,948.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-760"
@@ -1469,7 +1469,7 @@
     </g>
     <g
        id="g3613"
-       transform="translate(190,948.36214)">
+       transform="translate(216,948.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-86"
@@ -1523,7 +1523,7 @@
     </g>
     <g
        id="g3570"
-       transform="translate(60,948.36214)">
+       transform="translate(86,948.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-123"
@@ -1559,7 +1559,7 @@
     </g>
     <g
        id="g3572"
-       transform="translate(86,896.36214)">
+       transform="translate(112,896.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-415"
@@ -1577,7 +1577,7 @@
     </g>
     <g
        id="g3573"
-       transform="translate(216,818.36214)">
+       transform="translate(242,818.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-0377"
@@ -1595,7 +1595,7 @@
     </g>
     <g
        id="g3574"
-       transform="translate(216,922.36214)">
+       transform="translate(242,922.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-44"
@@ -1613,7 +1613,7 @@
     </g>
     <g
        id="g3575"
-       transform="translate(34,974.36217)">
+       transform="translate(60,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-739"
@@ -1631,7 +1631,7 @@
     </g>
     <g
        id="g3576"
-       transform="translate(268,948.36214)">
+       transform="translate(294,948.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-761"
@@ -1649,7 +1649,7 @@
     </g>
     <g
        id="g3577"
-       transform="translate(164,948.36214)">
+       transform="translate(190,948.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-568"
@@ -1667,7 +1667,7 @@
     </g>
     <g
        id="g3578"
-       transform="translate(164,922.36214)">
+       transform="translate(190,922.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-80"
@@ -1685,7 +1685,7 @@
     </g>
     <g
        id="g3581"
-       transform="translate(216,948.36214)">
+       transform="translate(242,948.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-592"
@@ -1703,7 +1703,7 @@
     </g>
     <g
        id="g3584"
-       transform="translate(138,948.36214)">
+       transform="translate(164,948.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-87"
@@ -1721,7 +1721,7 @@
     </g>
     <g
        id="g3587"
-       transform="translate(242,948.36214)">
+       transform="translate(268,948.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-38"
@@ -1739,7 +1739,7 @@
     </g>
     <g
        id="g3590"
-       transform="translate(294,948.36214)">
+       transform="translate(8,974.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-377"
@@ -1757,7 +1757,7 @@
     </g>
     <g
        id="g3593"
-       transform="translate(86,948.36214)">
+       transform="translate(112,948.36214)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-765"
@@ -1775,7 +1775,7 @@
     </g>
     <g
        id="g3596"
-       transform="translate(8,1026.3622)">
+       transform="translate(34,1026.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-49"
@@ -1793,7 +1793,7 @@
     </g>
     <g
        id="g3342"
-       transform="translate(294,1000.3622)">
+       transform="translate(8,1026.3622)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-06"
@@ -1811,7 +1811,7 @@
     </g>
     <g
        id="g3343"
-       transform="translate(268,870.36217)">
+       transform="translate(294,870.36217)">
       <rect
          style="fill:#1a1a1a;stroke:none"
          id="shield-018"
@@ -1825,6 +1825,24 @@
          style="fill:#ffffff;fill-opacity:1;stroke:none"
          id="caravan"
          d="M 4,4 C 3,4 2,5 2,6 l 0,4 c 0,1 1,2 2,2 l 1.0625,0 C 5.295616,10.860792 6.291877,10 7.5,10 c 1.208123,0 2.204384,0.860792 2.4375,2 L 16,12 c 0,0 0,-1 -1,-1 l -1.5,0 C 13.5,7.0343277 11,4 8,4 L 4,4 z M 4.84375,6 C 4.9375,5.984375 5,6 5,6 L 7,6 C 7,6 8,6 8,7 8,8 7,8 7,8 L 5,8 C 5,8 4,8 4,7 4,6.25 4.5625,6.046875 4.84375,6 z M 7.5,11 C 6.671573,11 6,11.671573 6,12.5 6,13.328427 6.671573,14 7.5,14 8.328427,14 9,13.328427 9,12.5 9,11.671573 8.328427,11 7.5,11 z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g3345"
+       transform="translate(216,818.36217)">
+      <rect
+         style="fill:#1a1a1a;stroke:none"
+         id="shield-11"
+         y="0"
+         x="0"
+         ry="3"
+         rx="3"
+         height="18"
+         width="18" />
+      <path
+         style="fill:#ffffff;fill-opacity:1"
+         id="courthouse"
+         d="M 9,2 C 8,2 8,3 8,3 L 4.25,4 4.25,5 2,10 c 0,1 0.792008,2 2.5,2 C 6.207992,12 7,11 7,10 L 4.75,5 8,5 8,15 4,15 3,16 15,16 14,15 10,15 10,5 13.25,5 11,10 c 0,1 0.77294,2 2.5,2 1.72706,0 2.5,-1 2.5,-2 L 13.75,5 13.75,4 10,3 C 10,3 10,2 9,2 z m -4.5,4 1.75,4 -3.5,0 z m 9,0 1.75,4 -3.5,0 z"
          inkscape:connector-curvature="0" />
     </g>
   </g>
