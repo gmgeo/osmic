@@ -2549,7 +2549,7 @@
     </g>
     <g
        id="g4405"
-       transform="translate(8,870.36217)">
+       transform="translate(34,870.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-518"
@@ -2573,7 +2573,7 @@
     </g>
     <g
        id="g4457"
-       transform="translate(34,870.36214)">
+       transform="translate(60,870.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-494"
@@ -2597,7 +2597,7 @@
     </g>
     <g
        id="g4509"
-       transform="translate(60,870.36214)">
+       transform="translate(86,870.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-7"
@@ -2621,7 +2621,7 @@
     </g>
     <g
        id="g4561"
-       transform="translate(86,870.36208)">
+       transform="translate(112,870.36208)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-955"
@@ -2645,7 +2645,7 @@
     </g>
     <g
        id="g4632"
-       transform="translate(112,870.36197)">
+       transform="translate(138,870.36197)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-93"
@@ -2669,7 +2669,7 @@
     </g>
     <g
        id="g4780"
-       transform="translate(138,870.36197)">
+       transform="translate(164,870.36197)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-38"
@@ -2693,7 +2693,7 @@
     </g>
     <g
        id="g4886"
-       transform="translate(242,870.36197)">
+       transform="translate(268,870.36197)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-806"
@@ -2717,7 +2717,7 @@
     </g>
     <g
        id="g4938"
-       transform="translate(268,870.36214)">
+       transform="translate(294,870.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-618"
@@ -2741,7 +2741,7 @@
     </g>
     <g
        id="g4990"
-       transform="translate(8,896.36217)">
+       transform="translate(34,896.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-959"
@@ -2765,7 +2765,7 @@
     </g>
     <g
        id="g5042"
-       transform="translate(60,896.36214)">
+       transform="translate(86,896.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-69"
@@ -2789,7 +2789,7 @@
     </g>
     <g
        id="g5146"
-       transform="translate(138,896.36214)">
+       transform="translate(164,896.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-1"
@@ -2813,7 +2813,7 @@
     </g>
     <g
        id="g5250"
-       transform="translate(164,896.36214)">
+       transform="translate(190,896.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-63"
@@ -2837,7 +2837,7 @@
     </g>
     <g
        id="g5366"
-       transform="translate(190,896.36214)">
+       transform="translate(216,896.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-2"
@@ -2861,7 +2861,7 @@
     </g>
     <g
        id="g5418"
-       transform="translate(216,896.36214)">
+       transform="translate(242,896.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-67"
@@ -2885,7 +2885,7 @@
     </g>
     <g
        id="g5489"
-       transform="translate(242,896.36214)">
+       transform="translate(268,896.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-937"
@@ -2909,7 +2909,7 @@
     </g>
     <g
        id="g5593"
-       transform="translate(268,896.36214)">
+       transform="translate(294,896.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-735"
@@ -2933,7 +2933,7 @@
     </g>
     <g
        id="g5645"
-       transform="translate(294,896.36214)">
+       transform="translate(8,922.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-66"
@@ -2957,7 +2957,7 @@
     </g>
     <g
        id="g5697"
-       transform="translate(8,922.36217)">
+       transform="translate(34,922.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-16"
@@ -2981,7 +2981,7 @@
     </g>
     <g
        id="g5749"
-       transform="translate(34,922.36217)">
+       transform="translate(60,922.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-5"
@@ -3005,7 +3005,7 @@
     </g>
     <g
        id="g5801"
-       transform="translate(60,922.36214)">
+       transform="translate(86,922.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-04"
@@ -3029,7 +3029,7 @@
     </g>
     <g
        id="g5917"
-       transform="translate(86,922.36214)">
+       transform="translate(112,922.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-758"
@@ -3053,7 +3053,7 @@
     </g>
     <g
        id="g5969"
-       transform="translate(112,922.36205)">
+       transform="translate(138,922.36205)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-82"
@@ -3077,7 +3077,7 @@
     </g>
     <g
        id="g6021"
-       transform="translate(138,922.36214)">
+       transform="translate(164,922.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-677"
@@ -3101,7 +3101,7 @@
     </g>
     <g
        id="g6073"
-       transform="translate(164,922.36214)">
+       transform="translate(190,922.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-48"
@@ -3125,7 +3125,7 @@
     </g>
     <g
        id="g6144"
-       transform="translate(216,922.36214)">
+       transform="translate(242,922.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-59"
@@ -3149,7 +3149,7 @@
     </g>
     <g
        id="g6248"
-       transform="translate(268,922.36214)">
+       transform="translate(294,922.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-53"
@@ -3173,7 +3173,7 @@
     </g>
     <g
        id="g6300"
-       transform="translate(8,948.36217)">
+       transform="translate(34,948.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-44"
@@ -3197,7 +3197,7 @@
     </g>
     <g
        id="g6435"
-       transform="translate(112,974.36217)">
+       transform="translate(138,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-86"
@@ -3221,7 +3221,7 @@
     </g>
     <g
        id="g6487"
-       transform="translate(138,974.36217)">
+       transform="translate(164,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-602"
@@ -3245,7 +3245,7 @@
     </g>
     <g
        id="g6539"
-       transform="translate(164,974.36217)">
+       transform="translate(190,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-71"
@@ -3269,7 +3269,7 @@
     </g>
     <g
        id="g6591"
-       transform="translate(190,974.36217)">
+       transform="translate(216,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-01"
@@ -3293,7 +3293,7 @@
     </g>
     <g
        id="g6643"
-       transform="translate(216,974.36217)">
+       transform="translate(242,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-4"
@@ -3317,7 +3317,7 @@
     </g>
     <g
        id="g6714"
-       transform="translate(242,974.36217)">
+       transform="translate(268,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-694"
@@ -3341,7 +3341,7 @@
     </g>
     <g
        id="g6766"
-       transform="translate(268,974.36217)">
+       transform="translate(294,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-03"
@@ -3365,7 +3365,7 @@
     </g>
     <g
        id="g6818"
-       transform="translate(294,974.36217)">
+       transform="translate(8,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-3"
@@ -3389,7 +3389,7 @@
     </g>
     <g
        id="g6934"
-       transform="translate(8,1000.3622)">
+       transform="translate(34,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-00"
@@ -3413,7 +3413,7 @@
     </g>
     <g
        id="g7038"
-       transform="translate(34,1000.3622)">
+       transform="translate(60,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-77"
@@ -3437,7 +3437,7 @@
     </g>
     <g
        id="g7090"
-       transform="translate(60,1000.3622)">
+       transform="translate(86,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-56"
@@ -3461,7 +3461,7 @@
     </g>
     <g
        id="g7142"
-       transform="translate(86,1000.3622)">
+       transform="translate(112,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-24"
@@ -3485,7 +3485,7 @@
     </g>
     <g
        id="g7194"
-       transform="translate(112,1000.3622)">
+       transform="translate(138,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-001"
@@ -3509,7 +3509,7 @@
     </g>
     <g
        id="g7246"
-       transform="translate(138,1000.3622)">
+       transform="translate(164,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-78"
@@ -3533,7 +3533,7 @@
     </g>
     <g
        id="g7298"
-       transform="translate(164,1000.3622)">
+       transform="translate(190,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-950"
@@ -3557,7 +3557,7 @@
     </g>
     <g
        id="g7350"
-       transform="translate(190,1000.3622)">
+       transform="translate(216,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-21"
@@ -3581,7 +3581,7 @@
     </g>
     <g
        id="g7466"
-       transform="translate(216,1000.3622)">
+       transform="translate(242,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-18"
@@ -3605,7 +3605,7 @@
     </g>
     <g
        id="g7518"
-       transform="translate(242,1000.3622)">
+       transform="translate(268,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-98"
@@ -3629,7 +3629,7 @@
     </g>
     <g
        id="g7622"
-       transform="translate(60,1026.3622)">
+       transform="translate(86,1026.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-36"
@@ -3677,7 +3677,7 @@
     </g>
     <g
        id="g3659"
-       transform="translate(86,896.36214)">
+       transform="translate(112,896.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-34"
@@ -3701,7 +3701,7 @@
     </g>
     <g
        id="g3631"
-       transform="translate(268,1000.3622)">
+       transform="translate(294,1000.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-49"
@@ -3725,7 +3725,7 @@
     </g>
     <g
        id="g3683"
-       transform="translate(294,1000.3622)">
+       transform="translate(8,1026.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-57"
@@ -3749,7 +3749,7 @@
     </g>
     <g
        id="g3711"
-       transform="translate(86,974.36217)">
+       transform="translate(112,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-049"
@@ -3773,7 +3773,7 @@
     </g>
     <g
        id="g3712"
-       transform="translate(34,948.36217)">
+       transform="translate(60,948.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-52"
@@ -3797,7 +3797,7 @@
     </g>
     <g
        id="g3649"
-       transform="translate(34,974.36217)">
+       transform="translate(60,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-73"
@@ -3821,7 +3821,7 @@
     </g>
     <g
        id="g3660"
-       transform="translate(60,948.36214)">
+       transform="translate(86,948.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-97"
@@ -3845,7 +3845,7 @@
     </g>
     <g
        id="g3671"
-       transform="translate(294,922.36214)">
+       transform="translate(8,948.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-017"
@@ -3869,7 +3869,7 @@
     </g>
     <g
        id="g3684"
-       transform="translate(164,870.36214)">
+       transform="translate(190,870.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-17"
@@ -3894,7 +3894,7 @@
     </g>
     <g
        id="g3761"
-       transform="translate(190,870.36214)">
+       transform="translate(216,870.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-85"
@@ -3918,7 +3918,7 @@
     </g>
     <g
        id="g3661"
-       transform="translate(216,870.36214)">
+       transform="translate(242,870.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-83"
@@ -3942,7 +3942,7 @@
     </g>
     <g
        id="g3747"
-       transform="translate(138,948.36214)">
+       transform="translate(164,948.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-438"
@@ -3966,7 +3966,7 @@
     </g>
     <g
        id="g3748"
-       transform="translate(216,948.36214)">
+       transform="translate(242,948.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-46"
@@ -4014,7 +4014,7 @@
     </g>
     <g
        id="g3750"
-       transform="translate(86,948.36214)">
+       transform="translate(112,948.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-597"
@@ -4062,7 +4062,7 @@
     </g>
     <g
        id="g3752"
-       transform="translate(112,896.36214)">
+       transform="translate(138,896.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-35"
@@ -4110,7 +4110,7 @@
     </g>
     <g
        id="g3740"
-       transform="translate(242,922.36214)">
+       transform="translate(268,922.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-196"
@@ -4134,7 +4134,7 @@
     </g>
     <g
        id="g3741"
-       transform="translate(60,974.36217)">
+       transform="translate(86,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-788"
@@ -4158,7 +4158,7 @@
     </g>
     <g
        id="g3754"
-       transform="translate(294,948.36214)">
+       transform="translate(8,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-018"
@@ -4182,7 +4182,7 @@
     </g>
     <g
        id="g3755"
-       transform="translate(190,948.36214)">
+       transform="translate(216,948.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-522"
@@ -4206,7 +4206,7 @@
     </g>
     <g
        id="g3756"
-       transform="translate(190,922.36214)">
+       transform="translate(216,922.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-185"
@@ -4230,7 +4230,7 @@
     </g>
     <g
        id="g3767"
-       transform="translate(242,948.36214)">
+       transform="translate(268,948.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-216"
@@ -4254,7 +4254,7 @@
     </g>
     <g
        id="g3765"
-       transform="translate(164,948.36214)">
+       transform="translate(190,948.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-783"
@@ -4278,7 +4278,7 @@
     </g>
     <g
        id="g3777"
-       transform="translate(268,948.36214)">
+       transform="translate(294,948.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-15"
@@ -4302,7 +4302,7 @@
     </g>
     <g
        id="g3782"
-       transform="translate(8,974.36217)">
+       transform="translate(34,974.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-0108"
@@ -4326,7 +4326,7 @@
     </g>
     <g
        id="g3787"
-       transform="translate(112,948.36214)">
+       transform="translate(138,948.36214)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-84"
@@ -4350,7 +4350,7 @@
     </g>
     <g
        id="g3865"
-       transform="translate(34,1026.3622)">
+       transform="translate(60,1026.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-20"
@@ -4374,7 +4374,7 @@
     </g>
     <g
        id="g3833"
-       transform="translate(8,1026.3622)">
+       transform="translate(34,1026.3622)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-41"
@@ -4398,7 +4398,7 @@
     </g>
     <g
        id="g3834"
-       transform="translate(294,870.36217)">
+       transform="translate(8,896.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-951"
@@ -4422,7 +4422,7 @@
     </g>
     <g
        id="g3831"
-       transform="translate(34,896.36217)">
+       transform="translate(60,896.36217)">
       <rect
          style="fill:none;stroke:none;visibility:hidden"
          id="canvas-05"
@@ -4465,6 +4465,30 @@
            style="fill:#1a1a1a;fill-opacity:1"
            id="icon-84"
            d="M 9,2 C 8,2 8,3 8,3 L 4.25,4 4.25,5 2,10 c 0,1 0.792008,2 2.5,2 C 6.207992,12 7,11 7,10 L 4.75,5 8,5 8,15 4,15 3,16 15,16 14,15 10,15 10,5 13.25,5 11,10 c 0,1 0.77294,2 2.5,2 1.72706,0 2.5,-1 2.5,-2 L 13.75,5 13.75,4 10,3 C 10,3 10,2 9,2 z m -4.5,4 1.75,4 -3.5,0 z m 9,0 1.75,4 -3.5,0 z"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g3836"
+       transform="translate(8,870.36217)">
+      <rect
+         style="fill:none;stroke:none;visibility:hidden"
+         id="canvas-25"
+         y="0"
+         x="0"
+         height="18"
+         width="18" />
+      <g
+         id="power-wind">
+        <path
+           style="opacity:0.3;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="halo-40"
+           d="m 13.71875,2.5 c -0.710267,-0.1006686 -2.512962,1.0161034 -4.6875,3.09375 0.722021,0.038118 1.439705,0.7751988 1.375,1.4375 C 12.551541,4.9815468 13.795818,3.2473073 13.71875,2.5 z M 3.9375,5.25 C 3.327989,5.2717544 2.8746189,5.3532481 2.65625,5.53125 2.96203,6.1801816 4.850901,7.0730322 7.78125,7.75 7.416755,7.1255886 7.660904,6.1220091 8.25,5.8125 6.4431644,5.3950856 4.9533516,5.2137427 3.9375,5.25 z M 9,6.5 C 8.7238576,6.5 8.5,6.7238576 8.5,7 8.5,7.2761424 8.7238576,7.5 9,7.5 9.2761424,7.5 9.5,7.2761424 9.5,7 9.5,6.7238576 9.2761424,6.5 9,6.5 z m 1.3125,1.03125 C 10.110548,8.1653203 9.147198,8.5624501 8.46875,8.3125 c 1.177974,2.767239 2.401414,4.468412 3.09375,4.65625 0.365764,-0.656219 -0.08787,-2.707481 -1.25,-5.4375 z M 8.40625,9.75 8,15 l -2,0 0,1 6,0 0,-1 -2,0 -0.21875,-2.78125 C 9.33272,11.489844 8.8785114,10.672219 8.40625,9.75 z"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:#1a1a1a;fill-opacity:1;stroke:none"
+           id="icon-249"
+           d="m 13.71875,2.5 c -0.710267,-0.1006686 -2.512962,1.0161034 -4.6875,3.09375 0.722021,0.038118 1.439705,0.7751988 1.375,1.4375 C 12.551541,4.9815468 13.795818,3.2473073 13.71875,2.5 z M 3.9375,5.25 C 3.327989,5.271754 2.874619,5.3532481 2.65625,5.53125 2.96203,6.1801816 4.850901,7.0730322 7.78125,7.75 7.416755,7.1255886 7.660904,6.1220091 8.25,5.8125 6.443164,5.3950856 4.953352,5.2137427 3.9375,5.25 z M 9,6.5 C 8.723858,6.5 8.5,6.7238576 8.5,7 8.5,7.2761424 8.723858,7.5 9,7.5 9.276142,7.5 9.5,7.2761424 9.5,7 9.5,6.7238576 9.276142,6.5 9,6.5 z m 1.3125,1.03125 C 10.110548,8.1653203 9.147198,8.5624501 8.46875,8.3125 c 1.177974,2.767239 2.401414,4.468412 3.09375,4.65625 0.365764,-0.656219 -0.08787,-2.707481 -1.25,-5.4375 z M 8.40625,9.75 8,15 l -2,0 0,1 6,0 0,-1 -2,0 -0.21875,-2.78125 C 9.33272,11.489844 8.878511,10.672219 8.40625,9.75 z"
            inkscape:connector-curvature="0" />
       </g>
     </g>
