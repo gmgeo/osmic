@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="0 0 18 18"
+   id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <rect
+     width="18"
+     height="18"
+     rx="3"
+     ry="3"
+     x="0"
+     y="0"
+     id="shield"
+     style="fill:#1a1a1a;stroke:none" />
+  <path
+       d="M 9,3 C 9,3 6,4 6,6 l 6,0 C 12,4 9,3 9,3 z M 3.5,4 C 3.5,4 2,5 2,6.5 L 2,7 5,7 5,6.5 C 5,5 3.5,4 3.5,4 z m 11,0 C 14.5,4 13,5 13,6.5 L 13,7 16,7 16,6.5 C 16,5 14.5,4 14.5,4 z M 6,7 6,9 5,9 5,8 2,8 l 0,7 5.5,0 c 0,-1 0.5,-2 1.5,-2 1,0 1.5,1 1.5,2 L 16,15 16,8 13,8 13,9 12,9 12,7 6,7 z M 7.5,8 C 8,8 8,8.7902542 8,9 L 8,10 7,10 7,9 C 7,8.7330508 7,8 7.5,8 z m 3,0 C 11,8 11,8.7902542 11,9 l 0,1 -1,0 0,-1 c 0,-0.2669492 0,-1 0.5,-1 z m -7,1 C 4.012353,9 4,9.6752871 4,10 l 0,1 -1,0 0,-1 C 3,9.6752871 3.01461,9 3.5,9 z m 11,0 c 0.512353,0 0.5,0.6752871 0.5,1 l 0,1 -1,0 0,-1 c 0,-0.3247129 0.01461,-1 0.5,-1 z"
+       id="castle-palace"
+       style="fill:#ffffff;fill-opacity:1;stroke:none" />
+</svg>
