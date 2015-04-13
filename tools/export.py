@@ -2,7 +2,7 @@
 
 # export to SVG or PNG (incl. retina output [coming soon]), re-colour, add padding, add halo, generate sprites
 
-import argparse, copy, glob, lxml.etree, math, os, re, shutil, subprocess, sys, yaml
+import argparse, copy, glob, lxml.etree, math, os, re, subprocess, sys, yaml
 
 def main():
 	parser = argparse.ArgumentParser(description='Exports Osmic (OSM Icons).')
