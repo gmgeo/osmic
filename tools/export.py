@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-# export to SVG or PNG (incl. retina output), re-colour, add padding, add halo, generate sprite etc.
+# export to SVG or PNG (incl. retina output [coming soon]), re-colour, add padding, add halo, generate sprites
 
-import argparse, copy, glob, lxml.etree, os, re, subprocess, sys, yaml
+import argparse, copy, glob, lxml.etree, math, os, re, shutil, subprocess, sys, yaml
 
 def main():
 	parser = argparse.ArgumentParser(description='Exports Osmic (OSM Icons).')
@@ -18,6 +18,8 @@ def main():
 	configfile.close()
 
 	defaultValues(config)
+
+	num_icons = 0
 
 	# loop through all specified directories
 	for directory in config['input_dirs']:
@@ -42,7 +44,9 @@ def main():
 			mod_config = copy.deepcopy(config['global_style'])
 			if icon_id in config:
 				for option in config[icon_id]:
-					mod_config[option] = config[icon_id][option]
+					# when generating sprites only the fill colour can be overridden
+					if not config['format'] == 'sprite' or option == 'fill':
+						mod_config[option] = config[icon_id][option]
 
 			# do modifications
 			(size, icon) = modifySVG(mod_config, icon_id, size, icon)	
@@ -62,13 +66,136 @@ def main():
 				print 'Could not save the modified file ' + icon_out_path + '.'
 				continue
 
+			num_icons += 1
+
 			if config['format'] not in ['svg', 'png', 'sprite']:
 				print 'Format must be either svg, png, sprite. Defaulting to svg.'
 		
 			# if PNG export generate PNG file and delete modified SVG
 			if config['format'] == 'png':
-				exportPNG(config, directory, icon_id, size, icon_out_path)
+				exportPNG(icon_out_path, os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png'), 90)
 				os.remove(icon_out_path)
+	
+	# generate sprite
+	if config['format'] == 'sprite':
+		sprite_cols = 12
+		if 'cols' in config['sprite']:
+			try:
+				sprite_cols = int(config['sprite']['cols'])
+				
+				if sprite_cols <= 0:
+					print 'A negative number of sprite columns or zero columns are not allowed. Defaulting to 12 columns.'
+			except ValueError:
+				print 'Sprite columns is not a number. Defaulting to 12 columns.'
+
+		outer_padding = 4
+		if 'outer_padding' in config['sprite']:
+			try:
+				outer_padding = int(config['sprite']['outer_padding'])
+				
+				if outer_padding < 0:
+					print 'A negative number of sprite outer padding is not allowed. Defaulting to a padding of 4.'
+			except ValueError:
+				print 'Sprite outer padding is not a number. Defaulting to a padding of 4.'
+
+		icon_padding = 4
+		if 'icon_padding' in config['sprite']:
+			try:
+				icon_padding = int(config['sprite']['icon_padding'])
+				
+				if icon_padding < 0:
+					print 'A negative number of sprite icon padding is not allowed. Defaulting to a padding of 4.'
+			except ValueError:
+				print 'Sprite outer padding is not a number. Defaulting to a padding of 4.'
+
+		sprite_background = None
+		if 'background' in config['sprite']:
+			sprite_background = config['sprite']['background']
+			if re.match('^#[0-9a-f]{6}$', sprite_background) == None:
+				sprite_background = None
+				print 'The specified shield fill is invalid. Format it as HEX (e.g. #1a1a1a). Defaulting to none (transparent).'
+
+		sprite_file_name = 'sprite'
+		if 'filename' in config['sprite']:
+			sprite_file_name = config['sprite']['filename']
+		sprite_out_path = os.path.join(config['output'], sprite_file_name)
+		
+		sprite_width = outer_padding * 2 + sprite_cols * (icon_padding * 2 + size)
+		sprite_height = outer_padding * 2 + (icon_padding * 2 + size) * math.ceil(float(num_icons) / sprite_cols)
+
+		sprite = lxml.etree.Element('svg')
+		sprite.set('width', str(sprite_width))
+		sprite.set('height', str(sprite_height))
+
+		if sprite_background != None:
+			bg_rect = lxml.etree.Element('rect')
+			bg_rect.set('width', str(sprite_width))
+			bg_rect.set('height', str(sprite_height))
+			bg_rect.set('style', 'fill:'+sprite_background+';')
+			sprite.append(bg_rect)
+
+		# loop through all specified directories (for sprite again)
+
+		col = 1
+		row = 1
+		x = outer_padding + icon_padding
+		y = outer_padding + icon_padding
+		
+		for directory in config['input_dirs']:
+			dir_path = os.path.join(config['output'], directory)
+
+			# loop through all SVG files in this directory
+			for icon_path in glob.glob(os.path.join(dir_path, '*.svg')):
+				name_match = re.search('^([a-z-]+)\-([0-9]+)', os.path.splitext(os.path.basename(icon_path))[0])
+				if name_match is not None:
+					icon_id = name_match.group(1)
+					size = int(name_match.group(2))
+		
+				# read in file contents
+				try:
+					iconfile = open(icon_path)
+				except IOError:
+					continue
+				icon_str = iconfile.read()
+				iconfile.close()
+
+				icon_xml = lxml.etree.fromstring(icon_str)
+				icon_sprite = lxml.etree.Element('g')
+				icon_sprite.set('id', icon_id)
+				icon_sprite.set('transform', 'translate('+str(x)+','+str(y)+')')
+
+				for child in list(icon_xml):
+					if child.attrib['id'] != 'metadata8' and child.attrib['id'] != 'defs6':
+						icon_sprite.append(child)
+				
+				sprite.append(icon_sprite)
+
+				col += 1
+				x += size + icon_padding * 2
+				if col > sprite_cols:				
+					row += 1
+					col = 1
+					x = outer_padding + icon_padding
+					y += size + icon_padding * 2
+
+				# after adding to sprite delete SVG
+				os.remove(icon_path)
+			
+			# after finishing directory remove it
+			if os.path.isdir(dir_path):
+				os.rmdir(dir_path)
+
+		# save sprite SVG to file
+		try:
+			spritefile = open(sprite_out_path+'.svg', 'w')
+			spritefile.write(lxml.etree.tostring(sprite, pretty_print=True))
+			spritefile.close()
+		except IOError:
+			print 'Could not save the sprite SVG file ' + sprite_out_path + '.'
+
+		# export sprite as PNG
+		exportPNG(sprite_out_path+'.svg', sprite_out_path+'.png', 90) 
+		
 	return
 
 
@@ -91,14 +218,14 @@ def defaultValues(config):
 
 
 # export PNG
-def exportPNG(config, directory, icon_id, size, icon_out_path):
+def exportPNG(source, destination, dpi):
 	# TODO Windows?
 	try:
 		# rsvg is preferred because faster, but fallback to Inkscape when rsvg is not installed
-		subprocess.call(['rsvg', '-a', '--format=png', icon_out_path, os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png')])
+		subprocess.call(['rsvg', '-a', '--zoom='+str(round(float(dpi) / 90, 2)), '--format=png', source, destination])
 	except OSError:
 		try:
-			subprocess.call(['inkscape', '-e', os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png'), icon_out_path])
+			subprocess.call(['inkscape', '--export-dpi='+str(dpi), '--export-png='+destination, source])
 		except OSError:
 			# if neither is installed print a message and exit
 			sys.exit('Export to PNG requires either rsvg or Inkscape. Please install one of those. rsvg seems to be faster (if you just want to export). Exiting.')
@@ -107,15 +234,28 @@ def exportPNG(config, directory, icon_id, size, icon_out_path):
 
 # modifications to the SVG
 def modifySVG(config, icon_id, size, icon):
-	shieldSizeIncrease = 0
-	
 	xml = lxml.etree.fromstring(icon)
 	xpEval = lxml.etree.XPathEvaluator(xml)
 	xpEval.register_namespace('def', 'http://www.w3.org/2000/svg')
 
+
+	# set padding of icon
+	padding = 0
+	if 'padding' in config:
+		try:
+			padding = int(config['padding'])
+
+			if padding < 0:
+				padding = 0
+				print 'Negative padding is not allowed. Defaulting to 0.'
+		except ValueError:
+			print 'Padding is not a number.'
+
+
+
 	# add shield
+	shield_size = size
 	if 'shield' in config:
-		shield_size = size
 		if 'size' in config['shield']:
 			try:
 				shield_size = int(config['shield']['size'])
@@ -124,7 +264,6 @@ def modifySVG(config, icon_id, size, icon):
 					if not (shield_size - size) % 2 == 0:
 						shield_size -= 1
 						print 'Shield: For effective centering it is required that the size increase is an even number. Making it even by making the shield smaller.'
-					shieldSizeIncrease += shield_size - size
 				else:
 					print 'Shield sizes < 0 or smaller than the icon size are not allowed. Defaulting to icon size.'
 			except ValueError:
@@ -170,18 +309,18 @@ def modifySVG(config, icon_id, size, icon):
 			except ValueError:
 				print 'The specified shield stroke width is not a number.'
 
-		if not stroke_fill == None and not stroke_width == None:
+		if stroke_fill != None and stroke_width != None:
 			# do not specify stroke if stroke_width = 0 was specified
-			if not stroke_width == 0:
+			if stroke_width > 0:
 				stroke = 'stroke:'+stroke_fill+';stroke-width:'+str(stroke_width)+';'
 		else:
-			# do not print warning if stroke width = 0 was specified
-			if not stroke_width == 0:
+			# do not print warning if stroke width = 0 or none was specified
+			if stroke_width > 0:
 				print 'Shield: Defined either stroke-fill without stroke-width or vice versa. Both are required for strokes to appear.'
 
 		shield = lxml.etree.Element('rect')
-		shield.set('x', str(-shieldSizeIncrease / 2))
-		shield.set('y', str(-shieldSizeIncrease / 2))
+		shield.set('x', str(padding))
+		shield.set('y', str(padding))
 		shield.set('width', str(shield_size))
 		shield.set('height', str(shield_size))
 		if shield_rounded > 0:
@@ -193,18 +332,6 @@ def modifySVG(config, icon_id, size, icon):
 		canvas = xpEval("//def:rect[@id='canvas']")[0]
 		canvas.addnext(shield)
 	
-
-	# set padding of icon
-	if 'padding' in config:
-		try:
-			padding = int(config['padding'])
-
-			if padding <= 0:
-				padding = 0
-				print 'Negative padding is not allowed. Defaulting to 0.'
-		except ValueError:
-			print 'Padding is not a number.'
-
 
 	# add icon halo
 	if 'halo' in config:
@@ -244,6 +371,7 @@ def modifySVG(config, icon_id, size, icon):
 			halo = copy.deepcopy(icon_element)
 			halo.set('id', 'halo')
 			halo.set('style', 'fill:'+halo_fill+';stroke:'+halo_fill+';stroke-width:'+str(halo_width * 2)+';opacity:'+str(halo_opacity)+';')
+			halo.set('transform', 'translate('+str(padding + halo_width)+','+str(padding + halo_width)+')');
 			icon_element.addprevious(halo)
 
 
@@ -256,12 +384,14 @@ def modifySVG(config, icon_id, size, icon):
 			print 'The specified fill is invalid. Format it as HEX (e.g. #1a1a1a).'
 
 	
-	# adjust icon and canvas size
-	size += shieldSizeIncrease + padding * 2
-	xml.attrib['viewBox'] = str(-padding - (shieldSizeIncrease / 2)) + ' ' + str(-padding - (shieldSizeIncrease / 2)) + ' ' + str(size) + ' ' + str(size)
+	# adjust document and canvas size, icon position
+	size += int(max((shield_size - size), halo_width * 2) + padding * 2)
+	xml.attrib['viewBox'] = '0 0 ' + str(size) + ' ' + str(size)
 	canvas = xpEval("//def:rect[@id='canvas']")[0]
 	canvas.attrib['width'] = str(size)
 	canvas.attrib['height'] = str(size)
+	icon_xml = xpEval("//def:path[@id='"+icon_id+"']")[0]
+	icon_xml.set('transform', 'translate('+str(padding + halo_width)+','+str(padding + halo_width)+')');
 
 
 	icon = lxml.etree.tostring(xml, pretty_print=True)
