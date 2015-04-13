@@ -10,7 +10,7 @@
    version="1.1"
    width="100%"
    height="100%"
-   viewBox="0 0 18 18"
+   viewBox="0 0 14 14"
    id="svg2">
   <metadata
      id="metadata8">
@@ -27,21 +27,14 @@
   <defs
      id="defs6" />
   <rect
-     width="18"
-     height="18"
+     width="14"
+     height="14"
      x="0"
      y="0"
      id="canvas"
      style="fill:none;stroke:none;visibility:hidden" />
-  <g
-     id="camping">
-    <path
-       d="M 16,16 10.000001,4.9999992 11.000001,2 l -1,0 L 9.0000012,3.9999995 8.0000003,2 7.0000005,2 8.0000003,4.9999992 2,16 z m -6.9999988,-7.0000008 2.9999998,6.0000018 -6.0000005,0 z"
-       id="halo"
-       style="opacity:0.3;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-    <path
-       d="M 16,16 10.000001,4.9999992 11.000001,2 l -1,0 -1,1.9999995 L 8,2 7,2 8,4.9999992 2,16 z m -6.999999,-7.0000008 3,6.0000018 -6.000001,0 z"
-       id="icon"
-       style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
-  </g>
+  <path
+     d="m 2.9995255,2 c -1.322034,0 -1.322034,1.5 0,1.5 l 8.0000005,0 c 1.33909,0 1.338983,-1.5 0,-1.5 L 2.9995255,2 z m 1,2 -0.75,3 -2.25,0 c -1.322034,0 -1.322034,1.5 0,1.5 l 1.875,0 -0.875,3.5 1.5,0 0.875,-3.5 5.25,0 0.8750005,3.5 1.5,0 -0.875,-3.5 1.875,0 c 1.33909,0 1.338983,-1.5 0,-1.5 l -2.25,0 -0.7500005,-3 -1.5,0 0.75,3 -4.5,0 0.75,-3 -1.5,0 z"
+     id="table"
+     style="fill:#000000;fill-opacity:1;stroke:none" />
 </svg>

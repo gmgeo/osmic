@@ -10,7 +10,7 @@
    version="1.1"
    width="100%"
    height="100%"
-   viewBox="0 0 18 18"
+   viewBox="0 0 14 14"
    id="svg2">
   <metadata
      id="metadata8">
@@ -27,21 +27,14 @@
   <defs
      id="defs6" />
   <rect
-     width="18"
-     height="18"
+     width="14"
+     height="14"
      x="0"
      y="0"
      id="canvas"
      style="fill:none;stroke:none;visibility:hidden" />
-  <g
-     id="drinking-water">
-    <path
-       d="m 3,8 1.5,8 5,0 L 11,8 z M 4.18,9 9.81,9 9.44,11 4.55,11 M 6,7 C 6,5 7,4 9,4 L 10,4 10,3 9,3 C 8,3 8,2 9,2 l 3,0 c 1,0 1,1 0,1 l -1,0 0,1 4,0 0,1.5 -6,0 C 7.9152599,5.4911116 7.5,5.9824765 7.5,7 z"
-       id="halo"
-       style="opacity:0.3;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-    <path
-       d="m 3,8 1.5,8 5,0 L 11,8 z M 4.18,9 9.81,9 9.44,11 4.55,11 M 6,7 C 6,5 7,4 9,4 L 10,4 10,3 9,3 C 8,3 8,2 9,2 l 3,0 c 1,0 1,1 0,1 l -1,0 0,1 4,0 0,1.5 -6,0 C 7.91526,5.49111 7.5,5.9824765 7.5,7 z"
-       id="icon"
-       style="fill:#1a1a1a;fill-opacity:1" />
-  </g>
+  <path
+     d="M 9,0 C 7.466325,0 6.25,1.0324775 6.25,3 l 0,1.3125 C 5.865049,4.1210714 5.433094,4 5,4 3.532943,4 2.25,5.0324775 2.25,7 l 0,3 1.5,0 0,-3 C 3.75,6.0340405 4.433016,5.5 5,5.5 5.566984,5.5 6.25,6.0673495 6.25,7 l 0,3 1.5,0 0,-3 0,-4 C 7.75,2.0340405 8.466325,1.5 9,1.5 c 0.600293,0 1.25,0.5673495 1.25,1.5 l 0,7 1.5,0 0,-7 C 11.75,1.1013899 10.500366,0 9,0 z M 0,11 c 0,1 3,3 7,3 4,0 7,-2 7,-3 L 0,11 z"
+     id="fountain"
+     style="fill:#000000;fill-opacity:1;stroke:none" />
 </svg>
