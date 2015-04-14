@@ -36,6 +36,7 @@ With the Python export script ([tools/export.py](https://github.com/nebulon42/os
 * re-colour icons
 * create icon sprites
 * export as SVG and PNG
+
 by changing a YAML configuration file.
 
 Have a look at the [export guide](https://github.com/nebulon42/osmic/blob/master/tools/export.md) for more details.
