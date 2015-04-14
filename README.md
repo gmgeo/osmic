@@ -28,6 +28,18 @@ All icons should adhere to the following features
 ## Icon specifications
 All icons use a canvas base size of 14px. Where required there exist several versions that are varying in size and amount of detail. The size is indicated by appending the pixel value to the icon name (e.g. hospital-14.svg).
 
+## Create a customised collection
+With the Python export script ([tools/export.py](https://github.com/nebulon42/osmic/blob/master/tools/export.py)) the appearance of the icons can be customised. You can
+* add padding
+* add halos
+* add shields
+* re-colour icons
+* create icon sprites
+* export as SVG and PNG
+by changing a YAML configuration file.
+
+Have a look at the [export guide](https://github.com/nebulon42/osmic/blob/master/tools/export.md) for more details.
+
 ## How to contribute
 
 Contributions are welcome, please have a look at this [guide](https://github.com/nebulon42/osmic/blob/master/CONTRIBUTING.md).
