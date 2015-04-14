@@ -1,0 +1,24 @@
+input: "../"
+
+input_dirs:
+  - "accomodation"
+  - "administration"
+  - "amenity"
+  - "eat-drink"
+  - "emergency"
+  - "energy"
+  - "health"
+  - "money"
+  - "nature"
+  - "outdoor"
+  - "religious"
+  - "shop"
+  - "tourism"
+  - "transport"
+
+output: "../export"
+format: "svg"
+
+global_style:
+  padding: 1
+  fill: "#000000"

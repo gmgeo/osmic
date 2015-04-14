@@ -1,0 +1,35 @@
+input: "../"
+
+input_dirs:
+  - "accomodation"
+  - "administration"
+  - "amenity"
+  - "eat-drink"
+  - "emergency"
+  - "energy"
+  - "health"
+  - "money"
+  - "nature"
+  - "outdoor"
+  - "religious"
+  - "shop"
+  - "tourism"
+  - "transport"
+
+output: "../export"
+format: "sprite"
+
+global_style:
+  padding: 1
+  fill: "#1a1a1a"
+
+  halo:
+    fill: "#ffffff"
+    width: 1
+    opacity: 0.3
+
+sprite:
+  cols: 12
+  outer_padding: 4
+  icon_padding: 4
+  filename: "icons"

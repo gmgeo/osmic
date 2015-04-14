@@ -344,6 +344,7 @@ def modifySVG(config, icon_id, size, icon):
 	
 
 	# add icon halo
+	halo_width = 0
 	if 'halo' in config:
 		halo_fill = '#fffff'
 		if 'fill' in config['halo']:
@@ -354,7 +355,6 @@ def modifySVG(config, icon_id, size, icon):
 		else:
 			print 'Halo fill not specified. Defaulting to #ffffff (white).'
 
-		halo_width = None
 		if 'width' in config['halo']:
 			try:
 				halo_width = float(config['halo']['width'])
@@ -389,7 +389,7 @@ def modifySVG(config, icon_id, size, icon):
 	if 'fill' in config:
 		if not re.match('^#[0-9a-f]{6}$', config['fill']) == None:
 			path = xpEval("//def:path[@id='"+icon_id+"']")[0]
-			path.attrib['style'] = re.sub('fill:#[0-9a-f]{6};', 'fill:'+config['fill']+';', path.attrib['style'])
+			path.attrib['style'] = re.sub('fill:#[0-9a-f]{6};?', 'fill:'+config['fill']+';', path.attrib['style'])
 		else:
 			print 'The specified fill is invalid. Format it as HEX (e.g. #1a1a1a).'
 
