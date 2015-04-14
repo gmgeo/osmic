@@ -35,6 +35,6 @@
      style="fill:none;stroke:none;visibility:hidden" />
   <path
      d="M 7,0 C 5.895431,0 5,0.895431 5,2 5,3.104569 5.895431,4 7,4 8.104569,4 9,3.104569 9,2 9,0.895431 8.104569,0 7,0 z m -4,5 0,2 2,0 0,5 -2,0 0,2 8,0 0,-2 -2,0 0,-7 -6,0 z"
-     id="icon"
+     id="information"
      style="fill:#000000;fill-opacity:1;stroke:none" />
 </svg>
