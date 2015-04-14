@@ -10,7 +10,7 @@
    version="1.1"
    width="100%"
    height="100%"
-   viewBox="0 0 18 18"
+   viewBox="0 0 14 14"
    id="svg2">
   <metadata
      id="metadata8">
@@ -27,21 +27,14 @@
   <defs
      id="defs6" />
   <rect
-     width="18"
-     height="18"
+     width="14"
+     height="14"
      x="0"
      y="0"
      id="canvas"
      style="fill:none;stroke:none;visibility:hidden" />
-  <g
-     id="clothes">
-    <path
-       d="M 5,3 2,5 3,8.35 5,7 5,15 13,15 13,7 15,8.35 16,5 13,3 11,3 C 11,4 10,5 9,5 8,5 7,4 7,3 z"
-       id="halo"
-       style="opacity:0.3;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-    <path
-       d="M 5,3 2,5 3,8.35 5,7 5,15 13,15 13,7 15,8.35 16,5 13,3 11,3 C 11,4 10,5 9,5 8,5 7,4 7,3 z"
-       id="icon"
-       style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
-  </g>
+  <path
+     d="M 3,0 C 3.944406,2.8332196 2.233819,6.4334035 6.25,6.938 l 0,5.562 C 6.25,11.033993 3.997226,8 1,8 c 3,2 1,6 5,6 2,0 0,0 2,0 4,0 2,-4 5,-6 -2.997226,0 -5.25,2.944994 -5.25,4.5 l 0,-5.562 C 11.753428,6.4504075 10.055593,2.8332196 11,0 10,0 8.75,3 8.75,3 8.75,3 8,1 7,0 6,1 5.25,3 5.25,3 5.25,3 4,0 3,0 z"
+     id="florist"
+     style="fill:#000000;fill-opacity:1;stroke:none" />
 </svg>
