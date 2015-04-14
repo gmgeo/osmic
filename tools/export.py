@@ -395,13 +395,14 @@ def modifySVG(config, icon_id, size, icon):
 
 	
 	# adjust document and canvas size, icon position
+	shieldIncrease = shield_size - size
 	size += int(max((shield_size - size), halo_width * 2) + padding * 2)
 	xml.attrib['viewBox'] = '0 0 ' + str(size) + ' ' + str(size)
 	canvas = xpEval("//def:rect[@id='canvas']")[0]
 	canvas.attrib['width'] = str(size)
 	canvas.attrib['height'] = str(size)
 	icon_xml = xpEval("//def:path[@id='"+icon_id+"']")[0]
-	icon_xml.set('transform', 'translate('+str(padding + halo_width)+','+str(padding + halo_width)+')');
+	icon_xml.set('transform', 'translate('+str(max(shieldIncrease / 2, halo_width) + padding)+','+str(max(shieldIncrease / 2, halo_width) + padding)+')');
 
 
 	icon = lxml.etree.tostring(xml, pretty_print=True)
