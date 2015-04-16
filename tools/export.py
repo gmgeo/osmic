@@ -154,8 +154,8 @@ def main():
 		for directory in config['input_dirs']:
 			dir_path = os.path.join(config['output'], directory)
 
-			# loop through all SVG files in this directory
-			for icon_path in glob.glob(os.path.join(dir_path, '*.svg')):
+			# loop through all SVG files in this directory (in alphabetical order)
+			for icon_path in sorted(glob.glob(os.path.join(dir_path, '*.svg'))):
 				name_match = re.search('^([a-z-]+)\-([0-9]+)', os.path.splitext(os.path.basename(icon_path))[0])
 				if name_match is not None:
 					icon_id = name_match.group(1)
