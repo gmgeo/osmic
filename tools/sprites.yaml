@@ -18,6 +18,7 @@ input_dirs:
 
 output: "../export"
 format: "sprite"
+retina: true
 
 global_style:
   padding: 1

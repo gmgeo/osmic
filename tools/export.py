@@ -83,7 +83,7 @@ def main():
 		
 			# if PNG export generate PNG file and delete modified SVG
 			if config['format'] == 'png':
-				exportPNG(icon_out_path, os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png'), 90)
+				exportPNG(icon_out_path, os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png'), 90, config['retina'])
 				os.remove(icon_out_path)
 	
 	# generate sprite
@@ -204,7 +204,7 @@ def main():
 			print 'Could not save the sprite SVG file ' + sprite_out_path + '.'
 
 		# export sprite as PNG
-		exportPNG(sprite_out_path+'.svg', sprite_out_path+'.png', 90) 
+		exportPNG(sprite_out_path+'.svg', sprite_out_path+'.png', 90, config['retina']) 
 		
 	return
 
@@ -223,22 +223,35 @@ def defaultValues(config):
 	
 	if not 'format' in config:
 		config['format'] = 'png'
+	
+	if not 'retina' in config:
+		config['retina'] = False
 
 	return
 
 
 # export PNG
-def exportPNG(source, destination, dpi):
-	# TODO Windows?
-	try:
-		# rsvg is preferred because faster, but fallback to Inkscape when rsvg is not installed
-		subprocess.call(['rsvg', '-a', '--zoom='+str(round(float(dpi) / 90, 2)), '--format=png', source, destination])
-	except OSError:
+def exportPNG(source, destination, dpi, retina):
+	for i in range(0, 2):
+		# TODO Windows?
 		try:
-			subprocess.call(['inkscape', '--export-dpi='+str(dpi), '--export-png='+destination, source])
+			# rsvg is preferred because faster, but fallback to Inkscape when rsvg is not installed
+			subprocess.call(['rsvg', '-a', '--zoom='+str(round(float(dpi) / 90, 2)), '--format=png', source, destination])
 		except OSError:
-			# if neither is installed print a message and exit
-			sys.exit('Export to PNG requires either rsvg or Inkscape. Please install one of those. rsvg seems to be faster (if you just want to export). Exiting.')
+			try:
+				subprocess.call(['inkscape', '--export-dpi='+str(dpi), '--export-png='+destination, source])
+			except OSError:
+				# if neither is installed print a message and exit
+				sys.exit('Export to PNG requires either rsvg or Inkscape. Please install one of those. rsvg seems to be faster (if you just want to export). Exiting.')
+		
+		if not retina:
+			break;
+		else:
+			dpi *= 2
+			# append @2x to file name
+			split_name = os.path.splitext(destination)
+			destination = split_name[0]+'@2x'+split_name[1]
+	
 	return
 
 

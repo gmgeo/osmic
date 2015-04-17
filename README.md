@@ -3,9 +3,7 @@
 A collection of 100+ clean high quality SVG map icons licensed under CC0 (Public Domain). Below you see a preview for positive and negative
 versions (these are 2x the [original size](https://github.com/nebulon42/osmic/raw/master/icons.png)).
 
-![Osmic (OSM Icons)](https://github.com/nebulon42/osmic/raw/master/icons-2x.png "Available icons")
-
-![Osmic (OSM Icons)](https://github.com/nebulon42/osmic/raw/master/icons-shields-2x.png "Available icons (shields)")
+![Osmic (OSM Icons)](https://github.com/nebulon42/osmic/raw/master/icons@2x.png "Available icons")
 
 Icons are heavily inspired by
 * Maki ([mapbox/maki](https://github.com/mapbox/maki))
