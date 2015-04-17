@@ -25,7 +25,7 @@ global_style:
 
   shield:
     fill: "#efefef"
-    stroke-fill: "#1a1a1a"
-    stroke-width: 1
+    stroke_fill: "#1a1a1a"
+    stroke_width: 1
     rounded: 3
     size: 18

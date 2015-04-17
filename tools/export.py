@@ -329,14 +329,14 @@ def modifySVG(config, icon_id, size, icon):
 		stroke = 'stroke:none;'
 		stroke_fill = None
 		if 'stroke-fill' in config['shield']:
-			stroke_fill = config['shield']['stroke-fill']
+			stroke_fill = config['shield']['stroke_fill']
 			if re.match('^#[0-9a-f]{6}$', stroke_fill) == None:
 				print('The specified shield stroke fill is invalid. Format it as HEX (e.g. #1a1a1a).')
 
 		stroke_width = None
 		if 'stroke-width' in config['shield']:
 			try:
-				stroke_width = float(config['shield']['stroke-width'])
+				stroke_width = float(config['shield']['stroke_width'])
 
 				if stroke_width < 0:
 					stroke_width = 1
@@ -351,7 +351,7 @@ def modifySVG(config, icon_id, size, icon):
 		else:
 			# do not print warning if stroke width = 0 or none was specified
 			if stroke_width > 0:
-				print('Shield: Defined either stroke-fill without stroke-width or vice versa. Both are required for strokes to appear.')
+				print('Shield: Defined either stroke_fill without stroke_width or vice versa. Both are required for strokes to appear.')
 
 		shield = lxml.etree.Element('rect')
 		shield.set('x', str(padding))
