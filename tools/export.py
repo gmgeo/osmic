@@ -2,6 +2,7 @@
 
 # export to SVG or PNG (incl. retina output), re-colour, add padding, add halo, generate sprites
 
+from __future__ import print_function
 import argparse, copy, glob, lxml.etree, math, os, re, subprocess, sys, yaml
 
 def main():
@@ -24,18 +25,18 @@ def main():
 		if os.path.isabs(config['basedir']):
 			os.chdir(os.path.dirname(config['basedir']))
 		else:
-			print 'The basedir you specified is either no path or a relative path. Relative paths are not allowed. Falling back to location of configuration file.'
+			print('The basedir you specified is either no path or a relative path. Relative paths are not allowed. Falling back to location of configuration file.')
 			os.chdir(os.path.dirname(os.path.abspath(args.configfile)))
 	else:
 		os.chdir(os.path.dirname(os.path.abspath(args.configfile)))
 
 	if not isinstance(config['retina'], bool):
 		config['retina'] = False
-		print 'The retina flag must be boolean. Defaulting to false.'
+		print('The retina flag must be boolean. Defaulting to false.')
 
 	if not isinstance(config['dpi'], int):
 		config['dpi'] = 90
-		print ' The dpi parameter must be a number. Defaulting to 90 dpi.'
+		print('The dpi parameter must be a number. Defaulting to 90 dpi.')
 
 	num_icons = 0
 
@@ -81,13 +82,13 @@ def main():
 				iconfile.write(icon)
 				iconfile.close()
 			except IOError:
-				print 'Could not save the modified file ' + icon_out_path + '.'
+				print('Could not save the modified file ' + icon_out_path + '.')
 				continue
 
 			num_icons += 1
 
 			if config['format'] not in ['svg', 'png', 'sprite']:
-				print 'Format must be either svg, png, sprite. Defaulting to svg.'
+				print('Format must be either svg, png, sprite. Defaulting to svg.')
 		
 			# if PNG export generate PNG file and delete modified SVG
 			if config['format'] == 'png':
@@ -102,9 +103,9 @@ def main():
 				sprite_cols = int(config['sprite']['cols'])
 				
 				if sprite_cols <= 0:
-					print 'A negative number of sprite columns or zero columns are not allowed. Defaulting to 12 columns.'
+					print('A negative number of sprite columns or zero columns are not allowed. Defaulting to 12 columns.')
 			except ValueError:
-				print 'Sprite columns is not a number. Defaulting to 12 columns.'
+				print('Sprite columns is not a number. Defaulting to 12 columns.')
 
 		outer_padding = 4
 		if 'outer_padding' in config['sprite']:
@@ -112,9 +113,9 @@ def main():
 				outer_padding = int(config['sprite']['outer_padding'])
 				
 				if outer_padding < 0:
-					print 'A negative number of sprite outer padding is not allowed. Defaulting to a padding of 4.'
+					print('A negative number of sprite outer padding is not allowed. Defaulting to a padding of 4.')
 			except ValueError:
-				print 'Sprite outer padding is not a number. Defaulting to a padding of 4.'
+				print('Sprite outer padding is not a number. Defaulting to a padding of 4.')
 
 		icon_padding = 4
 		if 'icon_padding' in config['sprite']:
@@ -122,16 +123,16 @@ def main():
 				icon_padding = int(config['sprite']['icon_padding'])
 				
 				if icon_padding < 0:
-					print 'A negative number of sprite icon padding is not allowed. Defaulting to a padding of 4.'
+					print('A negative number of sprite icon padding is not allowed. Defaulting to a padding of 4.')
 			except ValueError:
-				print 'Sprite outer padding is not a number. Defaulting to a padding of 4.'
+				print('Sprite outer padding is not a number. Defaulting to a padding of 4.')
 
 		sprite_background = None
 		if 'background' in config['sprite']:
 			sprite_background = config['sprite']['background']
 			if re.match('^#[0-9a-f]{6}$', sprite_background) == None:
 				sprite_background = None
-				print 'The specified shield fill is invalid. Format it as HEX (e.g. #1a1a1a). Defaulting to none (transparent).'
+				print('The specified shield fill is invalid. Format it as HEX (e.g. #1a1a1a). Defaulting to none (transparent).')
 
 		sprite_file_name = 'sprite'
 		if 'filename' in config['sprite']:
@@ -209,7 +210,7 @@ def main():
 			spritefile.write(lxml.etree.tostring(sprite, pretty_print=True))
 			spritefile.close()
 		except IOError:
-			print 'Could not save the sprite SVG file ' + sprite_out_path + '.'
+			print('Could not save the sprite SVG file ' + sprite_out_path + '.')
 
 		# export sprite as PNG
 		exportPNG(sprite_out_path+'.svg', sprite_out_path+'.png', config['dpi'], config['retina']) 
@@ -281,9 +282,9 @@ def modifySVG(config, icon_id, size, icon):
 
 			if padding < 0:
 				padding = 0
-				print 'Negative padding is not allowed. Defaulting to 0.'
+				print('Negative padding is not allowed. Defaulting to 0.')
 		except ValueError:
-			print 'Padding is not a number.'
+			print('Padding is not a number.')
 
 
 
@@ -297,13 +298,13 @@ def modifySVG(config, icon_id, size, icon):
 				if shield_size > 0 and shield_size >= size:
 					if not (shield_size - size) % 2 == 0:
 						shield_size -= 1
-						print 'Shield: For effective centering it is required that the size increase is an even number. Making it even by making the shield smaller.'
+						print('Shield: For effective centering it is required that the size increase is an even number. Making it even by making the shield smaller.')
 				else:
-					print 'Shield sizes < 0 or smaller than the icon size are not allowed. Defaulting to icon size.'
+					print('Shield sizes < 0 or smaller than the icon size are not allowed. Defaulting to icon size.')
 			except ValueError:
-				print 'Shield size is not a number. Defaulting to icon size.'
+				print('Shield size is not a number. Defaulting to icon size.')
 		else:
-			print 'Shield size not specified. Defaulting to icon size.'
+			print('Shield size not specified. Defaulting to icon size.')
 
 		shield_rounded = 0
 		if 'rounded' in config['shield']:
@@ -312,25 +313,25 @@ def modifySVG(config, icon_id, size, icon):
 				
 				if shield_rounded <= 0:
 					shield_rounded = 0
-					print 'A negative shield corner radius is not allowed. Defaulting to unrounded corners.'
+					print('A negative shield corner radius is not allowed. Defaulting to unrounded corners.')
 			except ValueError:
-				print 'Shield corner radius is not a number. Defaulting to unrounded corners.'
+				print('Shield corner radius is not a number. Defaulting to unrounded corners.')
 
 		shield_fill = '#000000'
 		if 'fill' in config['shield']:
 			shield_fill = config['shield']['fill']
 			if re.match('^#[0-9a-f]{6}$', shield_fill) == None:
 				shield_fill = '#000000'
-				print 'The specified shield fill is invalid. Format it as HEX (e.g. #1a1a1a). Defaulting to #000000 (black).'
+				print('The specified shield fill is invalid. Format it as HEX (e.g. #1a1a1a). Defaulting to #000000 (black).')
 		else:
-			print 'Shield fill not specified. Defaulting to #000000 (black).'
+			print('Shield fill not specified. Defaulting to #000000 (black).')
 
 		stroke = 'stroke:none;'
 		stroke_fill = None
 		if 'stroke-fill' in config['shield']:
 			stroke_fill = config['shield']['stroke-fill']
 			if re.match('^#[0-9a-f]{6}$', stroke_fill) == None:
-				print 'The specified shield stroke fill is invalid. Format it as HEX (e.g. #1a1a1a).'
+				print('The specified shield stroke fill is invalid. Format it as HEX (e.g. #1a1a1a).')
 
 		stroke_width = None
 		if 'stroke-width' in config['shield']:
@@ -339,9 +340,9 @@ def modifySVG(config, icon_id, size, icon):
 
 				if stroke_width < 0:
 					stroke_width = 1
-					print 'Negative shield stroke widths are not allowed. Defaulting to width=1.'
+					print('Negative shield stroke widths are not allowed. Defaulting to width=1.')
 			except ValueError:
-				print 'The specified shield stroke width is not a number.'
+				print('The specified shield stroke width is not a number.')
 
 		if stroke_fill != None and stroke_width != None:
 			# do not specify stroke if stroke_width = 0 was specified
@@ -350,7 +351,7 @@ def modifySVG(config, icon_id, size, icon):
 		else:
 			# do not print warning if stroke width = 0 or none was specified
 			if stroke_width > 0:
-				print 'Shield: Defined either stroke-fill without stroke-width or vice versa. Both are required for strokes to appear.'
+				print('Shield: Defined either stroke-fill without stroke-width or vice versa. Both are required for strokes to appear.')
 
 		shield = lxml.etree.Element('rect')
 		shield.set('x', str(padding))
@@ -375,9 +376,9 @@ def modifySVG(config, icon_id, size, icon):
 			halo_fill = config['halo']['fill']
 			if re.match('^#[0-9a-f]{6}$', halo_fill) == None:
 				halo_fill = '#ffffff'
-				print 'The specified halo fill is invalid. Format it as HEX (e.g. #1a1a1a). Defaulting to #ffffff (white).'
+				print('The specified halo fill is invalid. Format it as HEX (e.g. #1a1a1a). Defaulting to #ffffff (white).')
 		else:
-			print 'Halo fill not specified. Defaulting to #ffffff (white).'
+			print('Halo fill not specified. Defaulting to #ffffff (white).')
 
 		if 'width' in config['halo']:
 			try:
@@ -385,9 +386,9 @@ def modifySVG(config, icon_id, size, icon):
 
 				if halo_width < 0:
 					halo_width = 1
-					print 'Halo widths < 0 do not make sense. Defaulting to width=1.'
+					print('Halo widths < 0 do not make sense. Defaulting to width=1.')
 			except ValueError:
-				print 'The specified halo width is not a number.'
+				print('The specified halo width is not a number.')
 
 		halo_opacity = None
 		if 'opacity' in config['halo']:
@@ -396,9 +397,9 @@ def modifySVG(config, icon_id, size, icon):
 
 				if halo_opacity <= 0 or halo_opacity > 1:
 					halo_opacity = 0.3
-					print 'Halo opacity must lie between 0 and 1 (e.g. 0.5). Opacities of 0 do not make sense. Defaulting to 0.3.'
+					print('Halo opacity must lie between 0 and 1 (e.g. 0.5). Opacities of 0 do not make sense. Defaulting to 0.3.')
 			except ValueError:
-				print 'The specified halo opacity is not a number.'
+				print('The specified halo opacity is not a number.')
 
 		if not halo_width == 0:
 			icon_element = xpEval("//def:path[@id='"+icon_id+"']")[0]
@@ -415,7 +416,7 @@ def modifySVG(config, icon_id, size, icon):
 			path = xpEval("//def:path[@id='"+icon_id+"']")[0]
 			path.attrib['style'] = re.sub('fill:#[0-9a-f]{6};?', 'fill:'+config['fill']+';', path.attrib['style'])
 		else:
-			print 'The specified fill is invalid. Format it as HEX (e.g. #1a1a1a).'
+			print('The specified fill is invalid. Format it as HEX (e.g. #1a1a1a).')
 
 	
 	# adjust document and canvas size, icon position
@@ -431,6 +432,5 @@ def modifySVG(config, icon_id, size, icon):
 
 	icon = lxml.etree.tostring(xml, pretty_print=True)
 	return (size, icon)
-
 
 if __name__ == "__main__": main()
