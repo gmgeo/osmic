@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# export to SVG or PNG (incl. retina output [coming soon]), re-colour, add padding, add halo, generate sprites
+# export to SVG or PNG (incl. retina output), re-colour, add padding, add halo, generate sprites
 
 import argparse, copy, glob, lxml.etree, math, os, re, subprocess, sys, yaml
 
@@ -28,6 +28,14 @@ def main():
 			os.chdir(os.path.dirname(os.path.abspath(args.configfile)))
 	else:
 		os.chdir(os.path.dirname(os.path.abspath(args.configfile)))
+
+	if not isinstance(config['retina'], bool):
+		config['retina'] = False
+		print 'The retina flag must be boolean. Defaulting to false.'
+
+	if not isinstance(config['dpi'], int):
+		config['dpi'] = 90
+		print ' The dpi parameter must be a number. Defaulting to 90 dpi.'
 
 	num_icons = 0
 
@@ -83,7 +91,7 @@ def main():
 		
 			# if PNG export generate PNG file and delete modified SVG
 			if config['format'] == 'png':
-				exportPNG(icon_out_path, os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png'), 90, config['retina'])
+				exportPNG(icon_out_path, os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png'), config['dpi'], config['retina'])
 				os.remove(icon_out_path)
 	
 	# generate sprite
@@ -204,7 +212,7 @@ def main():
 			print 'Could not save the sprite SVG file ' + sprite_out_path + '.'
 
 		# export sprite as PNG
-		exportPNG(sprite_out_path+'.svg', sprite_out_path+'.png', 90, config['retina']) 
+		exportPNG(sprite_out_path+'.svg', sprite_out_path+'.png', config['dpi'], config['retina']) 
 		
 	return
 
@@ -226,6 +234,9 @@ def defaultValues(config):
 	
 	if not 'retina' in config:
 		config['retina'] = False
+
+	if not 'dpi' in config:
+		config['dpi'] = 90
 
 	return
 
