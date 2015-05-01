@@ -34,3 +34,4 @@ sprite:
   outer_padding: 4
   icon_padding: 4
   filename: "icons"
+  size_filter: 14

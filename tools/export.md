@@ -60,3 +60,4 @@ In the following all possible parameters are listed. All of them are optional.
   * `icon_padding`- specify the padding between the different icons, only values > 0 are allowed, if not specified defaults to `4`	
   * `background`- specify a hexadecimal colour value for the sprite background fill e.g. `#efefef`, if not specified it defaults to transparent
   * `filename`- specify the filename of the sprite, if not specified defaults to `sprite`
+  * `size_filter` - specify the size version (e.g. 14 for all icon-id-14.svg) which should be included in the sprite - all other sizes are left out, if not specified no filter is applied

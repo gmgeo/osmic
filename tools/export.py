@@ -38,6 +38,17 @@ def main():
 		config['dpi'] = 90
 		print('The dpi parameter must be a number. Defaulting to 90 dpi.')
 
+	# for sprite - filter by size
+	size_filter = 0
+	if (config['format'] == 'sprite' and 'sprite' in config and 'size_filter' in config['sprite']):
+		try:
+			size_filter = int(config['sprite']['size_filter'])
+			
+			if size_filter < 0:
+				print('A negative number of pixels for the sprite size filter is not allowed.')
+		except ValueError:
+			print('The sprite size filter is not a number.')
+
 	num_icons = 0
 
 	# loop through all specified directories
@@ -50,6 +61,10 @@ def main():
 			if name_match is not None:
 				icon_id = name_match.group(1)
 				size = int(name_match.group(2))
+			
+			
+			if (size_filter > 0 and size != size_filter):
+				continue
 		
 			# read in file contents
 			try:
@@ -210,7 +225,7 @@ def main():
 			spritefile.write(lxml.etree.tostring(sprite, pretty_print=True))
 			spritefile.close()
 		except IOError:
-			print('Could not save the sprite SVG file ' + sprite_out_path + '.')
+			print('Could not save the sprite SVG file ' + sprite_out_path + '.svg' + '.')
 
 		# export sprite as PNG
 		exportPNG(sprite_out_path+'.svg', sprite_out_path+'.png', config['dpi'], config['retina']) 
