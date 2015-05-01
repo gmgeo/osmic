@@ -24,3 +24,5 @@ Icon standard canvas size is 14x14px without any padding i.e. the icon can use a
 All icon content has the colour black (`#000000`) and consists of a single path (parts merged together). The path's ID is similar to the file name without the canvas size part (e.g. `waste-basket-14.svg` has id `waste-basket`).
 
 In the background all icons have a invisible rectangle spanning the whole canvas to avoid up-/downscaling of the shape alone when using `marker-width` or `marker-height` in CartoCSS. The style of this rectangle has set `visibility:hidden` and uses the id `canvas`. See one of the icons for an example how this looks.
+
+The shapes should be aligned to the pixel grid as much as possible to avoid a blurry representation. The pixel grid can be brought up within Inkscape by pressing # or by selecting View > Grid. When enabled nodes automatically snap to the grid.
