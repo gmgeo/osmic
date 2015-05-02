@@ -4,8 +4,7 @@ single icon or a small number of very closely related icons.
 
 # How to contribute
 
-Osmic uses "Fork & Pull" for contributions (see https://help.github.com/articles/using-pull-requests). Both adjustments and improvements to existing icons as well as
-new icons are welcome.
+Osmic uses "Fork & Pull" for contributions (see https://help.github.com/articles/using-pull-requests). Adjustments and improvements to existing icons are very welcome. New icons are only considered if they fit to the general appearance of Osmic and are of high quality. There might be modifications to proposed icons before they are added.
 
 Please limit new icon pull requests to one icon each unless they are very closely related in concept and design.
 
