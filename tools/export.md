@@ -7,12 +7,15 @@ This Python export script ([tools/export.py](https://github.com/nebulon42/osmic/
 * add shields
 * re-colour icons
 * create icon sprites
-* export as SVG and PNG with different resolutions including retina (double sized) versions.
+* create an icon font with the help of [Font Custom](https://github.com/FontCustom/fontcustom/)
+* export as SVG and PNG (through rsvg or Inkscape) with different resolutions including retina (double sized) versions.
 
 All parameters can be changed through a YAML configuration file. There are several examples in the script folder:
 
-* [osm-carto-svg.yaml](https://github.com/nebulon42/osmic/blob/master/tools/osm-carto-svg.yaml) exports icons in SVG format like they are currently used in [openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto) i.e. with 1px padding and without halo.
+* [font.yaml](https://github.com/nebulon42/osmic/blob/master/tools/font.yaml) creates an icon font of all icons.
 * [osm-carto-png.yaml](https://github.com/nebulon42/osmic/blob/master/tools/osm-carto-png.yaml) exports icons as PNG and re-colours them according to the colour scheme of [openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto).
+* [osm-carto-svg.yaml](https://github.com/nebulon42/osmic/blob/master/tools/osm-carto-svg.yaml) exports icons in SVG format like they are currently used in [openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto) i.e. with 1px padding and without halo.
+* [osm-carto-svg-color.yaml](https://github.com/nebulon42/osmic/blob/master/tools/osm-carto-svg-color.yaml) exports icons in SVG format like they are currently used in [openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto) i.e. with 1px padding and without halo and re-colours them according to their colour scheme.
 * [shields.yaml](https://github.com/nebulon42/osmic/blob/master/tools/shields.yaml) exports icons with shields.
 * [sprites.yaml](https://github.com/nebulon42/osmic/blob/master/tools/sprites.yaml) exports the icons in a sprite like [this one](https://github.com/nebulon42/osmic/blob/master/icons@2x.png).
 
