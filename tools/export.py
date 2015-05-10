@@ -121,7 +121,7 @@ def main():
 				os.remove(icon_out_path)
 			
 	if config['format'] == 'font':
-		exportFont(config['output'], config['font']['output'])
+		exportFont(config['output'], config['font']['output'], size)
 	
 	# generate sprite
 	if config['format'] == 'sprite':
@@ -309,13 +309,13 @@ def exportPNG(source, destination, dpi, retina):
 
 
 # export icon font
-def exportFont(source, destination):
+def exportFont(source, destination, size):
 	# TODO Windows?
 	try:
-		subprocess.call(['fontcustom', 'compile', source, '--force', '--output=' + destination, '--font-name=osmic', '--no-hash', '--font-design-size=14', '--css-selector=.oc-{{glyph}}'])
+		subprocess.call(['fontcustom', 'compile', source, '--force', '--output=' + destination, '--font-name=osmic', '--no-hash', '--font-design-size=' + str(size), '--css-selector=.oc-{{glyph}}'])
 	except OSError:
 		# fontcustom is not installed
-		sys.exit('Export as icon font requires fontcustom. See http://fontcustom.com. Exiting.')
+		sys.exit('Export as icon font requires Font Custom. See http://fontcustom.com. Exiting.')
 	return
 
 
