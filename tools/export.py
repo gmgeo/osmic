@@ -38,16 +38,18 @@ def main():
 		config['dpi'] = 90
 		print('The dpi parameter must be a number. Defaulting to 90 dpi.')
 
-	# for sprite - filter by size
+	# filter by size (for sprite and font)
 	size_filter = 0
-	if (config['format'] == 'sprite' and 'sprite' in config and 'size_filter' in config['sprite']):
-		try:
-			size_filter = int(config['sprite']['size_filter'])
+
+	if config['format'] == 'sprite' or config['format'] == 'font':
+		if (config['format'] in config and 'size_filter' in config[config['format']]):
+			try:
+				size_filter = int(config[config['format']]['size_filter'])
 			
-			if size_filter < 0:
-				print('A negative number of pixels for the sprite size filter is not allowed.')
-		except ValueError:
-			print('The sprite size filter is not a number.')
+				if size_filter < 0:
+					print('A negative number of pixels for the size filter is not allowed.')
+			except ValueError:
+				print('The size filter is not a number.')
 
 	num_icons = 0
 
@@ -74,6 +76,10 @@ def main():
 			icon = iconfile.read()
 			iconfile.close()
 
+			# add remove canvas option for font output
+			if config['format'] == 'font':
+				config['global_style']['canvas'] = False
+
 			# override global config with icon specific options
 			mod_config = copy.deepcopy(config['global_style'])
 			if icon_id in config:
@@ -86,7 +92,11 @@ def main():
 			(size, icon) = modifySVG(mod_config, icon_id, size, icon)	
 
 			# create subdirs
-			icon_out_path = os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.svg')
+			if not config['format'] == 'font':
+				icon_out_path = os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.svg')
+			else:
+				# remove subdirs and size info for font output
+				icon_out_path = os.path.join(config['output'], icon_id + '.svg')
 		
 			if not os.path.exists(os.path.dirname(icon_out_path)):
 				os.makedirs(os.path.dirname(icon_out_path))
@@ -102,13 +112,16 @@ def main():
 
 			num_icons += 1
 
-			if config['format'] not in ['svg', 'png', 'sprite']:
-				print('Format must be either svg, png, sprite. Defaulting to svg.')
+			if config['format'] not in ['svg', 'png', 'sprite', 'font']:
+				print('Format must be either svg, png, sprite or font. Defaulting to svg.')
 		
 			# if PNG export generate PNG file and delete modified SVG
 			if config['format'] == 'png':
 				exportPNG(icon_out_path, os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png'), config['dpi'], config['retina'])
 				os.remove(icon_out_path)
+			
+	if config['format'] == 'font':
+		exportFont(config['output'], config['font']['output'])
 	
 	# generate sprite
 	if config['format'] == 'sprite':
@@ -254,6 +267,19 @@ def defaultValues(config):
 	if not 'dpi' in config:
 		config['dpi'] = 90
 
+	if not 'global_style' in config:
+		config['global_style'] = {}
+
+	if config['format'] == 'font':
+		if not 'font' in config:
+			config['font'] = {}
+
+		if not 'size_filter' in config['font']:
+			config['font']['size_filter'] = 14
+
+		if not 'output' in config['font']:
+			config['font']['output'] = os.path.join(os.getcwd(), 'font')
+
 	return
 
 
@@ -279,6 +305,17 @@ def exportPNG(source, destination, dpi, retina):
 			split_name = os.path.splitext(destination)
 			destination = split_name[0]+'@2x'+split_name[1]
 	
+	return
+
+
+# export icon font
+def exportFont(source, destination):
+	# TODO Windows?
+	try:
+		subprocess.call(['fontcustom', 'compile', source, '--force', '--output=' + destination, '--font-name=osmic', '--no-hash', '--font-design-size=14', '--css-selector=.oc-{{glyph}}'])
+	except OSError:
+		# fontcustom is not installed
+		sys.exit('Export as icon font requires fontcustom. See http://fontcustom.com. Exiting.')
 	return
 
 
@@ -444,6 +481,12 @@ def modifySVG(config, icon_id, size, icon):
 	icon_xml = xpEval("//def:path[@id='"+icon_id+"']")[0]
 	icon_xml.set('transform', 'translate('+str(max(shieldIncrease / 2, halo_width) + padding)+','+str(max(shieldIncrease / 2, halo_width) + padding)+')');
 
+	# strip 'stroke:none' from style attributes
+	icon_xml.attrib['style'] = re.sub(';stroke:none', '', icon_xml.attrib['style'])
+
+	# remove canvas for font output
+	if 'canvas' in config and config['canvas'] == False:
+		canvas.getparent().remove(canvas)
 
 	icon = lxml.etree.tostring(xml, pretty_print=True)
 	return (size, icon)

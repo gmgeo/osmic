@@ -30,7 +30,7 @@ In the following all possible parameters are listed. All of them are optional.
 
 * `output` - specify the output base directory, if not specified it defaults to `./export`, can be either an absolute or relative path
 
-* `format` - is either `png`, `svg` or `sprite`, if not specified it defaults to `png`
+* `format` - is either `png`, `svg`, `sprite` or `font`, if not specified it defaults to `png`
 
 * `dpi` - specify the resolution in dots per inch (dpi), if not specified it defaults to `90`
 
@@ -61,3 +61,7 @@ In the following all possible parameters are listed. All of them are optional.
   * `background`- specify a hexadecimal colour value for the sprite background fill e.g. `#efefef`, if not specified it defaults to transparent
   * `filename`- specify the filename of the sprite, if not specified defaults to `sprite`
   * `size_filter` - specify the size version (e.g. 14 for all icon-id-14.svg) which should be included in the sprite - all other sizes are left out, if not specified no filter is applied
+
+* `font` - a list of configuration options for icon font generation
+  * `output` - specify the output directory for the font files, if not specified it defaults to `./font`, can be either an absolute or relative path
+  * `size_filter` - specify the size version (e.g. 14 for all icon-id-14.svg) which should be included in the icon font - all other sizes are left out, if not specified the filter defaults to 14

@@ -1,6 +1,6 @@
 # Osmic (OSM Icons)
 
-A collection of 100+ clean high quality SVG map icons licensed under CC0 (Public Domain). Below you see a possible preview (these are 2x the [original size](https://github.com/nebulon42/osmic/raw/master/icons.png)).
+A collection of 100+ clean high quality SVG map icons licensed under CC0 (Public Domain) and also available as [icon font](https://github.com/nebulon42/osmic/tree/master/font). Below you see a possible preview (these are 2x the [original size](https://github.com/nebulon42/osmic/raw/master/icons.png)).
 
 ![Osmic (OSM Icons)](https://github.com/nebulon42/osmic/raw/master/icons@2x.png "Available icons")
 
@@ -32,7 +32,7 @@ With the Python export script ([tools/export.py](https://github.com/nebulon42/os
 * add shields
 * re-colour icons
 * create icon sprites
-* export as SVG and PNG
+* export as SVG, PNG or icon font
 
 by changing a YAML configuration file.
 
