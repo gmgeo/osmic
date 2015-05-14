@@ -53,8 +53,6 @@ tram-stop:
   fill: "#0092da"
 bus-stop:
   fill: "#0092da"
-bus-stop:
-  fill: "#0092da"
 bus-station:
   fill: "#0092da"
 lighthouse:
@@ -68,6 +66,8 @@ shared-car:
 rental-car:
   fill: "#0092da"
 fuel:
+  fill: "#0092da"
+subway-entrance:
   fill: "#0092da"
 hostel:
   fill: "#0092da"
@@ -94,6 +94,8 @@ dentist:
 mast:
   fill: "#555555"
 mast-communications:
+  fill: "#555555"
+water-tower:
   fill: "#555555"
 christian:
   fill: "#000000"
@@ -141,11 +143,15 @@ furniture:
   fill: "#ac39ac"
 gift:
   fill: "#ac39ac"
+greengrocer:
+  fill: "#ac39ac"
 hairdresser:
   fill: "#ac39ac"
 jewellery:
   fill: "#ac39ac"
 kiosk:
+  fill: "#ac39ac"
+ice-cream:
   fill: "#ac39ac"
 mobile-phone:
   fill: "#ac39ac"
