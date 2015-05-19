@@ -67,6 +67,8 @@ rental-car:
   fill: "#0092da"
 fuel:
   fill: "#0092da"
+charging-station:
+  fill: "#0092da"
 subway-entrance:
   fill: "#0092da"
 hostel:

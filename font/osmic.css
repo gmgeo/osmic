@@ -47,6 +47,7 @@
 .oc-castle-manor:before,
 .oc-castle-palace:before,
 .oc-castle-stately:before,
+.oc-charging-station:before,
 .oc-christian:before,
 .oc-christian-orthodox:before,
 .oc-cinema:before,
@@ -78,6 +79,7 @@
 .oc-hotel:before,
 .oc-hunting-stand:before,
 .oc-ice-cream:before,
+.oc-icons:before,
 .oc-information:before,
 .oc-jewellery:before,
 .oc-jewish:before,
@@ -172,6 +174,7 @@
 .oc-castle-manor:before { content: "\f115"; }
 .oc-castle-palace:before { content: "\f116"; }
 .oc-castle-stately:before { content: "\f117"; }
+.oc-charging-station:before { content: "\f16f"; }
 .oc-christian:before { content: "\f118"; }
 .oc-christian-orthodox:before { content: "\f119"; }
 .oc-cinema:before { content: "\f11a"; }
@@ -203,6 +206,7 @@
 .oc-hotel:before { content: "\f134"; }
 .oc-hunting-stand:before { content: "\f135"; }
 .oc-ice-cream:before { content: "\f136"; }
+.oc-icons:before { content: "\f170"; }
 .oc-information:before { content: "\f137"; }
 .oc-jewellery:before { content: "\f138"; }
 .oc-jewish:before { content: "\f139"; }
