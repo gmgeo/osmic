@@ -61,6 +61,8 @@
 .oc-drinking-water:before,
 .oc-electronics:before,
 .oc-embassy:before,
+.oc-entrance:before,
+.oc-exit:before,
 .oc-fast-food:before,
 .oc-ferry:before,
 .oc-fire-station:before,
@@ -188,6 +190,8 @@
 .oc-drinking-water:before { content: "\f122"; }
 .oc-electronics:before { content: "\f123"; }
 .oc-embassy:before { content: "\f124"; }
+.oc-entrance:before { content: "\f171"; }
+.oc-exit:before { content: "\f172"; }
 .oc-fast-food:before { content: "\f125"; }
 .oc-ferry:before { content: "\f170"; }
 .oc-fire-station:before { content: "\f126"; }
