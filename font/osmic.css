@@ -62,6 +62,7 @@
 .oc-electronics:before,
 .oc-embassy:before,
 .oc-fast-food:before,
+.oc-ferry:before,
 .oc-fire-station:before,
 .oc-florist:before,
 .oc-fountain:before,
@@ -188,6 +189,7 @@
 .oc-electronics:before { content: "\f123"; }
 .oc-embassy:before { content: "\f124"; }
 .oc-fast-food:before { content: "\f125"; }
+.oc-ferry:before { content: "\f170"; }
 .oc-fire-station:before { content: "\f126"; }
 .oc-florist:before { content: "\f127"; }
 .oc-fountain:before { content: "\f128"; }
