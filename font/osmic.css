@@ -128,6 +128,7 @@
 .oc-spring:before,
 .oc-subway-entrance:before,
 .oc-supermarket:before,
+.oc-swimming:before,
 .oc-table:before,
 .oc-taoist:before,
 .oc-taxi:before,
@@ -257,6 +258,7 @@
 .oc-spring:before { content: "\f162"; }
 .oc-subway-entrance:before { content: "\f163"; }
 .oc-supermarket:before { content: "\f164"; }
+.oc-swimming:before { content: "\f173"; }
 .oc-table:before { content: "\f165"; }
 .oc-taoist:before { content: "\f166"; }
 .oc-taxi:before { content: "\f167"; }

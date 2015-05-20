@@ -13,6 +13,7 @@ input_dirs:
   - "outdoor"
   - "religious"
   - "shop"
+  - "sports"
   - "tourism"
   - "transport"
 
