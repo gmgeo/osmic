@@ -34,7 +34,7 @@
      id="canvas"
      style="fill:none;stroke:none;visibility:hidden" />
   <path
-     d="M 0,0 0,14 9,14 9,10 7,10 7,12 2,12 2,2 7,2 7,4 9,4 9,0 0,0 z m 10,3.5 0,2.25 -5,0 0,2.5 5,0 0,2.25 L 14,7 10,3.5 z"
+     d="M 0,0 0,14 9,14 9,10 7,10 7,12 2,12 2,2 7,2 7,4 9,4 9,0 z m 10,3.5 0,2.25 -6,0 0,2.5 6,0 0,2.25 4,-3.5 z"
      id="exit"
      style="fill:#000000;fill-opacity:1;stroke:none" />
 </svg>
