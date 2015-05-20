@@ -34,7 +34,7 @@
      id="canvas"
      style="fill:none;stroke:none;visibility:hidden" />
   <path
-     d="m 1,11 0,-8 6,4 6,-4 0,8 z"
+     d="m 2,10 0,-6 5,3 5,-3 0,6 z"
      id="saddle"
      style="fill:#000000;fill-opacity:1;stroke:none" />
 </svg>
