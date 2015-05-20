@@ -138,7 +138,8 @@
 .oc-tram-stop:before,
 .oc-waste-basket:before,
 .oc-watchtower:before,
-.oc-water-tower:before {
+.oc-water-tower:before,
+.oc-waterfall:before {
   display: inline-block;
   font-family: "osmic";
   font-style: normal;
@@ -269,3 +270,4 @@
 .oc-waste-basket:before { content: "\f16c"; }
 .oc-watchtower:before { content: "\f16d"; }
 .oc-water-tower:before { content: "\f16e"; }
+.oc-waterfall:before { content: "\f174"; }
