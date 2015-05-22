@@ -3,7 +3,7 @@
 # export to SVG or PNG (incl. retina output), re-colour, add padding, add halo, generate sprites
 
 from __future__ import print_function
-import argparse, copy, glob, lxml.etree, math, os, re, subprocess, sys, yaml
+import argparse, copy, glob, lxml.etree, math, os, re, shutil, subprocess, sys, yaml
 
 def main():
 	parser = argparse.ArgumentParser(description='Exports Osmic (OSM Icons).')
@@ -29,6 +29,18 @@ def main():
 			os.chdir(os.path.dirname(os.path.abspath(args.configfile)))
 	else:
 		os.chdir(os.path.dirname(os.path.abspath(args.configfile)))
+
+	# empty output directory if it exists and config param is set
+	if config['empty_output'] == True and os.path.exists(config['output']):
+		for the_file in os.listdir(config['output']):
+			file_path = os.path.join(config['output'], the_file)
+			try:
+				if os.path.isfile(file_path):
+					os.unlink(file_path)
+				elif os.path.isdir(file_path):
+					shutil.rmtree(file_path)
+			except:
+				pass
 
 	if not isinstance(config['retina'], bool):
 		config['retina'] = False
@@ -87,38 +99,43 @@ def main():
 					# when generating sprites only the fill colour can be overridden
 					if not config['format'] == 'sprite' or option == 'fill':
 						mod_config[option] = config[icon_id][option]
-
-			# do modifications
-			(size, icon) = modifySVG(mod_config, icon_id, size, icon)	
-
-			# create subdirs
-			if not config['format'] == 'font':
-				icon_out_path = os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.svg')
-			else:
-				# remove subdirs and size info for font output
-				icon_out_path = os.path.join(config['output'], icon_id + '.svg')
-		
-			if not os.path.exists(os.path.dirname(icon_out_path)):
-				os.makedirs(os.path.dirname(icon_out_path))
-
-			# save modified file
+			
 			try:
-				iconfile = open(icon_out_path, 'w')
-				iconfile.write(icon)
-				iconfile.close()
-			except IOError:
-				print('Could not save the modified file ' + icon_out_path + '.')
-				continue
+				# do modifications
+				(size, icon) = modifySVG(mod_config, icon_id, size, icon)	
 
-			num_icons += 1
-
-			if config['format'] not in ['svg', 'png', 'sprite', 'font']:
-				print('Format must be either svg, png, sprite or font. Defaulting to svg.')
+				# create subdirs
+				if not config['format'] == 'font':
+					icon_out_path = os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.svg')
+				else:
+					# remove subdirs and size info for font output
+					icon_out_path = os.path.join(config['output'], icon_id + '.svg')
 		
-			# if PNG export generate PNG file and delete modified SVG
-			if config['format'] == 'png':
-				exportPNG(icon_out_path, os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png'), config['dpi'], config['retina'])
-				os.remove(icon_out_path)
+				if not os.path.exists(os.path.dirname(icon_out_path)):
+					os.makedirs(os.path.dirname(icon_out_path))
+
+				# save modified file
+				try:
+					iconfile = open(icon_out_path, 'w')
+					iconfile.write(icon)
+					iconfile.close()
+				except IOError:
+					print('Could not save the modified file ' + icon_out_path + '.')
+					continue
+
+				num_icons += 1
+
+				if config['format'] not in ['svg', 'png', 'sprite', 'font']:
+					print('Format must be either svg, png, sprite or font. Defaulting to svg.')
+		
+				# if PNG export generate PNG file and delete modified SVG
+				if config['format'] == 'png':
+					exportPNG(icon_out_path, os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png'), config['dpi'], config['retina'])
+					os.remove(icon_out_path)
+			except Exception, e:
+				print(e)
+				continue
+			
 			
 	if config['format'] == 'font':
 		exportFont(config['output'], config['font']['output'], size)
@@ -258,6 +275,9 @@ def defaultValues(config):
 	if not 'output' in config:
 		config['output'] = os.path.join(os.getcwd(), 'export')
 	
+	if not 'empty_output' in config:
+		config['empty_output'] = False
+	
 	if not 'format' in config:
 		config['format'] = 'png'
 	
@@ -325,6 +345,14 @@ def modifySVG(config, icon_id, size, icon):
 	xpEval = lxml.etree.XPathEvaluator(xml)
 	xpEval.register_namespace('def', 'http://www.w3.org/2000/svg')
 
+	#sanity checks
+	paths = xpEval("//def:path")
+	if len(paths) > 1:
+		raise Exception("Icon '"+icon_id+"' contains more than one path. Skipping.")
+	if paths[0].get("id") == None:
+		raise Exception("Icon '"+icon_id+"' contains no path with id attribute. Skipping.")
+	if paths[0].get("id") != icon_id:
+		raise Exception("Icon file name ("+icon_id+") and path id attribute ("+paths[0].get("id")+") do not match. Skipping.")
 
 	# set padding of icon
 	padding = 0

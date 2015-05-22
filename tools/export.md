@@ -33,6 +33,8 @@ In the following all possible parameters are listed. All of them are optional.
 
 * `output` - specify the output base directory, if not specified it defaults to `./export`, can be either an absolute or relative path
 
+* `empty_output` - specify whether the output base directory should be emptied of all contents, the value must be either `true` or `false`, if not specified it defaults to `false`, *WARNING*: deletes all files in the output base directory if it already exists, **be careful** with existing data as all sample config files currently use this option!
+
 * `format` - is either `png`, `svg`, `sprite` or `font`, if not specified it defaults to `png`
 
 * `dpi` - specify the resolution in dots per inch (dpi), if not specified it defaults to `90`
