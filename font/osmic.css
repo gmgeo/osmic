@@ -136,6 +136,7 @@
 .oc-theatre:before,
 .oc-toilets:before,
 .oc-town-hall:before,
+.oc-toys:before,
 .oc-tram-stop:before,
 .oc-tree-coniferous:before,
 .oc-tree-deciduous:before,
@@ -271,6 +272,7 @@
 .oc-theatre:before { content: "\f168"; }
 .oc-toilets:before { content: "\f169"; }
 .oc-town-hall:before { content: "\f16a"; }
+.oc-toys:before { content: "\f17a"; }
 .oc-tram-stop:before { content: "\f16b"; }
 .oc-tree-coniferous:before { content: "\f177"; }
 .oc-tree-deciduous:before { content: "\f176"; }
