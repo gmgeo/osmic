@@ -144,7 +144,8 @@
 .oc-waste-basket:before,
 .oc-watchtower:before,
 .oc-water-tower:before,
-.oc-waterfall:before {
+.oc-waterfall:before,
+.oc-windmill:before {
   display: inline-block;
   font-family: "osmic";
   font-style: normal;
@@ -281,3 +282,4 @@
 .oc-watchtower:before { content: "\f16d"; }
 .oc-water-tower:before { content: "\f16e"; }
 .oc-waterfall:before { content: "\f174"; }
+.oc-windmill:before { content: "\f17b"; }
