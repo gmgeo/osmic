@@ -47,6 +47,7 @@
 .oc-castle-manor:before,
 .oc-castle-palace:before,
 .oc-castle-stately:before,
+.oc-cemetery:before,
 .oc-charging-station:before,
 .oc-christian:before,
 .oc-christian-orthodox:before,
@@ -184,6 +185,7 @@
 .oc-castle-manor:before { content: "\f115"; }
 .oc-castle-palace:before { content: "\f116"; }
 .oc-castle-stately:before { content: "\f117"; }
+.oc-cemetery:before { content: "\f17c"; }
 .oc-charging-station:before { content: "\f16f"; }
 .oc-christian:before { content: "\f118"; }
 .oc-christian-orthodox:before { content: "\f119"; }
