@@ -62,6 +62,7 @@
 .oc-drinking-water:before,
 .oc-electronics:before,
 .oc-embassy:before,
+.oc-emergency-phone:before,
 .oc-entrance:before,
 .oc-exit:before,
 .oc-fast-food:before,
@@ -200,6 +201,7 @@
 .oc-drinking-water:before { content: "\f122"; }
 .oc-electronics:before { content: "\f123"; }
 .oc-embassy:before { content: "\f124"; }
+.oc-emergency-phone:before { content: "\f17d"; }
 .oc-entrance:before { content: "\f171"; }
 .oc-exit:before { content: "\f172"; }
 .oc-fast-food:before { content: "\f125"; }
