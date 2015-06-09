@@ -135,6 +135,7 @@
 .oc-table:before,
 .oc-taoist:before,
 .oc-taxi:before,
+.oc-telephone:before,
 .oc-theatre:before,
 .oc-toilets:before,
 .oc-town-hall:before,
@@ -274,6 +275,7 @@
 .oc-table:before { content: "\f165"; }
 .oc-taoist:before { content: "\f166"; }
 .oc-taxi:before { content: "\f167"; }
+.oc-telephone:before { content: "\f17e"; }
 .oc-theatre:before { content: "\f168"; }
 .oc-toilets:before { content: "\f169"; }
 .oc-town-hall:before { content: "\f16a"; }

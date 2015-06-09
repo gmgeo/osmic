@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="0 0 14 14"
+   id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <rect
+     width="14"
+     height="14"
+     x="0"
+     y="0"
+     id="canvas"
+     style="fill:none;stroke:none;visibility:hidden" />
+  <path
+     d="M 2,8 C 1.0118212,8.9881788 0.56004859,10.573569 1.5487288,11.552966 L 2,12 5,9 5,7.5 7.5,5 9,5 12,2 11.489407,1.512712 C 10.513874,0.58170546 8.9807634,1.0192366 8,2 z m 0.7676058,4.760016 0.3387857,0.352887 c 0,0 0.8501683,0.07591 1.2889221,-0.356167 L 5.789013,11.384242 C 6.1708853,10.982259 6.0963283,10.079683 6.0963283,10.079683 L 5.7575428,9.7267956 z M 9.7606744,5.7724493 10.09946,6.1253355 c 0,0 0.869736,0.1575411 1.264351,-0.2310704 L 12.75751,4.5217711 C 13.152395,4.1328936 13.049996,3.0985676 13.049996,3.0985676 L 12.71121,2.7456814 z"
+     id="telephone"
+     style="color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+</svg>
