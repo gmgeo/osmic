@@ -69,6 +69,7 @@
 .oc-ferry:before,
 .oc-fire-station:before,
 .oc-florist:before,
+.oc-fort:before,
 .oc-fountain:before,
 .oc-fuel:before,
 .oc-furniture:before,
@@ -209,6 +210,7 @@
 .oc-ferry:before { content: "\f170"; }
 .oc-fire-station:before { content: "\f126"; }
 .oc-florist:before { content: "\f127"; }
+.oc-fort:before { content: "\f17f"; }
 .oc-fountain:before { content: "\f128"; }
 .oc-fuel:before { content: "\f129"; }
 .oc-furniture:before { content: "\f12a"; }
