@@ -31,4 +31,4 @@ global_style:
     stroke_fill: "#1a1a1a"
     stroke_width: 1
     rounded: 3
-    size: 18
+    padding: 2

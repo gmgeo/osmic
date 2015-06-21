@@ -75,11 +75,10 @@ def main():
 			if name_match is not None:
 				icon_id = name_match.group(1)
 				size = int(name_match.group(2))
-			
-			
+
 			if (size_filter > 0 and size != size_filter):
 				continue
-		
+
 			# read in file contents
 			try:
 				iconfile = open(icon_path)
@@ -99,10 +98,10 @@ def main():
 					# when generating sprites only the fill colour can be overridden
 					if not config['format'] == 'sprite' or option == 'fill':
 						mod_config[option] = config[icon_id][option]
-			
+
 			try:
 				# do modifications
-				(size, icon) = modifySVG(mod_config, icon_id, size, icon)	
+				(size, icon) = modifySVG(mod_config, icon_id, size, icon)
 
 				# create subdirs
 				if not config['format'] == 'font':
@@ -110,7 +109,7 @@ def main():
 				else:
 					# remove subdirs and size info for font output
 					icon_out_path = os.path.join(config['output'], icon_id + '.svg')
-		
+
 				if not os.path.exists(os.path.dirname(icon_out_path)):
 					os.makedirs(os.path.dirname(icon_out_path))
 
@@ -127,7 +126,7 @@ def main():
 
 				if config['format'] not in ['svg', 'png', 'sprite', 'font']:
 					print('Format must be either svg, png, sprite or font. Defaulting to svg.')
-		
+
 				# if PNG export generate PNG file and delete modified SVG
 				if config['format'] == 'png':
 					exportPNG(icon_out_path, os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png'), config['dpi'], config['retina'])
@@ -135,18 +134,18 @@ def main():
 			except Exception, e:
 				print(e)
 				continue
-			
-			
+
+
 	if config['format'] == 'font':
 		exportFont(config['output'], config['font']['output'], size)
-	
+
 	# generate sprite
 	if config['format'] == 'sprite':
 		sprite_cols = 12
 		if 'cols' in config['sprite']:
 			try:
 				sprite_cols = int(config['sprite']['cols'])
-				
+
 				if sprite_cols <= 0:
 					print('A negative number of sprite columns or zero columns are not allowed. Defaulting to 12 columns.')
 			except ValueError:
@@ -156,7 +155,7 @@ def main():
 		if 'outer_padding' in config['sprite']:
 			try:
 				outer_padding = int(config['sprite']['outer_padding'])
-				
+
 				if outer_padding < 0:
 					print('A negative number of sprite outer padding is not allowed. Defaulting to a padding of 4.')
 			except ValueError:
@@ -166,7 +165,7 @@ def main():
 		if 'icon_padding' in config['sprite']:
 			try:
 				icon_padding = int(config['sprite']['icon_padding'])
-				
+
 				if icon_padding < 0:
 					print('A negative number of sprite icon padding is not allowed. Defaulting to a padding of 4.')
 			except ValueError:
@@ -183,7 +182,7 @@ def main():
 		if 'filename' in config['sprite']:
 			sprite_file_name = config['sprite']['filename']
 		sprite_out_path = os.path.join(config['output'], sprite_file_name)
-		
+
 		sprite_width = outer_padding * 2 + sprite_cols * (icon_padding * 2 + size)
 		sprite_height = outer_padding * 2 + (icon_padding * 2 + size) * math.ceil(float(num_icons) / sprite_cols)
 
@@ -204,7 +203,7 @@ def main():
 		row = 1
 		x = outer_padding + icon_padding
 		y = outer_padding + icon_padding
-		
+
 		for directory in config['input_dirs']:
 			dir_path = os.path.join(config['output'], directory)
 
@@ -214,7 +213,7 @@ def main():
 				if name_match is not None:
 					icon_id = name_match.group(1)
 					size = int(name_match.group(2))
-		
+
 				# read in file contents
 				try:
 					iconfile = open(icon_path)
@@ -231,12 +230,12 @@ def main():
 				for child in list(icon_xml):
 					if child.attrib['id'] != 'metadata8' and child.attrib['id'] != 'defs6':
 						icon_sprite.append(child)
-				
+
 				sprite.append(icon_sprite)
 
 				col += 1
 				x += size + icon_padding * 2
-				if col > sprite_cols:				
+				if col > sprite_cols:
 					row += 1
 					col = 1
 					x = outer_padding + icon_padding
@@ -244,7 +243,7 @@ def main():
 
 				# after adding to sprite delete SVG
 				os.remove(icon_path)
-			
+
 			# after finishing directory remove it
 			if os.path.isdir(dir_path):
 				os.rmdir(dir_path)
@@ -259,7 +258,7 @@ def main():
 
 		# export sprite as PNG
 		exportPNG(sprite_out_path+'.svg', sprite_out_path+'.png', config['dpi'], config['retina']) 
-		
+
 	return
 
 
@@ -268,19 +267,19 @@ def defaultValues(config):
 	# config default values
 	if not 'input_dirs' in config:
 		config['input_dirs'] = ''
-	
+
 	if not 'input' in config:
 		config['input'] = os.getcwd()
-	
+
 	if not 'output' in config:
 		config['output'] = os.path.join(os.getcwd(), 'export')
-	
+
 	if not 'empty_output' in config:
 		config['empty_output'] = False
-	
+
 	if not 'format' in config:
 		config['format'] = 'png'
-	
+
 	if not 'retina' in config:
 		config['retina'] = False
 
@@ -316,7 +315,7 @@ def exportPNG(source, destination, dpi, retina):
 			except OSError:
 				# if neither is installed print a message and exit
 				sys.exit('Export to PNG requires either rsvg or Inkscape. Please install one of those. rsvg seems to be faster (if you just want to export). Exiting.')
-		
+
 		if not retina:
 			break;
 		else:
@@ -324,7 +323,7 @@ def exportPNG(source, destination, dpi, retina):
 			# append @2x to file name
 			split_name = os.path.splitext(destination)
 			destination = split_name[0]+'@2x'+split_name[1]
-	
+
 	return
 
 
@@ -371,20 +370,16 @@ def modifySVG(config, icon_id, size, icon):
 	# add shield
 	shield_size = size
 	if 'shield' in config:
-		if 'size' in config['shield']:
+		if 'padding' in config['shield']:
 			try:
-				shield_size = int(config['shield']['size'])
-				
-				if shield_size > 0 and shield_size >= size:
-					if not (shield_size - size) % 2 == 0:
-						shield_size -= 1
-						print('Shield: For effective centering it is required that the size increase is an even number. Making it even by making the shield smaller.')
+				shield_padding = int(config['shield']['padding'])
+
+				if shield_padding > 0:
+					shield_size += int(config['shield']['padding']) * 2
 				else:
-					print('Shield sizes < 0 or smaller than the icon size are not allowed. Defaulting to icon size.')
+					print('Negative shield padding is not allowed. Defaulting to 0.')
 			except ValueError:
-				print('Shield size is not a number. Defaulting to icon size.')
-		else:
-			print('Shield size not specified. Defaulting to icon size.')
+				print('Shield padding is not a number. Defaulting to 0.')
 
 		shield_rounded = 0
 		if 'rounded' in config['shield']:
@@ -408,13 +403,13 @@ def modifySVG(config, icon_id, size, icon):
 
 		stroke = 'stroke:none;'
 		stroke_fill = None
-		if 'stroke-fill' in config['shield']:
+		if 'stroke_fill' in config['shield']:
 			stroke_fill = config['shield']['stroke_fill']
 			if re.match('^#[0-9a-f]{6}$', stroke_fill) == None:
 				print('The specified shield stroke fill is invalid. Format it as HEX (e.g. #1a1a1a).')
 
 		stroke_width = None
-		if 'stroke-width' in config['shield']:
+		if 'stroke_width' in config['shield']:
 			try:
 				stroke_width = float(config['shield']['stroke_width'])
 
@@ -446,7 +441,7 @@ def modifySVG(config, icon_id, size, icon):
 
 		canvas = xpEval("//def:rect[@id='canvas']")[0]
 		canvas.addnext(shield)
-	
+
 
 	# add icon halo
 	halo_width = 0
@@ -498,7 +493,7 @@ def modifySVG(config, icon_id, size, icon):
 		else:
 			print('The specified fill is invalid. Format it as HEX (e.g. #1a1a1a).')
 
-	
+
 	# adjust document and canvas size, icon position
 	shieldIncrease = shield_size - size
 	size += int(max((shield_size - size), halo_width * 2) + padding * 2)

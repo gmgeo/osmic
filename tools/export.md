@@ -57,7 +57,7 @@ In the following all possible parameters are listed. All of them are optional.
     * `stroke_fill` - specify a hexadecimal colour value for the stroke fill e.g. `#efefef`, if not specified no stroke will be drawn
     * `stroke_width` - specify a stroke width in pixels, only values > 0 are allowed, if not specified no stroke will be drawn
     * `rounded` - specify the corner radius of the shield, only values > 0 are allowed, if not specified defaults to `0` (unrounded corners)
-    * `size` - specify the width/height of the shield, only sizes > 0 and > the base canvas size (14px) are allowed, will round to the next smaller even number if an odd number is specified
+    * `padding` - specify number of pixels of space between the icon shape and shield border, the icon stays centred all the times, only values > 0 are allowed, defaults to `0`
 
 * `sprite` - a list of styles such as columns and padding for generating sprites, makes only sense to specify for `format: "sprite"`, it is ignored otherwise
   * `cols` - specify the number of columns of the sprite i.e. how many icons will be displayed in one row, only values > 0 are allowed, if not specified defaults to `12`
