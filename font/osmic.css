@@ -30,6 +30,7 @@
 .oc-bakery:before,
 .oc-bank:before,
 .oc-bar:before,
+.oc-beauty:before,
 .oc-bench:before,
 .oc-bicycle:before,
 .oc-biergarten:before,
@@ -174,6 +175,7 @@
 .oc-bakery:before { content: "\f104"; }
 .oc-bank:before { content: "\f105"; }
 .oc-bar:before { content: "\f106"; }
+.oc-beauty:before { content: "\f183"; }
 .oc-bench:before { content: "\f107"; }
 .oc-bicycle:before { content: "\f108"; }
 .oc-biergarten:before { content: "\f109"; }
