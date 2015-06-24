@@ -54,6 +54,7 @@
 .oc-cinema:before,
 .oc-city-gate:before,
 .oc-clothes:before,
+.oc-confectionary:before,
 .oc-convenience:before,
 .oc-courthouse:before,
 .oc-dentist:before,
@@ -195,6 +196,7 @@
 .oc-cinema:before { content: "\f11a"; }
 .oc-city-gate:before { content: "\f11b"; }
 .oc-clothes:before { content: "\f11c"; }
+.oc-confectionary:before { content: "\f180"; }
 .oc-convenience:before { content: "\f11d"; }
 .oc-courthouse:before { content: "\f11e"; }
 .oc-dentist:before { content: "\f11f"; }
