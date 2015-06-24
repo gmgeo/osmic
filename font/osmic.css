@@ -94,6 +94,7 @@
 .oc-jewellery:before,
 .oc-jewish:before,
 .oc-kiosk:before,
+.oc-laundry:before,
 .oc-library:before,
 .oc-lighthouse:before,
 .oc-mast:before,
@@ -241,6 +242,7 @@
 .oc-jewellery:before { content: "\f138"; }
 .oc-jewish:before { content: "\f139"; }
 .oc-kiosk:before { content: "\f13a"; }
+.oc-laundry:before { content: "\f186"; }
 .oc-library:before { content: "\f13b"; }
 .oc-lighthouse:before { content: "\f13c"; }
 .oc-mast:before { content: "\f13d"; }
