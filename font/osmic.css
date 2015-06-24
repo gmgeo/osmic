@@ -41,6 +41,7 @@
 .oc-cafe:before,
 .oc-camping:before,
 .oc-car:before,
+.oc-car-parts:before,
 .oc-caravan:before,
 .oc-castle-defensive:before,
 .oc-castle-fortress:before,
@@ -184,6 +185,7 @@
 .oc-cafe:before { content: "\f10f"; }
 .oc-camping:before { content: "\f110"; }
 .oc-car:before { content: "\f111"; }
+.oc-car-parts:before { content: "\f182"; }
 .oc-caravan:before { content: "\f112"; }
 .oc-castle-defensive:before { content: "\f113"; }
 .oc-castle-fortress:before { content: "\f114"; }
