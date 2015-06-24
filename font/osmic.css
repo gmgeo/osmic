@@ -83,6 +83,7 @@
 .oc-guidepost:before,
 .oc-hairdresser:before,
 .oc-heliport:before,
+.oc-hifi:before,
 .oc-hinduist:before,
 .oc-hospital:before,
 .oc-hostel:before,
@@ -229,6 +230,7 @@
 .oc-guidepost:before { content: "\f12e"; }
 .oc-hairdresser:before { content: "\f12f"; }
 .oc-heliport:before { content: "\f130"; }
+.oc-hifi:before { content: "\f185"; }
 .oc-hinduist:before { content: "\f131"; }
 .oc-hospital:before { content: "\f132"; }
 .oc-hostel:before { content: "\f133"; }
