@@ -110,6 +110,7 @@
 .oc-peak:before,
 .oc-pet:before,
 .oc-pharmacy:before,
+.oc-photo:before,
 .oc-place-of-worship:before,
 .oc-playground:before,
 .oc-police:before,
@@ -252,6 +253,7 @@
 .oc-peak:before { content: "\f14b"; }
 .oc-pet:before { content: "\f14c"; }
 .oc-pharmacy:before { content: "\f14d"; }
+.oc-photo:before { content: "\f181"; }
 .oc-place-of-worship:before { content: "\f14e"; }
 .oc-playground:before { content: "\f14f"; }
 .oc-police:before { content: "\f150"; }
