@@ -104,6 +104,7 @@
 .oc-motel:before,
 .oc-museum:before,
 .oc-muslim:before,
+.oc-news:before,
 .oc-nightclub:before,
 .oc-optician:before,
 .oc-parking-bicycle:before,
@@ -249,6 +250,7 @@
 .oc-motel:before { content: "\f143"; }
 .oc-museum:before { content: "\f144"; }
 .oc-muslim:before { content: "\f145"; }
+.oc-news:before { content: "\f184"; }
 .oc-nightclub:before { content: "\f146"; }
 .oc-optician:before { content: "\f147"; }
 .oc-parking-bicycle:before { content: "\f148"; }
