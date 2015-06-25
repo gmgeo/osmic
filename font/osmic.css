@@ -32,6 +32,7 @@
 .oc-bar:before,
 .oc-beauty:before,
 .oc-bench:before,
+.oc-beverages:before,
 .oc-bicycle:before,
 .oc-biergarten:before,
 .oc-books:before,
@@ -180,6 +181,7 @@
 .oc-bar:before { content: "\f106"; }
 .oc-beauty:before { content: "\f183"; }
 .oc-bench:before { content: "\f107"; }
+.oc-beverages:before { content: "\f187"; }
 .oc-bicycle:before { content: "\f108"; }
 .oc-biergarten:before { content: "\f109"; }
 .oc-books:before { content: "\f10a"; }
