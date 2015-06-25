@@ -139,6 +139,7 @@
 .oc-shoes:before,
 .oc-sikhist:before,
 .oc-spring:before,
+.oc-stationery:before,
 .oc-subway-entrance:before,
 .oc-supermarket:before,
 .oc-swimming:before,
@@ -289,6 +290,7 @@
 .oc-shoes:before { content: "\f160"; }
 .oc-sikhist:before { content: "\f161"; }
 .oc-spring:before { content: "\f162"; }
+.oc-stationery:before { content: "\f189"; }
 .oc-subway-entrance:before { content: "\f163"; }
 .oc-supermarket:before { content: "\f164"; }
 .oc-swimming:before { content: "\f173"; }
