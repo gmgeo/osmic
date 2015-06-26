@@ -9,6 +9,8 @@ Icons are heavily inspired by
 * Nori (as referenced in [hotosm/HDM-CartoCSS](https://github.com/hotosm/HDM-CartoCSS/blob/master/icons/poi/_nori.svg))
 * Open-SVG-Map-Icons ([twain47/Open-SVG-Map-Icons](https://github.com/twain47/Open-SVG-Map-Icons))
 
+Currently icons from this collection form a major part of [OpenStreetMap standard tile layer](https://github.com/gravitystorm/openstreetmap-carto)'s icons.
+
 ## Icon Features
 All icons should adhere to the following features
 * flat (single colour, no gradients, no outlines)
