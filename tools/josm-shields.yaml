@@ -174,6 +174,30 @@ shoes:
   fill: "#ac39ac"
 supermarket:
   fill: "#ac39ac"
+confectionary:
+  fill: "#ac39ac"
+photo:
+  fill: "#ac39ac"
+car-parts:
+  fill: "#ac39ac"
+beauty:
+  fill: "#ac39ac"
+news:
+  fill: "#ac39ac"
+hifi:
+  fill: "#ac39ac"
+laundry:
+  fill: "#ac39ac"
+beverages:
+  fill: "#ac39ac"
+stationery:
+  fill: "#ac39ac"
+toys:
+  fill: "#ac39ac"
+garden-centre:
+  fill: "#ac39ac"
+copyshop:
+  fill: "#ac39ac"
 repair-car:
   fill: "#ac39ac"
 repair-bicycle:
