@@ -1,0 +1,34 @@
+input: "../"
+
+input_dirs:
+  - "accomodation"
+  - "administration"
+  - "amenity"
+  - "eat-drink"
+  - "emergency"
+  - "energy"
+  - "health"
+  - "money"
+  - "nature"
+  - "outdoor"
+  - "religious"
+  - "shop"
+  - "sports"
+  - "tourism"
+  - "transport"
+
+output: "../export"
+# WARNING: deletes all files within output directory if it exists
+empty_output: true
+format: "png"
+retina: true
+subdirs: false
+
+global_style:
+  padding: 1
+  fill: "#1a1a1a"
+
+  halo:
+    fill: "#ffffff"
+    width: 1
+    opacity: 0.3

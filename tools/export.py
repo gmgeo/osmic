@@ -105,7 +105,10 @@ def main():
 
 				# create subdirs
 				if not config['format'] == 'font':
-					icon_out_path = os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.svg')
+					if config['subdirs'] == True:
+						icon_out_path = os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.svg')
+					else:
+						icon_out_path = os.path.join(config['output'], icon_id + '-' + str(size) + '.svg')
 				else:
 					# remove subdirs and size info for font output
 					icon_out_path = os.path.join(config['output'], icon_id + '.svg')
@@ -129,7 +132,12 @@ def main():
 
 				# if PNG export generate PNG file and delete modified SVG
 				if config['format'] == 'png':
-					exportPNG(icon_out_path, os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png'), config['dpi'], config['retina'])
+					if config['subdirs'] == True:
+						destination = os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png')
+					else:
+						destination = os.path.join(config['output'], icon_id + '-' + str(size) + '.png')
+
+					exportPNG(icon_out_path, destination, config['dpi'], config['retina'])
 					os.remove(icon_out_path)
 			except Exception, e:
 				print(e)
@@ -282,6 +290,9 @@ def defaultValues(config):
 
 	if not 'retina' in config:
 		config['retina'] = False
+
+	if not 'subdirs' in config:
+		config['subdirs'] = True
 
 	if not 'dpi' in config:
 		config['dpi'] = 90

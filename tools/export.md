@@ -13,9 +13,11 @@ This Python export script ([tools/export.py](https://github.com/nebulon42/osmic/
 All parameters can be changed through a YAML configuration file. There are several examples in the script folder:
 
 * [font.yaml](https://github.com/nebulon42/osmic/blob/master/tools/font.yaml) creates an icon font of all icons.
+* [josm-shields.yaml](https://github.com/nebulon42/osmic/blob/master/tools/josm-shields.yaml) exports coloured icons with shields for JOSM.
 * [osm-carto-png.yaml](https://github.com/nebulon42/osmic/blob/master/tools/osm-carto-png.yaml) exports icons as PNG and re-colours them according to the colour scheme of [openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto).
 * [osm-carto-svg.yaml](https://github.com/nebulon42/osmic/blob/master/tools/osm-carto-svg.yaml) exports icons in SVG format like they are currently used in [openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto) i.e. with 1px padding and without halo.
 * [osm-carto-svg-color.yaml](https://github.com/nebulon42/osmic/blob/master/tools/osm-carto-svg-color.yaml) exports icons in SVG format like they are currently used in [openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto) i.e. with 1px padding and without halo and re-colours them according to their colour scheme.
+* [overpass-turbo-png.yaml](https://github.com/nebulon42/osmic/blob/master/tools/overpass-turbo-png.yaml) exports icons in PNG format for Overpass Turbo, all in the same colour with halos, retina version and without subdirectories.
 * [shields.yaml](https://github.com/nebulon42/osmic/blob/master/tools/shields.yaml) exports icons with shields.
 * [sprites.yaml](https://github.com/nebulon42/osmic/blob/master/tools/sprites.yaml) exports the icons in a sprite like [this one](https://github.com/nebulon42/osmic/blob/master/icons@2x.png).
 
@@ -40,6 +42,8 @@ In the following all possible parameters are listed. All of them are optional.
 * `dpi` - specify the resolution in dots per inch (dpi), if not specified it defaults to `90`
 
 * `retina` - specify whether double sized (retina) versions should be generated, the value must be either `true` or `false`, if not specified it defaults to `false`, makes only sense to specify for `format: "png"` or `format: "sprite"`, it is ignored otherwise
+
+* `subdirs` - specify whether the icons will be kept in their subdirectories or are exported all in the same directory, if not specified it defaults to `true` (meaning icons are kept in their subdirectories)
 
 * `global_style` - a list of global styles such as padding, halo, fill colour etc. for each icon, the following parameters are sub-elements of `global_style` or an icon id element e.g. `hunting-stand`.
 
