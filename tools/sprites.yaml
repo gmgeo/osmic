@@ -1,7 +1,7 @@
 input: "../"
 
 input_dirs:
-  - "accomodation"
+  - "accommodation"
   - "administration"
   - "amenity"
   - "eat-drink"
