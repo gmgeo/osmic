@@ -57,7 +57,7 @@
 .oc-cinema:before,
 .oc-city-gate:before,
 .oc-clothes:before,
-.oc-confectionary:before,
+.oc-confectionery:before,
 .oc-convenience:before,
 .oc-copyshop:before,
 .oc-courthouse:before,
@@ -154,6 +154,7 @@
 .oc-tram-stop:before,
 .oc-tree-coniferous:before,
 .oc-tree-deciduous:before,
+.oc-tree-unspecified:before,
 .oc-viewpoint:before,
 .oc-waste-basket:before,
 .oc-watchtower:before,
@@ -208,7 +209,7 @@
 .oc-cinema:before { content: "\f11a"; }
 .oc-city-gate:before { content: "\f11b"; }
 .oc-clothes:before { content: "\f11c"; }
-.oc-confectionary:before { content: "\f180"; }
+.oc-confectionery:before { content: "\f18b"; }
 .oc-convenience:before { content: "\f11d"; }
 .oc-copyshop:before { content: "\f188"; }
 .oc-courthouse:before { content: "\f11e"; }
@@ -305,6 +306,7 @@
 .oc-tram-stop:before { content: "\f16b"; }
 .oc-tree-coniferous:before { content: "\f177"; }
 .oc-tree-deciduous:before { content: "\f176"; }
+.oc-tree-unspecified:before { content: "\f18a"; }
 .oc-viewpoint:before { content: "\f178"; }
 .oc-waste-basket:before { content: "\f16c"; }
 .oc-watchtower:before { content: "\f16d"; }
