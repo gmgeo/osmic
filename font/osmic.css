@@ -58,6 +58,7 @@
 .oc-city-gate:before,
 .oc-clock:before,
 .oc-clothes:before,
+.oc-computer:before,
 .oc-confectionery:before,
 .oc-convenience:before,
 .oc-copyshop:before,
@@ -211,6 +212,7 @@
 .oc-city-gate:before { content: "\f11b"; }
 .oc-clock:before { content: "\f18c"; }
 .oc-clothes:before { content: "\f11c"; }
+.oc-computer:before { content: "\f18d"; }
 .oc-confectionery:before { content: "\f18b"; }
 .oc-convenience:before { content: "\f11d"; }
 .oc-copyshop:before { content: "\f188"; }
