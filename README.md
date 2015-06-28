@@ -9,8 +9,6 @@ Icons are heavily inspired by
 * Nori (as referenced in [hotosm/HDM-CartoCSS](https://github.com/hotosm/HDM-CartoCSS/blob/master/icons/poi/_nori.svg))
 * Open-SVG-Map-Icons ([twain47/Open-SVG-Map-Icons](https://github.com/twain47/Open-SVG-Map-Icons))
 
-Currently icons from this collection form a major part of [OpenStreetMap standard tile layer](https://github.com/gravitystorm/openstreetmap-carto)'s icons.
-
 ## Icon Features
 All icons should adhere to the following features
 * flat (single colour, no gradients, no outlines)
@@ -39,6 +37,12 @@ With the Python export script ([tools/export.py](https://github.com/nebulon42/os
 by changing a YAML configuration file.
 
 Have a look at the [export guide](https://github.com/nebulon42/osmic/blob/master/tools/export.md) for more details.
+
+## Known Uses
+
+* [OpenStreetMap standard tile layer](https://github.com/gravitystorm/openstreetmap-carto): Icons from this collection form a major part of the style's icons.
+* [Overpass Turbo](https://github.com/tyrasd/overpass-turbo): Osmic is part of the available icon collections in the MapCSS feature.
+* [Osmic JOSM style](https://github.com/nebulon42/osmic-josm-style): A MapCSS style displaying icons from Osmic for JOSM. Some icons are also used in the JOSM standard style.
 
 ## How to contribute
 
