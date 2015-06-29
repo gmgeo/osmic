@@ -4,6 +4,7 @@ input_dirs:
   - "accommodation"
   - "administration"
   - "amenity"
+  - "barrier"
   - "eat-drink"
   - "emergency"
   - "energy"
@@ -27,8 +28,8 @@ global_style:
 
   shield:
     fill: "#ffffff"
-    rounded: 3
-    padding: 2
+    rounded: 2
+    padding: 1
 
 atm:
   fill: "#555555"
@@ -174,7 +175,9 @@ shoes:
   fill: "#ac39ac"
 supermarket:
   fill: "#ac39ac"
-confectionary:
+confectionery:
+  fill: "#ac39ac"
+computer:
   fill: "#ac39ac"
 photo:
   fill: "#ac39ac"

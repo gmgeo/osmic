@@ -4,6 +4,7 @@ input_dirs:
   - "accommodation"
   - "administration"
   - "amenity"
+  - "barrier"
   - "eat-drink"
   - "emergency"
   - "energy"

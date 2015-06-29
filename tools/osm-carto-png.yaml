@@ -4,6 +4,7 @@ input_dirs:
   - "accommodation"
   - "administration"
   - "amenity"
+  - "barrier"
   - "eat-drink"
   - "emergency"
   - "energy"
@@ -170,7 +171,9 @@ shoes:
   fill: "#ac39ac"
 supermarket:
   fill: "#ac39ac"
-confectionary:
+confectionery:
+  fill: "#ac39ac"
+computer:
   fill: "#ac39ac"
 photo:
   fill: "#ac39ac"

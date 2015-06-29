@@ -35,6 +35,7 @@
 .oc-beverages:before,
 .oc-bicycle:before,
 .oc-biergarten:before,
+.oc-bollard:before,
 .oc-books:before,
 .oc-buddhist:before,
 .oc-bus-station:before,
@@ -189,6 +190,7 @@
 .oc-beverages:before { content: "\f187"; }
 .oc-bicycle:before { content: "\f108"; }
 .oc-biergarten:before { content: "\f109"; }
+.oc-bollard:before { content: "\f18e"; }
 .oc-books:before { content: "\f10a"; }
 .oc-buddhist:before { content: "\f10b"; }
 .oc-bus-station:before { content: "\f10c"; }
