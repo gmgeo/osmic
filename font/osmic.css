@@ -102,6 +102,7 @@
 .oc-kiosk:before,
 .oc-laundry:before,
 .oc-library:before,
+.oc-lift-gate:before,
 .oc-lighthouse:before,
 .oc-mast:before,
 .oc-mast-communications:before,
@@ -258,6 +259,7 @@
 .oc-kiosk:before { content: "\f13a"; }
 .oc-laundry:before { content: "\f186"; }
 .oc-library:before { content: "\f13b"; }
+.oc-lift-gate:before { content: "\f190"; }
 .oc-lighthouse:before { content: "\f13c"; }
 .oc-mast:before { content: "\f13d"; }
 .oc-mast-communications:before { content: "\f13e"; }
