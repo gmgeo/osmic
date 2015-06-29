@@ -82,6 +82,7 @@
 .oc-fuel:before,
 .oc-furniture:before,
 .oc-garden-centre:before,
+.oc-gate:before,
 .oc-gift:before,
 .oc-government:before,
 .oc-greengrocer:before,
@@ -237,6 +238,7 @@
 .oc-fuel:before { content: "\f129"; }
 .oc-furniture:before { content: "\f12a"; }
 .oc-garden-centre:before { content: "\f179"; }
+.oc-gate:before { content: "\f18f"; }
 .oc-gift:before { content: "\f12b"; }
 .oc-government:before { content: "\f12c"; }
 .oc-greengrocer:before { content: "\f12d"; }
