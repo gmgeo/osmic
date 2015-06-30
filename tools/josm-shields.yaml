@@ -81,6 +81,8 @@ charging-station:
   fill: "#0092da"
 subway-entrance:
   fill: "#0092da"
+ford:
+  fill: "#0092da"
 hostel:
   fill: "#0092da"
 hotel:
