@@ -207,3 +207,15 @@ repair-car:
   fill: "#ac39ac"
 repair-bicycle:
   fill: "#ac39ac"
+tree-coniferous:
+  fill: "#367308"
+tree-deciduous:
+  fill: "#367308"
+tree-unspecified:
+  fill: "#367308"
+spring:
+  fill: "#0b74a9"
+waterfall:
+  fill: "#0b74a9"
+fountain:
+  fill: "#0b74a9"
