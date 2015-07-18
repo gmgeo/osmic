@@ -162,6 +162,7 @@
 .oc-tree-coniferous:before,
 .oc-tree-deciduous:before,
 .oc-tree-unspecified:before,
+.oc-veterinary:before,
 .oc-viewpoint:before,
 .oc-waste-basket:before,
 .oc-watchtower:before,
@@ -321,6 +322,7 @@
 .oc-tree-coniferous:before { content: "\f177"; }
 .oc-tree-deciduous:before { content: "\f176"; }
 .oc-tree-unspecified:before { content: "\f18a"; }
+.oc-veterinary:before { content: "\f194"; }
 .oc-viewpoint:before { content: "\f178"; }
 .oc-waste-basket:before { content: "\f16c"; }
 .oc-watchtower:before { content: "\f16d"; }
