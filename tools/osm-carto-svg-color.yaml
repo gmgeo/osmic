@@ -203,3 +203,5 @@ repair-car:
   fill: "#ac39ac"
 repair-bicycle:
   fill: "#ac39ac"
+veterinary:
+  fill: "#da0092"
