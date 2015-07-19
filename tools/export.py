@@ -6,6 +6,7 @@ from __future__ import print_function
 import argparse, copy, glob, lxml.etree, math, os, re, shutil, subprocess, sys, yaml
 
 def main():
+	print(os.getcwd())
 	parser = argparse.ArgumentParser(description='Exports Osmic (OSM Icons).')
 	parser.add_argument('configfile', metavar='config-file', help='the configuration file for the export')
 	args = parser.parse_args()
@@ -20,15 +21,9 @@ def main():
 
 	defaultValues(config)
 
-	# set basedir (if not specified this is always the location of the configuration file)
+	# set basedir (elvaluation from cwd, if not specified always cwd)
 	if 'basedir' in config:
-		if os.path.isabs(config['basedir']):
-			os.chdir(os.path.dirname(config['basedir']))
-		else:
-			print('The basedir you specified is either no path or a relative path. Relative paths are not allowed. Falling back to location of configuration file.')
-			os.chdir(os.path.dirname(os.path.abspath(args.configfile)))
-	else:
-		os.chdir(os.path.dirname(os.path.abspath(args.configfile)))
+		os.chdir(os.path.dirname(config['basedir']))
 
 	# empty output directory if it exists and config param is set
 	if config['empty_output'] == True and os.path.exists(config['output']):

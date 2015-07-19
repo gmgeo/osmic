@@ -1,4 +1,4 @@
-input: "../"
+input: "."
 
 input_dirs:
   - "accommodation"
@@ -18,18 +18,11 @@ input_dirs:
   - "tourism"
   - "transport"
 
-output: "../export"
+output: "export"
 # WARNING: deletes all files within output directory if it exists
 empty_output: true
-format: "svg"
+format: "font"
 
-global_style:
-  padding: 1
-  fill: "#1a1a1a"
-
-  shield:
-    fill: "#efefef"
-    stroke_fill: "#1a1a1a"
-    stroke_width: 1
-    rounded: 3
-    padding: 2
+font:
+  output: "font"
+  size_filter: 14

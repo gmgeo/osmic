@@ -27,7 +27,7 @@ The configuration file follows a simple organisational pattern for maximum versa
 
 In the following all possible parameters are listed. All of them are optional.
 
-* `basedir` - specify the location based of which relative paths should be evaluated, if not specified it defaults to the location of the configuration file, must be an absolute path
+* `basedir` - specify the working directory, if not specified it defaults to the current working directory, relative and absulte paths are allowed, relative paths are evaluated against the current working directory
 
 * `input` - specify the input base directory, if not specified it defaults to the current working directory, can be either an absolute or relative path
 

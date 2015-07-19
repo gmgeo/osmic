@@ -1,4 +1,4 @@
-input: "../"
+input: "."
 
 input_dirs:
   - "accommodation"
@@ -18,7 +18,7 @@ input_dirs:
   - "tourism"
   - "transport"
 
-output: "../export"
+output: "export"
 # WARNING: deletes all files within output directory if it exists
 empty_output: true
 format: "svg"
