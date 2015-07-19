@@ -21,13 +21,13 @@ All parameters can be changed through a YAML configuration file. There are sever
 * [shields.yaml](https://github.com/nebulon42/osmic/blob/master/tools/shields.yaml) exports icons with shields.
 * [sprites.yaml](https://github.com/nebulon42/osmic/blob/master/tools/sprites.yaml) exports the icons in a sprite like [this one](https://github.com/nebulon42/osmic/blob/master/icons@2x.png).
 
-Such a configuration file must be supplied to the script as parameter e.g. execute `./tools/export.py tools/shields.yaml` in the main folder of Osmic.
+Such a configuration file must be supplied to the script as parameter e.g. execute `./tools/export.py tools/shields.yaml` in the main folder of Osmic. Additionally a basedir parameter can be specified with `--basedir`. Execute `export.py -h` for details.
 
 The configuration file follows a simple organisational pattern for maximum versatility: all global icon parameters can be overridden by parameters specific to a certain icon id (except for sprites where only the colour can be changed). This is e.g. how re-colouring of icons works. An example of this pattern can be found in [osm-carto-png.yaml](https://github.com/nebulon42/osmic/blob/master/tools/osm-carto-png.yaml) where the global fill colour of `#734a08` is changed for the icon id `peak` to `#d08f55`.
 
 In the following all possible parameters are listed. All of them are optional.
 
-* `basedir` - specify the working directory, if not specified it defaults to the current working directory, relative and absulte paths are allowed, relative paths are evaluated against the current working directory
+* `basedir` - specify the working directory, if not specified it defaults to the current working directory, relative and absolute paths are allowed, relative paths are evaluated against the current working directory
 
 * `input` - specify the input base directory, if not specified it defaults to the current working directory, can be either an absolute or relative path
 

@@ -6,9 +6,9 @@ from __future__ import print_function
 import argparse, copy, glob, lxml.etree, math, os, re, shutil, subprocess, sys, yaml
 
 def main():
-	print(os.getcwd())
 	parser = argparse.ArgumentParser(description='Exports Osmic (OSM Icons).')
 	parser.add_argument('configfile', metavar='config-file', help='the configuration file for the export')
+	parser.add_argument('--basedir', dest='basedir', metavar='base-directory', help='specify the working directory of the script', required=False, default=None)
 	args = parser.parse_args()
 
 	try:
@@ -20,6 +20,10 @@ def main():
 	configfile.close()
 
 	defaultValues(config)
+
+	# command line specified basedir value overwrites config file value
+	if args.basedir:
+		config['basedir'] = args.basedir
 
 	# set basedir (elvaluation from cwd, if not specified always cwd)
 	if 'basedir' in config:
