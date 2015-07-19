@@ -1,603 +1,604 @@
 {
   "checksum": {
-    "previous": "51c042b2c48ca47b967fa1f446fc084e0e5f6d250ed65fa18772d4fdc0c0fe39",
-    "current": "51c042b2c48ca47b967fa1f446fc084e0e5f6d250ed65fa18772d4fdc0c0fe39"
+    "previous": "4ff8133439ce8389d1a8d7a129f3434e0506cb983b2eb57733961bc18e0264bc",
+    "current": "4ff8133439ce8389d1a8d7a129f3434e0506cb983b2eb57733961bc18e0264bc"
   },
   "fonts": [
-    "../font/osmic.ttf",
-    "../font/osmic.svg",
-    "../font/osmic.woff",
-    "../font/osmic.eot"
+    "font/osmic.ttf",
+    "font/osmic.svg",
+    "font/osmic.woff",
+    "font/osmic.eot"
   ],
   "glyphs": {
     "airport": {
       "codepoint": 61696,
-      "source": "../export/airport.svg"
+      "source": "export/airport.svg"
     },
     "alcohol": {
       "codepoint": 61697,
-      "source": "../export/alcohol.svg"
+      "source": "export/alcohol.svg"
     },
     "archaeological-site": {
       "codepoint": 61698,
-      "source": "../export/archaeological-site.svg"
+      "source": "export/archaeological-site.svg"
     },
     "atm": {
       "codepoint": 61699,
-      "source": "../export/atm.svg"
+      "source": "export/atm.svg"
     },
     "bakery": {
       "codepoint": 61700,
-      "source": "../export/bakery.svg"
+      "source": "export/bakery.svg"
     },
     "bank": {
       "codepoint": 61701,
-      "source": "../export/bank.svg"
+      "source": "export/bank.svg"
     },
     "bar": {
       "codepoint": 61702,
-      "source": "../export/bar.svg"
+      "source": "export/bar.svg"
     },
     "beauty": {
       "codepoint": 61827,
-      "source": "../export/beauty.svg"
+      "source": "export/beauty.svg"
     },
     "bench": {
       "codepoint": 61703,
-      "source": "../export/bench.svg"
+      "source": "export/bench.svg"
     },
     "beverages": {
       "codepoint": 61831,
-      "source": "../export/beverages.svg"
+      "source": "export/beverages.svg"
     },
     "bicycle": {
       "codepoint": 61704,
-      "source": "../export/bicycle.svg"
+      "source": "export/bicycle.svg"
     },
     "biergarten": {
       "codepoint": 61705,
-      "source": "../export/biergarten.svg"
+      "source": "export/biergarten.svg"
     },
     "bollard": {
       "codepoint": 61838,
-      "source": "../export/bollard.svg"
+      "source": "export/bollard.svg"
     },
     "books": {
       "codepoint": 61706,
-      "source": "../export/books.svg"
+      "source": "export/books.svg"
     },
     "buddhist": {
       "codepoint": 61707,
-      "source": "../export/buddhist.svg"
+      "source": "export/buddhist.svg"
     },
     "bus-station": {
       "codepoint": 61708,
-      "source": "../export/bus-station.svg"
+      "source": "export/bus-station.svg"
     },
     "bus-stop": {
       "codepoint": 61709,
-      "source": "../export/bus-stop.svg"
+      "source": "export/bus-stop.svg"
     },
     "butcher": {
       "codepoint": 61710,
-      "source": "../export/butcher.svg"
+      "source": "export/butcher.svg"
     },
     "cafe": {
       "codepoint": 61711,
-      "source": "../export/cafe.svg"
+      "source": "export/cafe.svg"
     },
     "camping": {
       "codepoint": 61712,
-      "source": "../export/camping.svg"
+      "source": "export/camping.svg"
     },
     "car": {
       "codepoint": 61713,
-      "source": "../export/car.svg"
+      "source": "export/car.svg"
     },
     "car-parts": {
       "codepoint": 61826,
-      "source": "../export/car-parts.svg"
+      "source": "export/car-parts.svg"
     },
     "caravan": {
       "codepoint": 61714,
-      "source": "../export/caravan.svg"
+      "source": "export/caravan.svg"
     },
     "castle-defensive": {
       "codepoint": 61715,
-      "source": "../export/castle-defensive.svg"
+      "source": "export/castle-defensive.svg"
     },
     "castle-fortress": {
       "codepoint": 61716,
-      "source": "../export/castle-fortress.svg"
+      "source": "export/castle-fortress.svg"
     },
     "castle-manor": {
       "codepoint": 61717,
-      "source": "../export/castle-manor.svg"
+      "source": "export/castle-manor.svg"
     },
     "castle-palace": {
       "codepoint": 61718,
-      "source": "../export/castle-palace.svg"
+      "source": "export/castle-palace.svg"
     },
     "castle-stately": {
       "codepoint": 61719,
-      "source": "../export/castle-stately.svg"
+      "source": "export/castle-stately.svg"
     },
     "cattle-grid": {
       "codepoint": 61843,
-      "source": "../export/cattle-grid.svg"
+      "source": "export/cattle-grid.svg"
     },
     "cemetery": {
       "codepoint": 61820,
-      "source": "../export/cemetery.svg"
+      "source": "export/cemetery.svg"
     },
     "charging-station": {
       "codepoint": 61807,
-      "source": "../export/charging-station.svg"
+      "source": "export/charging-station.svg"
     },
     "christian": {
       "codepoint": 61720,
-      "source": "../export/christian.svg"
+      "source": "export/christian.svg"
     },
     "christian-orthodox": {
       "codepoint": 61721,
-      "source": "../export/christian-orthodox.svg"
+      "source": "export/christian-orthodox.svg"
     },
     "cinema": {
       "codepoint": 61722,
-      "source": "../export/cinema.svg"
+      "source": "export/cinema.svg"
     },
     "city-gate": {
       "codepoint": 61723,
-      "source": "../export/city-gate.svg"
+      "source": "export/city-gate.svg"
     },
     "clock": {
       "codepoint": 61836,
-      "source": "../export/clock.svg"
+      "source": "export/clock.svg"
     },
     "clothes": {
       "codepoint": 61724,
-      "source": "../export/clothes.svg"
+      "source": "export/clothes.svg"
     },
     "computer": {
       "codepoint": 61837,
-      "source": "../export/computer.svg"
+      "source": "export/computer.svg"
     },
     "confectionery": {
       "codepoint": 61835,
-      "source": "../export/confectionery.svg"
+      "source": "export/confectionery.svg"
     },
     "convenience": {
       "codepoint": 61725,
-      "source": "../export/convenience.svg"
+      "source": "export/convenience.svg"
     },
     "copyshop": {
       "codepoint": 61832,
-      "source": "../export/copyshop.svg"
+      "source": "export/copyshop.svg"
     },
     "courthouse": {
       "codepoint": 61726,
-      "source": "../export/courthouse.svg"
+      "source": "export/courthouse.svg"
     },
     "dentist": {
       "codepoint": 61727,
-      "source": "../export/dentist.svg"
+      "source": "export/dentist.svg"
     },
     "doctor": {
       "codepoint": 61728,
-      "source": "../export/doctor.svg"
+      "source": "export/doctor.svg"
     },
     "doityourself": {
       "codepoint": 61729,
-      "source": "../export/doityourself.svg"
+      "source": "export/doityourself.svg"
     },
     "drinking-water": {
       "codepoint": 61730,
-      "source": "../export/drinking-water.svg"
+      "source": "export/drinking-water.svg"
     },
     "electronics": {
       "codepoint": 61731,
-      "source": "../export/electronics.svg"
+      "source": "export/electronics.svg"
     },
     "embassy": {
       "codepoint": 61732,
-      "source": "../export/embassy.svg"
+      "source": "export/embassy.svg"
     },
     "emergency-phone": {
       "codepoint": 61821,
-      "source": "../export/emergency-phone.svg"
+      "source": "export/emergency-phone.svg"
     },
     "entrance": {
       "codepoint": 61809,
-      "source": "../export/entrance.svg"
+      "source": "export/entrance.svg"
     },
     "exit": {
       "codepoint": 61810,
-      "source": "../export/exit.svg"
+      "source": "export/exit.svg"
     },
     "fast-food": {
       "codepoint": 61733,
-      "source": "../export/fast-food.svg"
+      "source": "export/fast-food.svg"
     },
     "ferry": {
       "codepoint": 61808,
-      "source": "../export/ferry.svg"
+      "source": "export/ferry.svg"
     },
     "fire-station": {
       "codepoint": 61734,
-      "source": "../export/fire-station.svg"
+      "source": "export/fire-station.svg"
     },
     "florist": {
       "codepoint": 61735,
-      "source": "../export/florist.svg"
+      "source": "export/florist.svg"
     },
     "ford": {
       "codepoint": 61841,
-      "source": "../export/ford.svg"
+      "source": "export/ford.svg"
     },
     "fort": {
       "codepoint": 61823,
-      "source": "../export/fort.svg"
+      "source": "export/fort.svg"
     },
     "fountain": {
       "codepoint": 61736,
-      "source": "../export/fountain.svg"
+      "source": "export/fountain.svg"
     },
     "fuel": {
       "codepoint": 61737,
-      "source": "../export/fuel.svg"
+      "source": "export/fuel.svg"
     },
     "furniture": {
       "codepoint": 61738,
-      "source": "../export/furniture.svg"
+      "source": "export/furniture.svg"
     },
     "garden-centre": {
       "codepoint": 61817,
-      "source": "../export/garden-centre.svg"
+      "source": "export/garden-centre.svg"
     },
     "gate": {
       "codepoint": 61839,
-      "source": "../export/gate.svg"
+      "source": "export/gate.svg"
     },
     "gift": {
       "codepoint": 61739,
-      "source": "../export/gift.svg"
+      "source": "export/gift.svg"
     },
     "government": {
       "codepoint": 61740,
-      "source": "../export/government.svg"
+      "source": "export/government.svg"
     },
     "greengrocer": {
       "codepoint": 61741,
-      "source": "../export/greengrocer.svg"
+      "source": "export/greengrocer.svg"
     },
     "guidepost": {
       "codepoint": 61742,
-      "source": "../export/guidepost.svg"
+      "source": "export/guidepost.svg"
     },
     "hairdresser": {
       "codepoint": 61743,
-      "source": "../export/hairdresser.svg"
+      "source": "export/hairdresser.svg"
     },
     "heliport": {
       "codepoint": 61744,
-      "source": "../export/heliport.svg"
+      "source": "export/heliport.svg"
     },
     "hifi": {
       "codepoint": 61829,
-      "source": "../export/hifi.svg"
+      "source": "export/hifi.svg"
     },
     "hinduist": {
       "codepoint": 61745,
-      "source": "../export/hinduist.svg"
+      "source": "export/hinduist.svg"
     },
     "hospital": {
       "codepoint": 61746,
-      "source": "../export/hospital.svg"
+      "source": "export/hospital.svg"
     },
     "hostel": {
       "codepoint": 61747,
-      "source": "../export/hostel.svg"
+      "source": "export/hostel.svg"
     },
     "hotel": {
       "codepoint": 61748,
-      "source": "../export/hotel.svg"
+      "source": "export/hotel.svg"
     },
     "hunting-stand": {
       "codepoint": 61749,
-      "source": "../export/hunting-stand.svg"
+      "source": "export/hunting-stand.svg"
     },
     "ice-cream": {
       "codepoint": 61750,
-      "source": "../export/ice-cream.svg"
+      "source": "export/ice-cream.svg"
     },
     "information": {
       "codepoint": 61751,
-      "source": "../export/information.svg"
+      "source": "export/information.svg"
     },
     "jewellery": {
       "codepoint": 61752,
-      "source": "../export/jewellery.svg"
+      "source": "export/jewellery.svg"
     },
     "jewish": {
       "codepoint": 61753,
-      "source": "../export/jewish.svg"
+      "source": "export/jewish.svg"
     },
     "kiosk": {
       "codepoint": 61754,
-      "source": "../export/kiosk.svg"
+      "source": "export/kiosk.svg"
     },
     "laundry": {
       "codepoint": 61830,
-      "source": "../export/laundry.svg"
+      "source": "export/laundry.svg"
     },
     "library": {
       "codepoint": 61755,
-      "source": "../export/library.svg"
+      "source": "export/library.svg"
     },
     "lift-gate": {
       "codepoint": 61840,
-      "source": "../export/lift-gate.svg"
+      "source": "export/lift-gate.svg"
     },
     "lighthouse": {
       "codepoint": 61756,
-      "source": "../export/lighthouse.svg"
+      "source": "export/lighthouse.svg"
     },
     "mast": {
       "codepoint": 61757,
-      "source": "../export/mast.svg"
+      "source": "export/mast.svg"
     },
     "mast-communications": {
       "codepoint": 61758,
-      "source": "../export/mast-communications.svg"
+      "source": "export/mast-communications.svg"
     },
     "memorial": {
       "codepoint": 61759,
-      "source": "../export/memorial.svg"
+      "source": "export/memorial.svg"
     },
     "metro": {
       "codepoint": 61760,
-      "source": "../export/metro.svg"
+      "source": "export/metro.svg"
     },
     "mobile-phone": {
       "codepoint": 61761,
-      "source": "../export/mobile-phone.svg"
+      "source": "export/mobile-phone.svg"
     },
     "monument": {
       "codepoint": 61762,
-      "source": "../export/monument.svg"
+      "source": "export/monument.svg"
     },
     "motel": {
       "codepoint": 61763,
-      "source": "../export/motel.svg"
+      "source": "export/motel.svg"
     },
     "museum": {
       "codepoint": 61764,
-      "source": "../export/museum.svg"
+      "source": "export/museum.svg"
     },
     "muslim": {
       "codepoint": 61765,
-      "source": "../export/muslim.svg"
+      "source": "export/muslim.svg"
     },
     "news": {
       "codepoint": 61828,
-      "source": "../export/news.svg"
+      "source": "export/news.svg"
     },
     "nightclub": {
       "codepoint": 61766,
-      "source": "../export/nightclub.svg"
+      "source": "export/nightclub.svg"
     },
     "optician": {
       "codepoint": 61767,
-      "source": "../export/optician.svg"
+      "source": "export/optician.svg"
     },
     "parking-bicycle": {
       "codepoint": 61768,
-      "source": "../export/parking-bicycle.svg"
+      "source": "export/parking-bicycle.svg"
     },
     "parking-car": {
       "codepoint": 61769,
-      "source": "../export/parking-car.svg"
+      "source": "export/parking-car.svg"
     },
     "parking-garage-car": {
       "codepoint": 61770,
-      "source": "../export/parking-garage-car.svg"
+      "source": "export/parking-garage-car.svg"
     },
     "peak": {
       "codepoint": 61771,
-      "source": "../export/peak.svg"
+      "source": "export/peak.svg"
     },
     "pet": {
       "codepoint": 61772,
-      "source": "../export/pet.svg"
+      "source": "export/pet.svg"
     },
     "pharmacy": {
       "codepoint": 61773,
-      "source": "../export/pharmacy.svg"
+      "source": "export/pharmacy.svg"
     },
     "photo": {
       "codepoint": 61825,
-      "source": "../export/photo.svg"
+      "source": "export/photo.svg"
     },
     "place-of-worship": {
       "codepoint": 61774,
-      "source": "../export/place-of-worship.svg"
+      "source": "export/place-of-worship.svg"
     },
     "playground": {
       "codepoint": 61775,
-      "source": "../export/playground.svg"
+      "source": "export/playground.svg"
     },
     "police": {
       "codepoint": 61776,
-      "source": "../export/police.svg"
+      "source": "export/police.svg"
     },
     "post-office": {
       "codepoint": 61777,
-      "source": "../export/post-office.svg"
+      "source": "export/post-office.svg"
     },
     "power-wind": {
       "codepoint": 61778,
-      "source": "../export/power-wind.svg"
+      "source": "export/power-wind.svg"
     },
     "prison": {
       "codepoint": 61779,
-      "source": "../export/prison.svg"
+      "source": "export/prison.svg"
     },
     "pub": {
       "codepoint": 61780,
-      "source": "../export/pub.svg"
+      "source": "export/pub.svg"
     },
     "railway-halt": {
       "codepoint": 61781,
-      "source": "../export/railway-halt.svg"
+      "source": "export/railway-halt.svg"
     },
     "railway-station": {
       "codepoint": 61782,
-      "source": "../export/railway-station.svg"
+      "source": "export/railway-station.svg"
     },
     "recycling": {
       "codepoint": 61783,
-      "source": "../export/recycling.svg"
+      "source": "export/recycling.svg"
     },
     "rental-bicycle": {
       "codepoint": 61784,
-      "source": "../export/rental-bicycle.svg"
+      "source": "export/rental-bicycle.svg"
     },
     "rental-car": {
       "codepoint": 61785,
-      "source": "../export/rental-car.svg"
+      "source": "export/rental-car.svg"
     },
     "repair-bicycle": {
       "codepoint": 61786,
-      "source": "../export/repair-bicycle.svg"
+      "source": "export/repair-bicycle.svg"
     },
     "repair-car": {
       "codepoint": 61787,
-      "source": "../export/repair-car.svg"
+      "source": "export/repair-car.svg"
     },
     "restaurant": {
       "codepoint": 61788,
-      "source": "../export/restaurant.svg"
+      "source": "export/restaurant.svg"
     },
     "saddle": {
       "codepoint": 61789,
-      "source": "../export/saddle.svg"
+      "source": "export/saddle.svg"
     },
     "shared-car": {
       "codepoint": 61790,
-      "source": "../export/shared-car.svg"
+      "source": "export/shared-car.svg"
     },
     "shintoist": {
       "codepoint": 61791,
-      "source": "../export/shintoist.svg"
+      "source": "export/shintoist.svg"
     },
     "shoes": {
       "codepoint": 61792,
-      "source": "../export/shoes.svg"
+      "source": "export/shoes.svg"
     },
     "sikhist": {
       "codepoint": 61793,
-      "source": "../export/sikhist.svg"
+      "source": "export/sikhist.svg"
     },
     "spring": {
       "codepoint": 61794,
-      "source": "../export/spring.svg"
+      "source": "export/spring.svg"
     },
     "stationery": {
       "codepoint": 61833,
-      "source": "../export/stationery.svg"
+      "source": "export/stationery.svg"
     },
     "steps": {
       "codepoint": 61842,
-      "source": "../export/steps.svg"
+      "source": "export/steps.svg"
     },
     "supermarket": {
       "codepoint": 61796,
-      "source": "../export/supermarket.svg"
+      "source": "export/supermarket.svg"
     },
     "swimming": {
       "codepoint": 61811,
-      "source": "../export/swimming.svg"
+      "source": "export/swimming.svg"
     },
     "table": {
       "codepoint": 61797,
-      "source": "../export/table.svg"
+      "source": "export/table.svg"
     },
     "taoist": {
       "codepoint": 61798,
-      "source": "../export/taoist.svg"
+      "source": "export/taoist.svg"
     },
     "taxi": {
       "codepoint": 61799,
-      "source": "../export/taxi.svg"
+      "source": "export/taxi.svg"
     },
     "telephone": {
       "codepoint": 61822,
-      "source": "../export/telephone.svg"
+      "source": "export/telephone.svg"
     },
     "theatre": {
       "codepoint": 61800,
-      "source": "../export/theatre.svg"
+      "source": "export/theatre.svg"
     },
     "toilets": {
       "codepoint": 61801,
-      "source": "../export/toilets.svg"
+      "source": "export/toilets.svg"
     },
     "town-hall": {
       "codepoint": 61802,
-      "source": "../export/town-hall.svg"
+      "source": "export/town-hall.svg"
     },
     "toys": {
       "codepoint": 61818,
-      "source": "../export/toys.svg"
+      "source": "export/toys.svg"
     },
     "tram-stop": {
       "codepoint": 61803,
-      "source": "../export/tram-stop.svg"
+      "source": "export/tram-stop.svg"
     },
     "tree-coniferous": {
       "codepoint": 61815,
-      "source": "../export/tree-coniferous.svg"
+      "source": "export/tree-coniferous.svg"
     },
     "tree-deciduous": {
       "codepoint": 61814,
-      "source": "../export/tree-deciduous.svg"
+      "source": "export/tree-deciduous.svg"
     },
     "tree-unspecified": {
       "codepoint": 61834,
-      "source": "../export/tree-unspecified.svg"
+      "source": "export/tree-unspecified.svg"
     },
     "veterinary": {
       "codepoint": 61844,
-      "source": "../export/veterinary.svg"
+      "source": "export/veterinary.svg"
     },
     "viewpoint": {
       "codepoint": 61816,
-      "source": "../export/viewpoint.svg"
+      "source": "export/viewpoint.svg"
     },
     "waste-basket": {
       "codepoint": 61804,
-      "source": "../export/waste-basket.svg"
+      "source": "export/waste-basket.svg"
     },
     "watchtower": {
       "codepoint": 61805,
-      "source": "../export/watchtower.svg"
+      "source": "export/watchtower.svg"
     },
     "water-tower": {
       "codepoint": 61806,
-      "source": "../export/water-tower.svg"
+      "source": "export/water-tower.svg"
     },
     "waterfall": {
       "codepoint": 61812,
-      "source": "../export/waterfall.svg"
+      "source": "export/waterfall.svg"
     },
     "windmill": {
       "codepoint": 61819,
-      "source": "../export/windmill.svg"
+      "source": "export/windmill.svg"
     }
   },
   "options": {
     "autowidth": false,
     "config": false,
+    "copyright": "Osmic icon font (https://github.com/nebulon42/osmic), License: SIL OFL",
     "css_selector": ".oc-{{glyph}}",
     "debug": false,
     "font_ascent": 448,
@@ -607,14 +608,14 @@
     "font_name": "osmic",
     "force": true,
     "input": {
-      "templates": "../export",
-      "vectors": "../export"
+      "templates": "export",
+      "vectors": "export"
     },
     "no_hash": true,
     "output": {
-      "css": "../font",
-      "fonts": "../font",
-      "preview": "../font"
+      "css": "font",
+      "fonts": "font",
+      "preview": "font"
     },
     "preprocessor_path": null,
     "quiet": false,
@@ -624,7 +625,7 @@
     ]
   },
   "templates": [
-    "../font/osmic.css",
-    "../font/osmic-preview.html"
+    "font/osmic.css",
+    "font/osmic-preview.html"
   ]
 }

@@ -339,9 +339,27 @@ def exportPNG(source, destination, dpi, retina):
 
 # export icon font
 def exportFont(source, destination, size):
+	copyright_message = 'Osmic icon font (https://github.com/nebulon42/osmic), License: SIL OFL'
 	# TODO Windows?
 	try:
-		subprocess.call(['fontcustom', 'compile', source, '--force', '--output=' + destination, '--font-name=osmic', '--no-hash', '--font-design-size=' + str(size), '--css-selector=.oc-{{glyph}}'])
+		subprocess.call(['fontcustom', 'compile', source, '--force', '--output=' + destination, '--font-name=osmic', '--no-hash', '--font-design-size=' + str(size), '--css-selector=.oc-{{glyph}}', '--copyright=' + copyright_message])
+
+		# strip out metadata of SVG font
+		svg_font = os.path.join(destination, 'osmic.svg')
+		try:
+			fontfile = open(svg_font)
+			font = fontfile.read()
+			fontfile.close()
+
+			xml = lxml.etree.fromstring(font)
+			xpEval = lxml.etree.XPathEvaluator(xml)
+			xpEval.register_namespace('def', 'http://www.w3.org/2000/svg')
+			metadata = xpEval('//def:metadata')[0]
+			metadata.text = copyright_message
+			lxml.etree.ElementTree(xml).write(svg_font, pretty_print=True)
+		except IOError:
+			# if we cannot read the file we just let it be
+			pass
 	except OSError:
 		# fontcustom is not installed
 		sys.exit('Export as icon font requires Font Custom. See http://fontcustom.com. Exiting.')
