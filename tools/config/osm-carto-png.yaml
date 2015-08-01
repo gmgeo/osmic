@@ -27,10 +27,6 @@ global_style:
   padding: 1
   fill: "#734a08"
 
-atm:
-  fill: "#555555"
-bank:
-  fill: "#555555"
 power-wind:
   fill: "#555555"
 hunting-stand:
