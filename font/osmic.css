@@ -106,6 +106,7 @@
 .oc-library:before,
 .oc-lift-gate:before,
 .oc-lighthouse:before,
+.oc-luggage:before,
 .oc-mast:before,
 .oc-mast-communications:before,
 .oc-memorial:before,
@@ -266,6 +267,7 @@
 .oc-library:before { content: "\f13b"; }
 .oc-lift-gate:before { content: "\f190"; }
 .oc-lighthouse:before { content: "\f13c"; }
+.oc-luggage:before { content: "\f195"; }
 .oc-mast:before { content: "\f13d"; }
 .oc-mast-communications:before { content: "\f13e"; }
 .oc-memorial:before { content: "\f13f"; }

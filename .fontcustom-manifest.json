@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "4ff8133439ce8389d1a8d7a129f3434e0506cb983b2eb57733961bc18e0264bc",
-    "current": "4ff8133439ce8389d1a8d7a129f3434e0506cb983b2eb57733961bc18e0264bc"
+    "previous": "d5281db6c546a6ca61bd0cd6272b59b2d60420f29161dad2fb70726a0b1aac30",
+    "current": "d5281db6c546a6ca61bd0cd6272b59b2d60420f29161dad2fb70726a0b1aac30"
   },
   "fonts": [
     "font/osmic.ttf",
@@ -341,6 +341,10 @@
     "lighthouse": {
       "codepoint": 61756,
       "source": "export/lighthouse.svg"
+    },
+    "luggage": {
+      "codepoint": 61845,
+      "source": "export/luggage.svg"
     },
     "mast": {
       "codepoint": 61757,
