@@ -40,7 +40,7 @@ Have a look at the [export guide](https://github.com/nebulon42/osmic/blob/master
 
 ## Known Uses
 
-* [OpenStreetMap standard tile layer](https://github.com/gravitystorm/openstreetmap-carto): Icons from this collection form a major part of the style's icons.
+* [OpenStreetMap standard tile layer](https://github.com/gravitystorm/openstreetmap-carto): Icons from this collection [form a major part](https://wiki.openstreetmap.org/wiki/User:Nebulon42/Icons) of the style's icons.
 * [Overpass Turbo](https://github.com/tyrasd/overpass-turbo): Osmic is part of the available icon collections in the MapCSS feature.
 * [Osmic JOSM style](https://github.com/nebulon42/osmic-josm-style): A MapCSS style displaying icons from Osmic for JOSM. Some icons are also used in the JOSM standard style.
 
