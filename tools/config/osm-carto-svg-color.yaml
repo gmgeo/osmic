@@ -67,6 +67,8 @@ rental-car:
   fill: "#0092da"
 fuel:
   fill: "#0092da"
+elevator:
+  fill: "#0092da"
 ferry:
   fill: "#0092da"
 charging-station:
