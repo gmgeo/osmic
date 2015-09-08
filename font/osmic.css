@@ -70,6 +70,7 @@
 .oc-doityourself:before,
 .oc-drinking-water:before,
 .oc-electronics:before,
+.oc-elevator:before,
 .oc-embassy:before,
 .oc-emergency-phone:before,
 .oc-entrance:before,
@@ -231,6 +232,7 @@
 .oc-doityourself:before { content: "\f121"; }
 .oc-drinking-water:before { content: "\f122"; }
 .oc-electronics:before { content: "\f123"; }
+.oc-elevator:before { content: "\f196"; }
 .oc-embassy:before { content: "\f124"; }
 .oc-emergency-phone:before { content: "\f17d"; }
 .oc-entrance:before { content: "\f171"; }

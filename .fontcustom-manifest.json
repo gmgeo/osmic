@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "d5281db6c546a6ca61bd0cd6272b59b2d60420f29161dad2fb70726a0b1aac30",
-    "current": "d5281db6c546a6ca61bd0cd6272b59b2d60420f29161dad2fb70726a0b1aac30"
+    "previous": "6c60ef8b40e8d71b9311df388083cce30431c92825545a550507010bbe1b5d1a",
+    "current": "6c60ef8b40e8d71b9311df388083cce30431c92825545a550507010bbe1b5d1a"
   },
   "fonts": [
     "font/osmic.ttf",
@@ -197,6 +197,10 @@
     "electronics": {
       "codepoint": 61731,
       "source": "export/electronics.svg"
+    },
+    "elevator": {
+      "codepoint": 61846,
+      "source": "export/elevator.svg"
     },
     "embassy": {
       "codepoint": 61732,
