@@ -1,8 +1,8 @@
 # Osmic (OSM Icons)
 
-A collection of 120+ clean high quality SVG map icons licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (Public Domain) and also available as [icon font](https://github.com/nebulon42/osmic/tree/master/font), which is licensed under [SIL OFL](http://scripts.sil.org/OFL). Below you see a possible preview (these are 2x the [original size](https://github.com/nebulon42/osmic/raw/master/icons.png)).
+A collection of 120+ clean high quality SVG map icons licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (Public Domain) and also available as [icon font](https://github.com/gmgeo/osmic/tree/master/font), which is licensed under [SIL OFL](http://scripts.sil.org/OFL). Below you see a possible preview (these are 2x the [original size](https://github.com/gmgeo/osmic/raw/master/icons.png)).
 
-![Osmic (OSM Icons)](https://github.com/nebulon42/osmic/raw/master/icons@2x.png "Available icons")
+![Osmic (OSM Icons)](https://github.com/gmgeo/osmic/raw/master/icons@2x.png "Available icons")
 
 Icons are heavily inspired by
 * Maki ([mapbox/maki](https://github.com/mapbox/maki))
@@ -26,7 +26,7 @@ All icons should adhere to the following features
 All icons use a canvas base size of 14px. Where required there exist several versions that are varying in size and amount of detail. The size is indicated by appending the pixel value to the icon name (e.g. hospital-14.svg).
 
 ## Create a customised collection
-With the Python export script ([tools/export.py](https://github.com/nebulon42/osmic/blob/master/tools/export.py)) the appearance of the icons can be customised. You can
+With the Python export script ([tools/export.py](https://github.com/gmgeo/osmic/blob/master/tools/export.py)) the appearance of the icons can be customised. You can
 * add padding
 * add halos
 * add shields
@@ -36,7 +36,7 @@ With the Python export script ([tools/export.py](https://github.com/nebulon42/os
 
 by changing a YAML configuration file.
 
-Have a look at the [export guide](https://github.com/nebulon42/osmic/blob/master/tools/export.md) for more details.
+Have a look at the [export guide](https://github.com/gmgeo/osmic/blob/master/tools/export.md) for more details.
 
 ## Known Uses
 
@@ -46,4 +46,4 @@ Have a look at the [export guide](https://github.com/nebulon42/osmic/blob/master
 
 ## How to contribute
 
-Contributions are welcome, please have a look at this [guide](https://github.com/nebulon42/osmic/blob/master/CONTRIBUTING.md).
+Contributions are welcome, please have a look at this [guide](https://github.com/gmgeo/osmic/blob/master/CONTRIBUTING.md).

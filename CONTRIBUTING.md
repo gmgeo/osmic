@@ -10,7 +10,7 @@ Please limit new icon pull requests to one icon each unless they are very closel
 
 ## Legal aspects
 
-By contributing you agree to release your work under CC0 (or Public Domain), see the [license](https://github.com/nebulon42/osmic/blob/master/LICENSE.txt) for details.
+By contributing you agree to release your work under CC0 (or Public Domain), see the [license](https://github.com/gmgeo/osmic/blob/master/LICENSE.txt) for details.
 If submitting new icons or substantial modifications you confirm that this is your own work and it is free of the rights of others.
 
 ## Technical aspects
