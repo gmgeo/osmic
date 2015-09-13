@@ -13,7 +13,7 @@ This Python export script ([tools/export.py](https://github.com/gmgeo/osmic/blob
 All parameters can be changed through a YAML configuration file. There are several examples in the script folder:
 
 * [font.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/font.yaml) creates an icon font of all icons.
-* [josm-shields.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/josm-shields.yaml) exports coloured icons with shields for JOSM.
+* [josm.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/josm.yaml) exports coloured icons with halos for the [Osmic JOSM style](https://github.com/gmgeo/osmic-josm-style).
 * [osm-carto-png.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/osm-carto-png.yaml) exports icons as PNG and re-colours them according to the colour scheme of [openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto).
 * [osm-carto-svg.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/osm-carto-svg.yaml) exports icons in SVG format like they are currently used in [openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto) i.e. with 1px padding and without halo.
 * [osm-carto-svg-color.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/osm-carto-svg-color.yaml) exports icons in SVG format like they are currently used in [openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto) i.e. with 1px padding and without halo and re-colours them according to their colour scheme.
