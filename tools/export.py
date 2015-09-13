@@ -3,7 +3,7 @@
 # export to SVG or PNG (incl. retina output), re-colour, add padding, add halo, generate sprites
 
 from __future__ import print_function
-import argparse, copy, glob, lxml.etree, math, os, re, shutil, subprocess, sys, yaml
+import argparse, copy, glob, lxml.etree, lxml.objectify, math, os, re, shutil, subprocess, sys, yaml
 
 def main():
 	parser = argparse.ArgumentParser(description='Exports Osmic (OSM Icons).')
@@ -369,6 +369,8 @@ def exportFont(source, destination, size):
 # modifications to the SVG
 def modifySVG(config, icon_id, size, icon):
 	xml = lxml.etree.fromstring(icon)
+	# cleanup namespaces as Inkscape adds a (unnecessary?) xmlns:svg namespace, which leads to unwanted svg:path elements for halos
+	lxml.objectify.deannotate(xml, cleanup_namespaces=True)
 	xpEval = lxml.etree.XPathEvaluator(xml)
 	xpEval.register_namespace('def', 'http://www.w3.org/2000/svg')
 
@@ -539,7 +541,7 @@ def modifySVG(config, icon_id, size, icon):
 	if 'canvas' in config and config['canvas'] == False:
 		canvas.getparent().remove(canvas)
 
-	icon = lxml.etree.tostring(xml, pretty_print=True)
+	icon = lxml.etree.tostring(xml, encoding='utf-8', xml_declaration=True, pretty_print=True)
 	return (size, icon)
 
 if __name__ == "__main__": main()

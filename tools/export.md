@@ -47,7 +47,7 @@ In the following all possible parameters are listed. All of them are optional.
 
 * `global_style` - a list of global styles such as padding, halo, fill colour etc. for each icon, the following parameters are sub-elements of `global_style` or an icon id element e.g. `hunting-stand`.
 
-  * `padding` - specify number of pixels of space between the icon shape and canvas border, the icon stays centred all the times, only values > 0 are allowed, defaults to `0`
+  * `padding` - specify the number of pixels of space between the icon shape and canvas border, the icon stays centred all the time, only values > 0 are allowed, defaults to `0`
 
   * `fill` - specify a hexadecimal colour value for the icon fill e.g. `#efefef`, if not specified the colour fill stays `#000000` (black)
 
