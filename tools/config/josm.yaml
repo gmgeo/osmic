@@ -201,6 +201,8 @@ garden-centre:
   fill: "#ac39ac"
 copyshop:
   fill: "#ac39ac"
+chemist:
+  fill: "#ac39ac"
 repair-car:
   fill: "#ac39ac"
 repair-bicycle:

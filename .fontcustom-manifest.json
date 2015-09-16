@@ -1,7 +1,7 @@
 {
   "checksum": {
-    "previous": "6c60ef8b40e8d71b9311df388083cce30431c92825545a550507010bbe1b5d1a",
-    "current": "6c60ef8b40e8d71b9311df388083cce30431c92825545a550507010bbe1b5d1a"
+    "previous": "7966cfb509ad1a4e3a939c193b2f0aaa8fe1ff7e18313766f87cc75834f31d0f",
+    "current": "7966cfb509ad1a4e3a939c193b2f0aaa8fe1ff7e18313766f87cc75834f31d0f"
   },
   "fonts": [
     "font/osmic.ttf",
@@ -133,6 +133,10 @@
     "charging-station": {
       "codepoint": 61807,
       "source": "export/charging-station.svg"
+    },
+    "chemist": {
+      "codepoint": 61847,
+      "source": "export/chemist.svg"
     },
     "christian": {
       "codepoint": 61720,

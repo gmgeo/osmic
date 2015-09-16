@@ -54,6 +54,7 @@
 .oc-cattle-grid:before,
 .oc-cemetery:before,
 .oc-charging-station:before,
+.oc-chemist:before,
 .oc-christian:before,
 .oc-christian-orthodox:before,
 .oc-cinema:before,
@@ -216,6 +217,7 @@
 .oc-cattle-grid:before { content: "\f193"; }
 .oc-cemetery:before { content: "\f17c"; }
 .oc-charging-station:before { content: "\f16f"; }
+.oc-chemist:before { content: "\f197"; }
 .oc-christian:before { content: "\f118"; }
 .oc-christian-orthodox:before { content: "\f119"; }
 .oc-cinema:before { content: "\f11a"; }
