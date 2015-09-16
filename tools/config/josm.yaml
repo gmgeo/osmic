@@ -29,7 +29,7 @@ global_style:
   halo:
     fill: "#ffffff"
     width: 2
-    opacity: 0.7
+    opacity: 1.0
 
 power-wind:
   fill: "#555555"
