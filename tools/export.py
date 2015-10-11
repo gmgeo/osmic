@@ -24,7 +24,7 @@ def main():
                         metavar='config-file',
                         help='the configuration file for the export')
     parser.add_argument('--basedir', dest='basedir',
-                        metavar='base-directory'
+                        metavar='base-directory',
                         help='specify the working directory of the script',
                         required=False,
                         default=None)
