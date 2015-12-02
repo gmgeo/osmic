@@ -23,6 +23,7 @@ output: "export"
 empty_output: true
 format: "sprite"
 retina: true
+size_filter: 14
 
 global_style:
   padding: 1
@@ -38,4 +39,3 @@ sprite:
   outer_padding: 4
   icon_padding: 4
   filename: "icons"
-  size_filter: 14

@@ -22,7 +22,7 @@ output: "export"
 # WARNING: deletes all files within output directory if it exists
 empty_output: true
 format: "font"
+size_filter: 14
 
 font:
   output: "font"
-  size_filter: 14
