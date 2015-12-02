@@ -45,6 +45,8 @@ In the following all possible parameters are listed. All of them are optional.
 
 * `subdirs` - specify whether the icons will be kept in their subdirectories or are exported all in the same directory, if not specified it defaults to `true` (meaning icons are kept in their subdirectories)
 
+* `size_filter` - specify the size version (e.g. 14 for all icon-id-14.svg) which should be included in the output - all other sizes are left out, if not specified no filter is applied (for font output there is a default filter of 14 active)
+
 * `global_style` - a list of global styles such as padding, halo, fill colour etc. for each icon, the following parameters are sub-elements of `global_style` or an icon id element e.g. `hunting-stand`.
 
   * `padding` - specify the number of pixels of space between the icon shape and canvas border, the icon stays centred all the time, only values > 0 are allowed, defaults to `0`
@@ -69,8 +71,6 @@ In the following all possible parameters are listed. All of them are optional.
   * `icon_padding`- specify the padding between the different icons, only values > 0 are allowed, if not specified defaults to `4`	
   * `background`- specify a hexadecimal colour value for the sprite background fill e.g. `#efefef`, if not specified it defaults to transparent
   * `filename`- specify the filename of the sprite, if not specified defaults to `sprite`
-  * `size_filter` - specify the size version (e.g. 14 for all icon-id-14.svg) which should be included in the sprite - all other sizes are left out, if not specified no filter is applied
 
 * `font` - a list of configuration options for icon font generation
   * `output` - specify the output directory for the font files, if not specified it defaults to `./font`, can be either an absolute or relative path
-  * `size_filter` - specify the size version (e.g. 14 for all icon-id-14.svg) which should be included in the icon font - all other sizes are left out, if not specified the filter defaults to 14

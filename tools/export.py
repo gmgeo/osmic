@@ -44,7 +44,7 @@ def main():
     if args.basedir:
         config['basedir'] = args.basedir
 
-    # set basedir (elvaluation from cwd, if not specified always cwd)
+    # set basedir (evaluation from cwd, if not specified always cwd)
     if 'basedir' in config:
         os.chdir(os.path.dirname(config['basedir']))
 
@@ -68,18 +68,17 @@ def main():
         config['dpi'] = 90
         print('The dpi parameter must be a number. Defaulting to 90 dpi.')
 
-    # filter by size (for sprite and font)
+    # filter by size
     size_filter = 0
 
-    if config['format'] == 'sprite' or config['format'] == 'font':
-        if (config['format'] in config and 'size_filter' in config[config['format']]):
-            try:
-                size_filter = int(config[config['format']]['size_filter'])
+    if 'size_filter' in config:
+        try:
+            size_filter = int(config['size_filter'])
 
-                if size_filter < 0:
-                    print('A negative number of pixels for the size filter is not allowed.')
-            except ValueError:
-                print('The size filter is not a number.')
+            if size_filter < 0:
+                print('A negative number of pixels for the size filter is not allowed.')
+        except ValueError:
+            print('The size filter is not a number.')
 
     num_icons = 0
 
@@ -322,8 +321,8 @@ def defaultValues(config):
         if 'font' not in config:
             config['font'] = {}
 
-        if 'size_filter' not in config['font']:
-            config['font']['size_filter'] = 14
+        if 'size_filter' not in config:
+            config['size_filter'] = 14
 
         if 'output' not in config['font']:
             config['font']['output'] = os.path.join(os.getcwd(), 'font')
