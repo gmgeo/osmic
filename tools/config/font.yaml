@@ -1,6 +1,6 @@
-input: "."
+input_basedir: "."
 
-input_dirs:
+input:
   - "accommodation"
   - "administration"
   - "amenity"
@@ -18,11 +18,11 @@ input_dirs:
   - "tourism"
   - "transport"
 
-output: "export"
+output_basedir: "export"
 # WARNING: deletes all files within output directory if it exists
 empty_output: true
 format: "font"
 size_filter: 14
 
 font:
-  output: "font"
+  output_basedir: "font"

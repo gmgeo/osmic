@@ -28,6 +28,16 @@ def main():
                         help='specify the working directory of the script',
                         required=False,
                         default=None)
+    parser.add_argument('--input', dest='input_basedir',
+                        metavar='input base-directory',
+                        help='specify the base directory for the input',
+                        required=False,
+                        default=None)
+    parser.add_argument('--output', dest='output_basedir',
+                        metavar='output base-directory',
+                        help='specify the base directory for the output',
+                        required=False,
+                        default=None)
     args = parser.parse_args()
 
     try:
@@ -40,18 +50,22 @@ def main():
 
     defaultValues(config)
 
-    # command line specified basedir value overwrites config file value
+    # command line specified basedir values overwrites config file values
     if args.basedir:
         config['basedir'] = args.basedir
+    if args.input_basedir:
+        config['input_basedir'] = args.input_basedir
+    if args.output_basedir:
+        config['output_basedir'] = args.output_basedir
 
     # set basedir (evaluation from cwd, if not specified always cwd)
     if 'basedir' in config:
         os.chdir(os.path.dirname(config['basedir']))
 
     # empty output directory if it exists and config param is set
-    if config['empty_output'] == True and os.path.exists(config['output']):
-        for the_file in os.listdir(config['output']):
-            file_path = os.path.join(config['output'], the_file)
+    if config['empty_output'] == True and os.path.exists(config['output_basedir']):
+        for the_file in os.listdir(config['output_basedir']):
+            file_path = os.path.join(config['output_basedir'], the_file)
             try:
                 if os.path.isfile(file_path):
                     os.unlink(file_path)
@@ -83,8 +97,8 @@ def main():
     num_icons = 0
 
     # loop through all specified directories
-    for directory in config['input_dirs']:
-        dir_path = os.path.join(config['input'], directory)
+    for directory in config['input']:
+        dir_path = os.path.join(config['input_basedir'], directory)
 
         # loop through all SVG files in this directory
         for icon_path in glob.glob(os.path.join(dir_path, '*.svg')):
@@ -123,12 +137,12 @@ def main():
                 # create subdirs
                 if not config['format'] == 'font':
                     if config['subdirs'] == True:
-                        icon_out_path = os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.svg')
+                        icon_out_path = os.path.join(config['output_basedir'], directory, icon_id + '-' + str(size) + '.svg')
                     else:
-                        icon_out_path = os.path.join(config['output'], icon_id + '-' + str(size) + '.svg')
+                        icon_out_path = os.path.join(config['output_basedir'], icon_id + '-' + str(size) + '.svg')
                 else:
                     # remove subdirs and size info for font output
-                    icon_out_path = os.path.join(config['output'], icon_id + '.svg')
+                    icon_out_path = os.path.join(config['output_basedir'], icon_id + '.svg')
 
                 if not os.path.exists(os.path.dirname(icon_out_path)):
                     os.makedirs(os.path.dirname(icon_out_path))
@@ -150,9 +164,9 @@ def main():
                 # if PNG export generate PNG file and delete modified SVG
                 if config['format'] == 'png':
                     if config['subdirs'] == True:
-                        destination = os.path.join(config['output'], directory, icon_id + '-' + str(size) + '.png')
+                        destination = os.path.join(config['output_basedir'], directory, icon_id + '-' + str(size) + '.png')
                     else:
-                        destination = os.path.join(config['output'], icon_id + '-' + str(size) + '.png')
+                        destination = os.path.join(config['output_basedir'], icon_id + '-' + str(size) + '.png')
 
                     exportPNG(icon_out_path, destination, config['dpi'], config['retina'])
                     os.remove(icon_out_path)
@@ -162,7 +176,7 @@ def main():
 
 
     if config['format'] == 'font':
-        exportFont(config['output'], config['font']['output'], size)
+        exportFont(config['output_basedir'], config['font']['output_basedir'], size)
 
     # generate sprite
     if config['format'] == 'sprite':
@@ -206,7 +220,7 @@ def main():
         sprite_file_name = 'sprite'
         if 'filename' in config['sprite']:
             sprite_file_name = config['sprite']['filename']
-        sprite_out_path = os.path.join(config['output'], sprite_file_name)
+        sprite_out_path = os.path.join(config['output_basedir'], sprite_file_name)
 
         sprite_width = outer_padding * 2 + sprite_cols * (icon_padding * 2 + size)
         sprite_height = outer_padding * 2 + (icon_padding * 2 + size) * math.ceil(float(num_icons) / sprite_cols)
@@ -229,8 +243,8 @@ def main():
         x = outer_padding + icon_padding
         y = outer_padding + icon_padding
 
-        for directory in config['input_dirs']:
-            dir_path = os.path.join(config['output'], directory)
+        for directory in config['input']:
+            dir_path = os.path.join(config['output_basedir'], directory)
 
             # loop through all SVG files in this directory (in alphabetical order)
             for icon_path in sorted(glob.glob(os.path.join(dir_path, '*.svg'))):
@@ -290,14 +304,14 @@ def main():
 # set config default values
 def defaultValues(config):
     # config default values
-    if 'input_dirs' not in config:
-        config['input_dirs'] = ''
-
     if 'input' not in config:
+        config['input'] = ''
+
+    if 'input_basedir' not in config:
         config['input'] = os.getcwd()
 
-    if 'output' not in config:
-        config['output'] = os.path.join(os.getcwd(), 'export')
+    if 'output_basedir' not in config:
+        config['output_basedir'] = os.path.join(os.getcwd(), 'export')
 
     if 'empty_output' not in config:
         config['empty_output'] = False
@@ -324,8 +338,8 @@ def defaultValues(config):
         if 'size_filter' not in config:
             config['size_filter'] = 14
 
-        if 'output' not in config['font']:
-            config['font']['output'] = os.path.join(os.getcwd(), 'font')
+        if 'output_basedir' not in config['font']:
+            config['font']['output_basedir'] = os.path.join(os.getcwd(), 'font')
 
     return
 

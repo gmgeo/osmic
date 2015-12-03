@@ -21,7 +21,10 @@ All parameters can be changed through a YAML configuration file. There are sever
 * [shields.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/shields.yaml) exports icons with shields.
 * [sprites.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/sprites.yaml) exports the icons in a sprite like [this one](https://github.com/gmgeo/osmic/blob/master/icons@2x.png).
 
-Such a configuration file must be supplied to the script as parameter e.g. execute `./tools/export.py tools/shields.yaml` in the main folder of Osmic. Additionally a basedir parameter can be specified with `--basedir`. Execute `export.py -h` for details.
+Such a configuration file must be supplied to the script as parameter e.g. execute `./tools/export.py tools/shields.yaml` in the main folder of Osmic. Additionally the following parameters can be specified at the command line (execute `export.py -h` for details):
+* a working directory parameter with `--basedir`
+* a input base directory parameter with `--input`
+* a output base directory parameter with `--output`
 
 The configuration file follows a simple organisational pattern for maximum versatility: all global icon parameters can be overridden by parameters specific to a certain icon id (except for sprites where only the colour can be changed). This is e.g. how re-colouring of icons works. An example of this pattern can be found in [osm-carto-png.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/osm-carto-png.yaml) where the global fill colour of `#734a08` is changed for the icon id `peak` to `#d08f55`.
 
@@ -29,11 +32,11 @@ In the following all possible parameters are listed. All of them are optional.
 
 * `basedir` - specify the working directory, if not specified it defaults to the current working directory, relative and absolute paths are allowed, relative paths are evaluated against the current working directory
 
-* `input` - specify the input base directory, if not specified it defaults to the current working directory, can be either an absolute or relative path
+* `input_basedir` - specify the input base directory, if not specified it defaults to the current working directory, can be either an absolute or relative path
 
-* `input_dirs` - specify a list of directory names from which the icon files are read, useful if only a subset of icons should be processed, if not specified the script reads icons from the base directory
+* `input` - specify a list of directory names from which the icon files are read, useful if only a subset of icons should be processed, if not specified the script reads icons from the base directory
 
-* `output` - specify the output base directory, if not specified it defaults to `./export`, can be either an absolute or relative path
+* `output_basedir` - specify the output base directory, if not specified it defaults to `./export`, can be either an absolute or relative path
 
 * `empty_output` - specify whether the output base directory should be emptied of all contents, the value must be either `true` or `false`, if not specified it defaults to `false`, **WARNING**: deletes all files in the output base directory if it already exists, *be careful* with existing data as all sample config files currently use this option!
 
@@ -73,4 +76,4 @@ In the following all possible parameters are listed. All of them are optional.
   * `filename`- specify the filename of the sprite, if not specified defaults to `sprite`
 
 * `font` - a list of configuration options for icon font generation
-  * `output` - specify the output directory for the font files, if not specified it defaults to `./font`, can be either an absolute or relative path
+  * `output_basedir` - specify the output directory for the font files, if not specified it defaults to `./font`, can be either an absolute or relative path
