@@ -27,6 +27,7 @@ All icons use a canvas base size of 14px. Where required there exist several ver
 
 ## Create a customised collection
 With the Python export script ([tools/export.py](https://github.com/gmgeo/osmic/blob/master/tools/export.py)) the appearance of the icons can be customised. You can
+* specify which icons should be included in or be excluded from the export
 * add padding
 * add halos
 * add shields
