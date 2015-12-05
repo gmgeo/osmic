@@ -98,15 +98,64 @@ def main():
 
     # loop through all specified directories
     for directory in config['input']:
-        dir_path = os.path.join(config['input_basedir'], directory)
+        if 'name' not in directory:
+            print('This directory has no name (name: directory). Skipping.')
+            continue
+        if 'include' in directory and 'exclude' in directory:
+            print('Include and exclude cannot be specified together for one directory. Skipping.')
+            continue
+
+        filter_spec = None
+        if 'include' in directory:
+            filter_spec = directory['include']
+        elif 'exclude' in directory:
+            filter_spec = directory['exclude']
+
+        icon_filter = None
+        if filter_spec:
+            icon_filter = dict()
+            for element in filter_spec:
+                name_match = re.search('^([a-z-]+)([0-9]+)?$', element)
+                icon_id = None
+                size = None
+                if name_match is not None:
+                    icon_id = name_match.group(1).rstrip('-')
+                    if name_match.group(2) is not None:
+                        size = int(name_match.group(2))
+                if icon_id is not None:
+                    if icon_id not in icon_filter:
+                        icon_filter[icon_id] = []
+                    if size is not None:
+                        icon_filter[icon_id].append(size)
+
+        dir_path = os.path.join(config['input_basedir'], directory['name'])
 
         # loop through all SVG files in this directory
         for icon_path in glob.glob(os.path.join(dir_path, '*.svg')):
-            name_match = re.search('^([a-z-]+)\-([0-9]+)', os.path.splitext(os.path.basename(icon_path))[0])
+            name_match = re.search('^([a-z-]+)\-([0-9]+)$', os.path.splitext(os.path.basename(icon_path))[0])
+            icon_id = None
+            size = None
             if name_match is not None:
                 icon_id = name_match.group(1)
                 size = int(name_match.group(2))
 
+            # include mode - determine if current file should be included in set
+            if 'include' in directory:
+                if icon_id not in icon_filter:
+                    continue
+                elif icon_filter[icon_id]:
+                    if size not in icon_filter[icon_id]:
+                        continue
+
+            # exclude mode - determine if current file should be excluded from set
+            if 'exclude' in directory and icon_id in icon_filter:
+                if icon_filter[icon_id]:
+                    if size in icon_filter[icon_id]:
+                        continue
+                else:
+                    continue
+
+            # skip files that do not match size filter
             if (size_filter > 0 and size != size_filter):
                 continue
 
@@ -137,7 +186,7 @@ def main():
                 # create subdirs
                 if not config['format'] == 'font':
                     if config['subdirs'] == True:
-                        icon_out_path = os.path.join(config['output_basedir'], directory, icon_id + '-' + str(size) + '.svg')
+                        icon_out_path = os.path.join(config['output_basedir'], directory['name'], icon_id + '-' + str(size) + '.svg')
                     else:
                         icon_out_path = os.path.join(config['output_basedir'], icon_id + '-' + str(size) + '.svg')
                 else:
@@ -164,7 +213,7 @@ def main():
                 # if PNG export generate PNG file and delete modified SVG
                 if config['format'] == 'png':
                     if config['subdirs'] == True:
-                        destination = os.path.join(config['output_basedir'], directory, icon_id + '-' + str(size) + '.png')
+                        destination = os.path.join(config['output_basedir'], directory['name'], icon_id + '-' + str(size) + '.png')
                     else:
                         destination = os.path.join(config['output_basedir'], icon_id + '-' + str(size) + '.png')
 
@@ -175,11 +224,111 @@ def main():
                 continue
 
 
+    # export font
     if config['format'] == 'font':
-        exportFont(config['output_basedir'], config['font']['output_basedir'], size)
+        exportFont(config, size_filter)
 
     # generate sprite
     if config['format'] == 'sprite':
+        exportSprite(config, size_filter, num_icons)
+
+    return
+
+
+# set config default values
+def defaultValues(config):
+    # config default values
+    if 'input' not in config:
+        config['input'] = ''
+
+    if 'input_basedir' not in config:
+        config['input_basedir'] = os.getcwd()
+
+    if 'output_basedir' not in config:
+        config['output_basedir'] = os.path.join(os.getcwd(), 'export')
+
+    if 'empty_output' not in config:
+        config['empty_output'] = False
+
+    if 'format' not in config:
+        config['format'] = 'png'
+
+    if 'retina' not in config:
+        config['retina'] = False
+
+    if 'subdirs' not in config:
+        config['subdirs'] = True
+
+    if 'dpi' not in config:
+        config['dpi'] = 90
+
+    if 'global_style' not in config:
+        config['global_style'] = {}
+
+    if config['format'] == 'font':
+        if 'font' not in config:
+            config['font'] = {}
+
+        if 'size_filter' not in config:
+            config['size_filter'] = 14
+
+        if 'output_basedir' not in config['font']:
+            config['font']['output_basedir'] = os.path.join(os.getcwd(), 'font')
+
+    return
+
+
+def parseIconSizeParams(config):
+    # padding of icon
+    padding = 0
+    if 'padding' in config:
+        try:
+            padding = int(config['padding'])
+            if padding < 0:
+                padding = 0
+        except ValueError:
+            pass
+
+    # halo of icon
+    halo_width = 0
+    if 'halo' in config and 'width' in config['halo']:
+        try:
+            halo_width = float(config['halo']['width'])
+
+            if halo_width < 0:
+                halo_width = 0
+        except ValueError:
+            pass
+
+    # shield width
+    shield = 0
+    if 'shield' in config:
+        if 'padding' in config['shield']:
+            try:
+                shield_padding = int(config['shield']['padding'])
+
+                if shield_padding > 0:
+                    shield += int(config['shield']['padding']) * 2
+            except ValueError:
+                pass
+
+        stroke_width = 0
+        if 'stroke_width' in config['shield']:
+            try:
+                stroke_width = float(config['shield']['stroke_width'])
+                if stroke_width > 0:
+                    shield += stroke_width * 2
+                elif stroke_width < 0:
+                    shield += 2
+            except ValueError:
+                pass
+
+    return (padding, halo_width, shield)
+
+
+# export Sprite
+def exportSprite(config, size_filter, num_icons):
+    if 'sprite' in config:
         sprite_cols = 12
         if 'cols' in config['sprite']:
             try:
@@ -222,6 +371,13 @@ def main():
             sprite_file_name = config['sprite']['filename']
         sprite_out_path = os.path.join(config['output_basedir'], sprite_file_name)
 
+        # have to define sane defaults for size parameter, otherwise the last read icon determines the size (that would be random)
+        (padding, halo_width, shield_width) = parseIconSizeParams(config['global_style'])
+        if size_filter > 0:
+            size = size_filter + (padding + halo_width) * 2 + shield_width
+        else:
+            size = 14 + (padding + halo_width) * 2 + shield_width
+
         sprite_width = outer_padding * 2 + sprite_cols * (icon_padding * 2 + size)
         sprite_height = outer_padding * 2 + (icon_padding * 2 + size) * math.ceil(float(num_icons) / sprite_cols)
 
@@ -244,11 +400,18 @@ def main():
         y = outer_padding + icon_padding
 
         for directory in config['input']:
-            dir_path = os.path.join(config['output_basedir'], directory)
+            if 'name' not in directory:
+                continue
+            if 'include' in directory and 'exclude' in directory:
+                continue
+
+            dir_path = os.path.join(config['output_basedir'], directory['name'])
 
             # loop through all SVG files in this directory (in alphabetical order)
             for icon_path in sorted(glob.glob(os.path.join(dir_path, '*.svg'))):
-                name_match = re.search('^([a-z-]+)\-([0-9]+)', os.path.splitext(os.path.basename(icon_path))[0])
+                name_match = re.search('^([a-z-]+)\-([0-9]+)$', os.path.splitext(os.path.basename(icon_path))[0])
+                icon_id = None
+                size = None
                 if name_match is not None:
                     icon_id = name_match.group(1)
                     size = int(name_match.group(2))
@@ -301,49 +464,6 @@ def main():
     return
 
 
-# set config default values
-def defaultValues(config):
-    # config default values
-    if 'input' not in config:
-        config['input'] = ''
-
-    if 'input_basedir' not in config:
-        config['input'] = os.getcwd()
-
-    if 'output_basedir' not in config:
-        config['output_basedir'] = os.path.join(os.getcwd(), 'export')
-
-    if 'empty_output' not in config:
-        config['empty_output'] = False
-
-    if 'format' not in config:
-        config['format'] = 'png'
-
-    if 'retina' not in config:
-        config['retina'] = False
-
-    if 'subdirs' not in config:
-        config['subdirs'] = True
-
-    if 'dpi' not in config:
-        config['dpi'] = 90
-
-    if 'global_style' not in config:
-        config['global_style'] = {}
-
-    if config['format'] == 'font':
-        if 'font' not in config:
-            config['font'] = {}
-
-        if 'size_filter' not in config:
-            config['size_filter'] = 14
-
-        if 'output_basedir' not in config['font']:
-            config['font']['output_basedir'] = os.path.join(os.getcwd(), 'font')
-
-    return
-
-
 # export PNG
 def exportPNG(source, destination, dpi, retina):
     for i in range(0, 2):
@@ -370,31 +490,42 @@ def exportPNG(source, destination, dpi, retina):
 
 
 # export icon font
-def exportFont(source, destination, size):
-    copyright_message = 'Osmic icon font (https://github.com/nebulon42/osmic), License: SIL OFL'
-    # TODO Windows?
-    try:
-        subprocess.call(['fontcustom', 'compile', source, '--force', '--output=' + destination, '--font-name=osmic', '--no-hash', '--font-design-size=' + str(size), '--css-selector=.oc-{{glyph}}', '--copyright=' + copyright_message])
+def exportFont(config, size_filter):
+    if 'font' in config:
+        source = config['output_basedir']
+        destination = config['font']['output_basedir']
 
-        # strip out metadata of SVG font
-        svg_font = os.path.join(destination, 'osmic.svg')
+        # have to define sane defaults for size parameter, otherwise the last read icon determines the size (that would be random)
+        (padding, halo_width, shield_width) = parseIconSizeParams(config['global_style'])
+        if size_filter > 0:
+            size = size_filter + (padding + halo_width) * 2 + shield_width
+        else:
+            size = 14 + (padding + halo_width) * 2 + shield_width
+
+        copyright_message = 'Osmic icon font (https://github.com/nebulon42/osmic), License: SIL OFL'
+        # TODO Windows?
         try:
-            fontfile = open(svg_font)
-            font = fontfile.read()
-            fontfile.close()
+            subprocess.call(['fontcustom', 'compile', source, '--force', '--output=' + destination, '--font-name=osmic', '--no-hash', '--font-design-size=' + str(size), '--css-selector=.oc-{{glyph}}', '--copyright=' + copyright_message])
 
-            xml = lxml.etree.fromstring(font)
-            xpEval = lxml.etree.XPathEvaluator(xml)
-            xpEval.register_namespace('def', 'http://www.w3.org/2000/svg')
-            metadata = xpEval('//def:metadata')[0]
-            metadata.text = copyright_message
-            lxml.etree.ElementTree(xml).write(svg_font, pretty_print=True)
-        except IOError:
-            # if we cannot read the file we just let it be
-            pass
-    except OSError:
-        # fontcustom is not installed
-        sys.exit('Export as icon font requires Font Custom. See http://fontcustom.com. Exiting.')
+            # strip out metadata of SVG font
+            svg_font = os.path.join(destination, 'osmic.svg')
+            try:
+                fontfile = open(svg_font)
+                font = fontfile.read()
+                fontfile.close()
+
+                xml = lxml.etree.fromstring(font)
+                xpEval = lxml.etree.XPathEvaluator(xml)
+                xpEval.register_namespace('def', 'http://www.w3.org/2000/svg')
+                metadata = xpEval('//def:metadata')[0]
+                metadata.text = copyright_message
+                lxml.etree.ElementTree(xml).write(svg_font, pretty_print=True)
+            except IOError:
+                # if we cannot read the file we just let it be
+                pass
+        except OSError:
+            # fontcustom is not installed
+            sys.exit('Export as icon font requires Font Custom. See http://fontcustom.com. Exiting.')
     return
 
 
@@ -523,8 +654,8 @@ def modifySVG(config, icon_id, size, icon):
                 halo_width = float(config['halo']['width'])
 
                 if halo_width < 0:
-                    halo_width = 1
-                    print('Halo widths < 0 do not make sense. Defaulting to width=1.')
+                    halo_width = 0
+                    print('Halo widths < 0 do not make sense. Omitting halo.')
             except ValueError:
                 print('The specified halo width is not a number.')
 
@@ -579,4 +710,3 @@ def modifySVG(config, icon_id, size, icon):
 
 if __name__ == "__main__":
     main()
-

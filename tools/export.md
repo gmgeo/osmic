@@ -2,6 +2,7 @@ To keep maintenance effort low for Osmic the repository contains only the base o
 
 This Python export script ([tools/export.py](https://github.com/gmgeo/osmic/blob/master/tools/export.py)) enables you to create your own customised collection of icons. It is able to:
 
+* include exactly the icons in the export you want to have
 * add padding
 * add halos/outlines
 * add shields
@@ -19,6 +20,7 @@ All parameters can be changed through a YAML configuration file. There are sever
 * [osm-carto-svg-color.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/osm-carto-svg-color.yaml) exports icons in SVG format like they are currently used in [openstreetmap-carto](https://github.com/gravitystorm/openstreetmap-carto) i.e. with 1px padding and without halo and re-colours them according to their colour scheme.
 * [overpass-turbo-png.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/overpass-turbo-png.yaml) exports icons in PNG format for Overpass Turbo, all in the same colour with halos, retina version and without subdirectories.
 * [shields.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/shields.yaml) exports icons with shields.
+* [small-collection.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/small-collection.yaml) exports a subset of icons demonstrating the ability to specify which icons exactly should be included in the export.
 * [sprites.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/sprites.yaml) exports the icons in a sprite like [this one](https://github.com/gmgeo/osmic/blob/master/icons@2x.png).
 
 Such a configuration file must be supplied to the script as parameter e.g. execute `./tools/export.py tools/shields.yaml` in the main folder of Osmic. Additionally the following parameters can be specified at the command line (execute `export.py -h` for details):
@@ -34,7 +36,11 @@ In the following all possible parameters are listed. All of them are optional.
 
 * `input_basedir` - specify the input base directory, if not specified it defaults to the current working directory, can be either an absolute or relative path
 
-* `input` - specify a list of directory names from which the icon files are read, useful if only a subset of icons should be processed, if not specified the script reads icons from the base directory
+* `input` - specify a list of directory names from which the icon files are read, useful if only a subset of icons should be processed, if not specified the script reads icons from the base directory. Each directory has the following parameters:
+  * `name` - specify the directory name, if not specified the directory will be skipped
+  * `include` - specify a list of file names with or without size (e.g. `waste-basket` or `waste-basket-14`) that should be included in the export, if not specified and no `exclude` list is present (see below) all icons in this directory are included. If no size for an icon is specified all sizes of this icon are included.
+  * `exclude` - specify a list of file names with or without size (e.g. `waste-basket` or `waste-basket-14`) that should be excluded from the export, if not specified and no `include` list is present (see above) all icons in this directory are included. If no size for an icon is specified all sizes of this icon are excluded.
+  * `include` and `exclude` may never be specified together for a directory, otherwise the directory will be skipped.
 
 * `output_basedir` - specify the output base directory, if not specified it defaults to `./export`, can be either an absolute or relative path
 
@@ -58,7 +64,7 @@ In the following all possible parameters are listed. All of them are optional.
 
   * `halo` - a list of styles related to icon halos/outlines such as fill colour, width and opacity
     * `fill` - specify a hexadecimal colour value for the halo fill e.g. `#efefef`, if not specified the colour fill defaults to `#ffffff` (white)
-    * `width` - specify the width of the halo in pixels, if not specified it defaults to `1`
+    * `width` - specify the width of the halo in pixels, if not specified it defaults to `0` which means no halo will be added
     * `opacity` - specify the opacity of the halo in values of 0 (transparent) .. 1 (opaque), if not specified it defaults to `0.3`
 
   * `shield` - a list of styles related to icon shields such as fills and strokes
@@ -71,7 +77,7 @@ In the following all possible parameters are listed. All of them are optional.
 * `sprite` - a list of styles such as columns and padding for generating sprites, makes only sense to specify for `format: "sprite"`, it is ignored otherwise
   * `cols` - specify the number of columns of the sprite i.e. how many icons will be displayed in one row, only values > 0 are allowed, if not specified defaults to `12`
   * `outer_padding`- specify the padding at the outer border of all icons, only values > 0 are allowed, if not specified defaults to `4`
-  * `icon_padding`- specify the padding between the different icons, only values > 0 are allowed, if not specified defaults to `4`	
+  * `icon_padding`- specify the padding between the different icons, only values > 0 are allowed, if not specified defaults to `4`
   * `background`- specify a hexadecimal colour value for the sprite background fill e.g. `#efefef`, if not specified it defaults to transparent
   * `filename`- specify the filename of the sprite, if not specified defaults to `sprite`
 
