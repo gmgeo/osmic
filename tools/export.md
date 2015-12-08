@@ -31,6 +31,7 @@ Such a configuration file must be supplied to the script as parameter e.g. execu
 The configuration file follows a simple organisational pattern for maximum versatility: all global icon parameters can be overridden by parameters specific to a certain icon id (except for sprites where only the colour can be changed). This is e.g. how re-colouring of icons works. An example of this pattern can be found in [osm-carto-png.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/osm-carto-png.yaml) where the global fill colour of `#734a08` is changed for the icon id `peak` to `#d08f55`.
 
 In the following all possible parameters are listed. All of them are optional.
+Colour values can be either specified as RGB value e.g. `rgb(255, 255, 255)` or `#ffffff` or as HSL value e.g. `hsl(20, 40%, 33%)`.
 
 * `basedir` - specify the working directory, if not specified it defaults to the current working directory, relative and absolute paths are allowed, relative paths are evaluated against the current working directory
 
@@ -60,16 +61,16 @@ In the following all possible parameters are listed. All of them are optional.
 
   * `padding` - specify the number of pixels of space between the icon shape and canvas border, the icon stays centred all the time, only values > 0 are allowed, defaults to `0`
 
-  * `fill` - specify a hexadecimal colour value for the icon fill e.g. `#efefef`, if not specified the colour fill stays `#000000` (black)
+  * `fill` - specify a colour value for the icon fill e.g. `#efefef`, if not specified the colour fill stays black
 
   * `halo` - a list of styles related to icon halos/outlines such as fill colour, width and opacity
-    * `fill` - specify a hexadecimal colour value for the halo fill e.g. `#efefef`, if not specified the colour fill defaults to `#ffffff` (white)
+    * `fill` - specify a colour value for the halo fill e.g. `#efefef`, if not specified the colour fill defaults to white
     * `width` - specify the width of the halo in pixels, if not specified it defaults to `0` which means no halo will be added
     * `opacity` - specify the opacity of the halo in values of 0 (transparent) .. 1 (opaque), if not specified it defaults to `0.3`
 
   * `shield` - a list of styles related to icon shields such as fills and strokes
-    * `fill` - specify a hexadecimal colour value for the shield fill e.g. `#efefef`, if not specified the colour fill defaults to `#000000` (black)
-    * `stroke_fill` - specify a hexadecimal colour value for the stroke fill e.g. `#efefef`, if not specified no stroke will be drawn
+    * `fill` - specify a colour value for the shield fill e.g. `#efefef`, if not specified the colour fill defaults to black
+    * `stroke_fill` - specify a colour value for the stroke fill e.g. `#efefef`, if not specified no stroke will be drawn
     * `stroke_width` - specify a stroke width in pixels, only values > 0 are allowed, if not specified no stroke will be drawn
     * `rounded` - specify the corner radius of the shield, only values > 0 are allowed, if not specified defaults to `0` (unrounded corners)
     * `padding` - specify number of pixels of space between the icon shape and shield border, the icon stays centred all the times, only values > 0 are allowed, defaults to `0`
@@ -78,7 +79,7 @@ In the following all possible parameters are listed. All of them are optional.
   * `cols` - specify the number of columns of the sprite i.e. how many icons will be displayed in one row, only values > 0 are allowed, if not specified defaults to `12`
   * `outer_padding`- specify the padding at the outer border of all icons, only values > 0 are allowed, if not specified defaults to `4`
   * `icon_padding`- specify the padding between the different icons, only values > 0 are allowed, if not specified defaults to `4`
-  * `background`- specify a hexadecimal colour value for the sprite background fill e.g. `#efefef`, if not specified it defaults to transparent
+  * `background`- specify a colour value for the sprite background fill e.g. `#efefef`, if not specified it defaults to transparent
   * `filename`- specify the filename of the sprite, if not specified defaults to `sprite`
 
 * `font` - a list of configuration options for icon font generation

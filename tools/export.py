@@ -5,6 +5,7 @@
 
 from __future__ import print_function
 import argparse
+import colorsys
 import copy
 import glob
 import lxml.etree
@@ -361,10 +362,9 @@ def exportSprite(config, size_filter, num_icons):
 
         sprite_background = None
         if 'background' in config['sprite']:
-            sprite_background = config['sprite']['background']
-            if re.match('^#[0-9a-f]{6}$', sprite_background) == None:
-                sprite_background = None
-                print('The specified shield fill is invalid. Format it as HEX (e.g. #1a1a1a). Defaulting to none (transparent).')
+            sprite_background = parseColor(config['sprite']['background'])
+            if sprite_background == None:
+                print('The specified background colour is invalid. Format it as HEX/RGB/HSL (e.g. #1a1a1a). Defaulting to none (transparent).')
 
         sprite_file_name = 'sprite'
         if 'filename' in config['sprite']:
@@ -529,6 +529,35 @@ def exportFont(config, size_filter):
     return
 
 
+# parse rgb, hex and hsl color definitions, return hex color or None on error
+def parseColor(color):
+    parsed_color = None
+    if re.match('^#[0-9a-f]{6}$', color) != None:
+        parsed_color = color
+    rgb_match = re.search('^rgb\(([0-9]{1,3}),\s*([0-9]{1,3}),\s*([0-9]{1,3})\)$', color)
+    if rgb_match is not None:
+        try:
+            r = int(rgb_match.group(1))
+            g = int(rgb_match.group(2))
+            b = int(rgb_match.group(3))
+            parsed_color = '#'+("%x" % r)+("%x" % g)+("%x" % b)
+        except ValueError:
+            pass
+    else:
+        hsl_match = re.search('^hsl\(([0-9]{1,3}(\.[0-9]*)?),\s*([0-9]{1,3}(\.[0-9]*)?)\%,\s*([0-9]{1,3}(\.[0-9]*)?)\%\)$', color)
+        if hsl_match is not None:
+            try:
+                h = float(hsl_match.group(1)) / 365
+                s = float(hsl_match.group(3)) / 100
+                l = float(hsl_match.group(5)) / 100
+                (r, g, b) = colorsys.hls_to_rgb(h, l, s)
+                parsed_color = '#'+("%x" % (r * 255))+("%x" % (g * 255))+("%x" % (b * 255))
+            except ValueError:
+                pass
+
+    return parsed_color
+
+
 # modifications to the SVG
 def modifySVG(config, icon_id, size, icon):
     xml = lxml.etree.fromstring(icon)
@@ -588,19 +617,19 @@ def modifySVG(config, icon_id, size, icon):
 
         shield_fill = '#000000'
         if 'fill' in config['shield']:
-            shield_fill = config['shield']['fill']
-            if re.match('^#[0-9a-f]{6}$', shield_fill) == None:
+            shield_fill = parseColor(config['shield']['fill'])
+            if shield_fill == None:
                 shield_fill = '#000000'
-                print('The specified shield fill is invalid. Format it as HEX (e.g. #1a1a1a). Defaulting to #000000 (black).')
+                print('The specified shield fill is invalid. Format it as HEX/RGB/HSL (e.g. #1a1a1a). Defaulting to #000000 (black).')
         else:
             print('Shield fill not specified. Defaulting to #000000 (black).')
 
         stroke = 'stroke:none;'
         stroke_fill = None
         if 'stroke_fill' in config['shield']:
-            stroke_fill = config['shield']['stroke_fill']
-            if re.match('^#[0-9a-f]{6}$', stroke_fill) == None:
-                print('The specified shield stroke fill is invalid. Format it as HEX (e.g. #1a1a1a).')
+            stroke_fill = parseColor(config['shield']['stroke_fill'])
+            if stroke_fill == None:
+                print('The specified shield stroke fill is invalid. Format it as HEX/RGB/HSL (e.g. #1a1a1a).')
 
         stroke_width = None
         if 'stroke_width' in config['shield']:
@@ -642,10 +671,10 @@ def modifySVG(config, icon_id, size, icon):
     if 'halo' in config:
         halo_fill = '#fffff'
         if 'fill' in config['halo']:
-            halo_fill = config['halo']['fill']
-            if re.match('^#[0-9a-f]{6}$', halo_fill) == None:
+            halo_fill = parseColor(config['halo']['fill'])
+            if halo_fill == None:
                 halo_fill = '#ffffff'
-                print('The specified halo fill is invalid. Format it as HEX (e.g. #1a1a1a). Defaulting to #ffffff (white).')
+                print('The specified halo fill is invalid. Format it as HEX/RGB/HSL (e.g. #1a1a1a). Defaulting to #ffffff (white).')
         else:
             print('Halo fill not specified. Defaulting to #ffffff (white).')
 
@@ -681,11 +710,12 @@ def modifySVG(config, icon_id, size, icon):
 
     # change fill colour of icon
     if 'fill' in config:
-        if not re.match('^#[0-9a-f]{6}$', config['fill']) == None:
+        fill_color = parseColor(config['fill'])
+        if fill_color != None:
             path = xpEval("//def:path[@id='"+icon_id+"']")[0]
-            path.attrib['style'] = re.sub('fill:#[0-9a-f]{6};?', 'fill:'+config['fill']+';', path.attrib['style'])
+            path.attrib['style'] = re.sub('fill:#[0-9a-f]{6};?', 'fill:'+fill_color+';', path.attrib['style'])
         else:
-            print('The specified fill is invalid. Format it as HEX (e.g. #1a1a1a).')
+            print('The specified fill is invalid. Format it as HEX/RGB/HSL (e.g. #1a1a1a).')
 
 
     # adjust document and canvas size, icon position
