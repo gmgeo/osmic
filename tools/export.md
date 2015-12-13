@@ -31,7 +31,7 @@ Such a configuration file must be supplied to the script as parameter e.g. execu
 The configuration file follows a simple organisational pattern for maximum versatility: all global icon parameters can be overridden by parameters specific to a certain icon id (except for sprites where only the colour can be changed). This is e.g. how re-colouring of icons works. An example of this pattern can be found in [osm-carto-png.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/osm-carto-png.yaml) where the global fill colour of `#734a08` is changed for the icon id `peak` to `#d08f55`.
 
 In the following all possible parameters are listed. All of them are optional.
-Colour values can be either specified as RGB value e.g. `rgb(255, 255, 255)` or `#ffffff` or as HSL value e.g. `hsl(20, 40%, 33%)`.
+Colour values can be either specified as RGB value e.g. `rgb(255, 255, 255)` or `#ffffff`, as HSL value e.g. `hsl(20, 40%, 33%)` or as perceptual HUSL value (http://www.husl-colors.org/) e.g. `husl(20, 40%, 33%)`.
 
 * `basedir` - specify the working directory, if not specified it defaults to the current working directory, relative and absolute paths are allowed, relative paths are evaluated against the current working directory
 
@@ -84,3 +84,6 @@ Colour values can be either specified as RGB value e.g. `rgb(255, 255, 255)` or 
 
 * `font` - a list of configuration options for icon font generation
   * `output_basedir` - specify the output directory for the font files, if not specified it defaults to `./font`, can be either an absolute or relative path
+
+#### Dependencies
+* `husl` (`pip install husl`) if you want to specify HUSL colour values.
