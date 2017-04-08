@@ -641,6 +641,17 @@ def modifySVG(config, icon_id, size, icon):
                 print('The specified shield fill is invalid. Format it as HEX/RGB/HSL/HUSL (e.g. #1a1a1a). Defaulting to #000000 (black).')
         else:
             print('Shield fill not specified. Defaulting to #000000 (black).')
+        
+        shield_opacity = None
+        if 'opacity' in config['shield']:
+            try:
+                shield_opacity = float(config['shield']['opacity'])
+
+                if shield_opacity < 0 or shield_opacity > 1:
+                    shield_opacity = 1.0
+                    print('Fill opacity must lie between 0 and 1 (e.g. 0.5). Defaulting to 1.0.')
+            except ValueError:
+                print('The specified fill opacity is not a number.')
 
         stroke = 'stroke:none;'
         stroke_fill = None
@@ -659,11 +670,22 @@ def modifySVG(config, icon_id, size, icon):
                     print('Negative shield stroke widths are not allowed. Defaulting to width=1.')
             except ValueError:
                 print('The specified shield stroke width is not a number.')
+                
+        stroke_opacity = None
+        if 'stroke_opacity' in config['shield']:
+            try:
+                stroke_opacity = float(config['shield']['stroke_opacity'])
+
+                if stroke_opacity < 0 or stroke_opacity > 1:
+                    stroke_opacity = 1.0
+                    print('Stroke opacity must lie between 0 and 1 (e.g. 0.5). Opacities of 0 do not make sense. Defaulting to 1.0.')
+            except ValueError:
+                print('The specified stroke opacity is not a number.')
 
         if stroke_fill is not None and stroke_width is not None:
             # do not specify stroke if stroke_width = 0 was specified
             if stroke_width > 0:
-                stroke = 'stroke:'+stroke_fill+';stroke-width:'+str(stroke_width)+';'
+                stroke = 'stroke:'+stroke_fill+';stroke-width:'+str(stroke_width)+';stroke-opacity:'+str(stroke_opacity)+';'
         else:
             # do not print warning if stroke width = 0 or none was specified
             if stroke_width > 0:
@@ -678,7 +700,7 @@ def modifySVG(config, icon_id, size, icon):
             shield.set('rx', str(shield_rounded))
             shield.set('ry', str(shield_rounded))
         shield.set('id', 'shield')
-        shield.set('style', 'fill:'+shield_fill+';'+stroke)
+        shield.set('style', 'fill:'+shield_fill+';'+'fill-opacity:'+str(shield_opacity)+';'+stroke)
 
         canvas = xpEval("//def:rect[@id='canvas']")[0]
         canvas.addnext(shield)
@@ -734,6 +756,19 @@ def modifySVG(config, icon_id, size, icon):
             path.attrib['style'] = re.sub('fill:#[0-9a-f]{6};?', 'fill:'+fill_color+';', path.attrib['style'])
         else:
             print('The specified fill is invalid. Format it as HEX/RGB/HSL/HUSL (e.g. #1a1a1a).')
+    
+    # change the icon opacity        
+    opacity = None
+    if 'opacity' in config:
+        try:
+            opacity = float(config['opacity'])
+            if opacity < 0 or opacity > 1:
+                opacity = 1.0
+                print('Icon opacity must lie between 0 and 1 (e.g. 0.5). Defaulting to 1.0.')
+            else:
+                path.attrib['style'] = re.sub('fill-opacity:[.0-9]+;?', 'fill-opacity:'+str(opacity)+';', path.attrib['style'])
+        except ValueError:
+            print('The specified icon opacity is not a number.')
 
 
     # adjust document and canvas size, icon position
