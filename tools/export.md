@@ -11,7 +11,7 @@ This Python export script ([tools/export.py](https://github.com/gmgeo/osmic/blob
 * create an icon font with the help of [Font Custom](https://github.com/FontCustom/fontcustom/)
 * export as SVG and PNG (through rsvg or Inkscape) with different resolutions including retina (double sized) versions.
 
-All parameters can be changed through a YAML configuration file. There are several examples in the script folder:
+All parameters can be changed through a YAML configuration file. There are several examples in the config/ folder at the same location as the script:
 
 * [font.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/font.yaml) creates an icon font of all icons.
 * [josm.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/josm.yaml) exports coloured icons with halos for the [Osmic JOSM style](https://github.com/gmgeo/osmic-josm-style).
@@ -23,7 +23,7 @@ All parameters can be changed through a YAML configuration file. There are sever
 * [small-collection.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/small-collection.yaml) exports a subset of icons demonstrating the ability to specify which icons exactly should be included in the export.
 * [sprites.yaml](https://github.com/gmgeo/osmic/blob/master/tools/config/sprites.yaml) exports the icons in a sprite like [this one](https://github.com/gmgeo/osmic/blob/master/icons@2x.png).
 
-Such a configuration file must be supplied to the script as parameter e.g. execute `./tools/export.py tools/shields.yaml` in the main folder of Osmic. Additionally the following parameters can be specified at the command line (execute `export.py -h` for details):
+Such a configuration file must be supplied to the script as parameter e.g. execute `./tools/export.py tools/config/shields.yaml` in the main folder of Osmic. Additionally the following parameters can be specified at the command line (execute `export.py -h` for details):
 * a working directory parameter with `--basedir`
 * a input base directory parameter with `--input`
 * a output base directory parameter with `--output`
@@ -63,6 +63,8 @@ Colour values can be either specified as RGB value e.g. `rgb(255, 255, 255)` or 
 
   * `fill` - specify a colour value for the icon fill e.g. `#efefef`, if not specified the colour fill stays black
 
+  * `opacity` - specify the opacity of the icon fill in values of 0 (transparent) .. 1 (opaque), if not specified it defaults to `1.0`
+
   * `halo` - a list of styles related to icon halos/outlines such as fill colour, width and opacity
     * `fill` - specify a colour value for the halo fill e.g. `#efefef`, if not specified the colour fill defaults to white
     * `width` - specify the width of the halo in pixels, if not specified it defaults to `0` which means no halo will be added
@@ -70,8 +72,10 @@ Colour values can be either specified as RGB value e.g. `rgb(255, 255, 255)` or 
 
   * `shield` - a list of styles related to icon shields such as fills and strokes
     * `fill` - specify a colour value for the shield fill e.g. `#efefef`, if not specified the colour fill defaults to black
+    * `opacity` - specify the opacity of the shield fill in values of 0 (transparent) .. 1 (opaque), if not specified it defaults to `1.0`
     * `stroke_fill` - specify a colour value for the stroke fill e.g. `#efefef`, if not specified no stroke will be drawn
     * `stroke_width` - specify a stroke width in pixels, only values > 0 are allowed, if not specified no stroke will be drawn
+    * `stroke_opacity` - specify the opacity of the stroke in values of 0 (transparent) .. 1 (opaque), if not specified it defaults to `1.0`
     * `rounded` - specify the corner radius of the shield, only values > 0 are allowed, if not specified defaults to `0` (unrounded corners)
     * `padding` - specify number of pixels of space between the icon shape and shield border, the icon stays centred all the times, only values > 0 are allowed, defaults to `0`
 
