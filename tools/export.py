@@ -133,7 +133,7 @@ def main():
 
         # loop through all SVG files in this directory
         for icon_path in glob.glob(os.path.join(dir_path, '*.svg')):
-            name_match = re.search('^([a-z-]+)\-([0-9]+)$', os.path.splitext(os.path.basename(icon_path))[0])
+            name_match = re.search(r'^([a-z-]+)\-([0-9]+)$', os.path.splitext(os.path.basename(icon_path))[0])
             icon_id = None
             size = None
             if name_match is not None:
@@ -162,7 +162,7 @@ def main():
 
             # read in file contents
             try:
-                iconfile = open(icon_path)
+                iconfile = open(icon_path, mode="rb")
             except IOError:
                 continue
             icon = iconfile.read()
@@ -199,7 +199,7 @@ def main():
 
                 # save modified file
                 try:
-                    iconfile = open(icon_out_path, 'w')
+                    iconfile = open(icon_out_path, mode='wb')
                     iconfile.write(icon)
                     iconfile.close()
                 except IOError:
@@ -220,7 +220,7 @@ def main():
 
                     exportPNG(icon_out_path, destination, config['dpi'], config['retina'])
                     os.remove(icon_out_path)
-            except Exception, e:
+            except Exception as e:
                 print(e)
                 continue
 
@@ -409,7 +409,7 @@ def exportSprite(config, size_filter, num_icons):
 
             # loop through all SVG files in this directory (in alphabetical order)
             for icon_path in sorted(glob.glob(os.path.join(dir_path, '*.svg'))):
-                name_match = re.search('^([a-z-]+)\-([0-9]+)$', os.path.splitext(os.path.basename(icon_path))[0])
+                name_match = re.search(r'^([a-z-]+)\-([0-9]+)$', os.path.splitext(os.path.basename(icon_path))[0])
                 icon_id = None
                 size = None
                 if name_match is not None:
@@ -537,7 +537,7 @@ def parseColor(color):
         if re.match('^#[0-9a-f]{6}$', color) != None:
             parsed_color = color
     elif color.startswith('rgb'):
-        rgb_match = re.search('^rgb\(([0-9]{1,3}),\s*([0-9]{1,3}),\s*([0-9]{1,3})\)$', color)
+        rgb_match = re.search(r'^rgb\(([0-9]{1,3}),\s*([0-9]{1,3}),\s*([0-9]{1,3})\)$', color)
         if rgb_match is not None:
             try:
                 r = min(int(rgb_match.group(1)), 255)
@@ -547,7 +547,7 @@ def parseColor(color):
             except ValueError:
                 pass
     elif color.startswith('hsl'):
-        hsl_match = re.search('^hsl\(([0-9]{1,3}(\.[0-9]*)?),\s*([0-9]{1,3}(\.[0-9]*)?)\%,\s*([0-9]{1,3}(\.[0-9]*)?)\%\)$', color)
+        hsl_match = re.search(r'^hsl\(([0-9]{1,3}(\.[0-9]*)?),\s*([0-9]{1,3}(\.[0-9]*)?)\%,\s*([0-9]{1,3}(\.[0-9]*)?)\%\)$', color)
         if hsl_match is not None:
             try:
                 h = min(float(hsl_match.group(1)) / 365, 1)
@@ -558,7 +558,7 @@ def parseColor(color):
             except ValueError:
                 pass
     elif color.startswith('husl'):
-        husl_match = re.search('^husl\(([0-9]{1,3}(\.[0-9]*)?),\s*([0-9]{1,3}(\.[0-9]*)?)\%,\s*([0-9]{1,3}(\.[0-9]*)?)\%\)$', color)
+        husl_match = re.search(r'^husl\(([0-9]{1,3}(\.[0-9]*)?),\s*([0-9]{1,3}(\.[0-9]*)?)\%,\s*([0-9]{1,3}(\.[0-9]*)?)\%\)$', color)
         if husl_match is not None:
             try:
                 import husl
